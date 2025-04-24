@@ -1,0 +1,60 @@
+﻿//objectcomments Renvoie la taille et la position de la fenêtre container MDI
+global type f_getmdiposandsize from function_object
+end type
+
+forward prototypes
+global subroutine f_getmdiposandsize (integer ai_defwidth, integer ai_defheight, ref integer ai_width, ref integer ai_height, ref integer ai_x, ref integer ai_y)
+end prototypes
+
+global subroutine f_getmdiposandsize (integer ai_defwidth, integer ai_defheight, ref integer ai_width, ref integer ai_height, ref integer ai_x, ref integer ai_y);// PCO 08/03/2017 : calcule la taille et la position du container MDI en limitant à la résolution de l'écran.
+// Si par exemple on quitte l'application avec la fenêtre affichée dans un second écran et qu'on la relance 
+// sans la présence de ce 2ème écran, l'appli n'apparaît pas et il faut la killer puis supprimer la position 
+// mémorisée dans le .ini. La fonction permet d'éviter cet inconvénient.
+//
+// arguments ai_defwidth et ai_defheight : dimensions initiales du container MDI, tel que prévu lors du développement.
+// retour : par des variables passées par référence, renvoie la dimension et la position du container MDI.
+environment l_env
+integer		li_status, li_width, li_height, li_x, li_y, li_w_pbunits, li_h_pbunits
+
+li_status = GetEnvironment(l_env)
+IF li_status = 1 THEN 
+	// convertir résolution de l'écran en PBunits
+	li_w_pbunits = PixelsToUnits(l_env.ScreenWidth, XPixelsToUnits!) 
+	li_h_pbunits = PixelsToUnits(l_env.ScreenHeight, YPixelsToUnits!)
+	// recharger dernière dimension de la fenêtre MDI
+	li_width = ProfileInt(gs_locinifile, gs_username, "MDIWidth", ai_defWidth)
+	li_height = ProfileInt(gs_locinifile, gs_username, "MDIHeight", ai_defHeight)
+	// limiter à la résolution de l'écran avec un minimum de 1500
+	IF li_width >= 1500 AND li_width <= li_w_pbunits - 100 THEN 
+		ai_width = li_width
+	ELSE
+		ai_width = ai_defWidth
+	END IF
+	IF li_height >= 1500 AND li_height <= li_h_pbunits - 30 THEN 
+		ai_height = li_height
+	ELSE
+		ai_height = ai_defHeight
+	END IF
+	
+	// recharger dernière position de l'écran
+	li_x = ProfileInt(gs_locinifile, gs_username, "MDIx", 1)
+	li_y =	ProfileInt(gs_locinifile, gs_username, "MDIy", 1)
+	// si la dernière position est compatible avec l'écran (max le centre de l'écran), on l'utilise pour positionner l'écran
+	IF li_x > 0 AND li_x <= li_w_pbunits / 2 THEN 
+		ai_x = li_x
+	ELSE
+		ai_x = 1
+	END IF
+	IF li_y > 0 AND li_y <= li_h_pbunits / 2 THEN 
+		ai_y = li_y
+	ELSE
+		ai_y = 1
+	END IF
+ELSE
+	ai_x = 1
+	ai_y = 1
+	ai_width = ai_defWidth
+	ai_height = ai_defHeight
+END IF
+end subroutine
+

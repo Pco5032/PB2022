@@ -1,0 +1,38 @@
+﻿global type f_runfile from function_object
+end type
+
+forward prototypes
+global function integer f_runfile (string as_document)
+end prototypes
+
+global function integer f_runfile (string as_document);// Ouvre le fichier passé en argument au moyen du programme spécifié par Windows, comme le ferait un double-click sur le fichier.
+// return(1) si OK
+// return(-xx) si erreur
+ulong		lul_ret
+constant int SW_SHOWNORMAL = 1
+constant int SE_ERR_NOASSOC = 31
+
+IF NOT FileExists(as_Document) THEN
+	gu_message.uf_error("Le document à ouvrir (" + as_Document + ") n'existe pas")
+	return(-1)
+END IF
+
+lul_ret = ShellExecute( 0, "open", as_Document, "", "", SW_SHOWNORMAL )
+
+// If the function succeeds, it returns a value greater than 32. If the function fails, it returns an error value that indicates the cause of the failure.
+IF lul_ret > 32 THEN
+	return(1)
+END IF
+
+IF lul_ret <= 32 THEN
+	CHOOSE CASE lul_ret 
+		CASE SE_ERR_NOASSOC
+			gu_message.uf_error("Il n'y a pas d'application associée au fichier " + as_Document)
+		CASE ELSE
+			gu_message.uf_error("Erreur " + string(lul_ret) + " tentative d'ouverture du fichier " + as_Document)
+	END CHOOSE
+	return(lul_ret * -1)
+END IF
+
+end function
+

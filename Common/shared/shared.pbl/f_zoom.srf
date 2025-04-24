@@ -1,0 +1,26 @@
+﻿global type f_zoom from function_object
+end type
+
+forward prototypes
+global function integer f_zoom (ref string as_text, integer ai_limit, boolean ab_displayonly)
+end prototypes
+
+global function integer f_zoom (ref string as_text, integer ai_limit, boolean ab_displayonly);// affichage du texte passé en paramètre dans une fenêtre plus grande, limite de caractères=ai_limit (0=unlimited), modifiable TRUE/FALSE
+// return 1 si on quitte la fenêtre en cliquant OK
+// return -1 si on quitte la fenêtre en cliquant ANNULER
+
+str_params	lstr_params
+
+lstr_params.a_param[1] = as_text
+lstr_params.a_param[2] = ai_limit
+lstr_params.a_param[3] = ab_displayonly
+openwithparm(w_zoom, lstr_params)
+
+IF Message.DoubleParm = -1 THEN 
+	return(-1)
+ELSE
+	IF ab_displayonly THEN as_text = Message.StringParm
+	return(1)
+END IF
+end function
+

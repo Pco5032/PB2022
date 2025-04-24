@@ -1,0 +1,18 @@
+﻿global type f_bolddestroy from function_object
+end type
+
+forward prototypes
+global subroutine f_bolddestroy ()
+end prototypes
+
+global subroutine f_bolddestroy ();// Fonction à appeler quand un objet n'a plus besoin de BOLD.
+// A utiliser au lieu d'un DESTROY direct dans programmes business qui doivent interragir avec BOLD.
+IF isValid(gu_bold) THEN
+	gu_bold.uf_disconnect()
+	IF gu_bold.uf_getconnectioncount() = 0 THEN
+		DESTROY gu_bold
+	END IF
+END IF
+
+end subroutine
+

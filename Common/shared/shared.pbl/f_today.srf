@@ -1,0 +1,12 @@
+﻿global type f_today from function_object
+end type
+
+forward prototypes
+global function date f_today ()
+end prototypes
+
+global function date f_today ();// dans certains cas, la fonction today() renvoie une variable de type datetime. 
+// La fonction f_today() assure que le type renvoyé est date et non datetime
+return (date(string(today())))
+end function
+

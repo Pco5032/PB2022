@@ -1,0 +1,14 @@
+﻿global type f_translate_getlabel from function_object
+end type
+
+forward prototypes
+global function string f_translate_getlabel (string as_tag, string as_defaultlabel)
+end prototypes
+
+global function string f_translate_getlabel (string as_tag, string as_defaultlabel);IF gu_translate.uf_musttranslate() THEN
+	return(gu_translate.uf_getlabel(as_tag, as_defaultlabel))
+ELSE
+	return(as_defaultLabel)
+END IF
+end function
+

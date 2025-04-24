@@ -1,0 +1,18 @@
+﻿global type f_popupaction from function_object
+end type
+
+forward prototypes
+global subroutine f_popupaction (window aw_windowclickedon)
+end prototypes
+
+global subroutine f_popupaction (window aw_windowclickedon);// cliquer dans la fenêtre active (uniquement celle-là) avec le bouton droit : afficher le menu action
+IF aw_windowclickedon <> gw_mdiframe.GetActiveSheet() THEN
+	beep(1)
+	return
+END IF
+
+// puis on affiche le menu action
+gw_mdiframe.menuid.item[2].PopMenu (w_mdiframe.PointerX(),w_mdiframe.PointerY())
+
+end subroutine
+

@@ -1,0 +1,10 @@
+﻿global type f_enteristab from function_object
+end type
+
+forward prototypes
+global subroutine f_enteristab (boolean ab_enteristab)
+end prototypes
+
+global subroutine f_enteristab (boolean ab_enteristab);gb_enteristab = ab_EnterIsTab
+end subroutine
+

@@ -1,0 +1,24 @@
+﻿global type f_clean_validmsg from function_object
+end type
+
+forward prototypes
+global function string f_clean_validmsg (string as_validmsg)
+end prototypes
+
+global function string f_clean_validmsg (string as_validmsg);// Quand on affecte la propriété ValidationMsg d'un objet DataWindow à une variable string, la chaîne de caractères
+// contenue dans cette variable contient des caractères indésirables (~) que l'on enlève ici
+
+long		ll_pos
+string	ls_ValidationMsg
+
+ls_ValidationMsg = MidA(string(as_validmsg),4,LenA(string(as_validmsg)) - 6)
+ll_pos = PosA(ls_ValidationMsg,"~~",1)
+DO WHILE ll_pos > 0
+	ls_ValidationMsg = LeftA(ls_ValidationMsg,ll_pos - 1) + MidA(ls_ValidationMsg,ll_pos + 1)
+	ll_pos = PosA(ls_ValidationMsg,"~~",1)
+LOOP
+
+return(ls_ValidationMsg)
+
+end function
+

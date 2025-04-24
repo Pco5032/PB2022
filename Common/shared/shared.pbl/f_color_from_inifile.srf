@@ -1,0 +1,33 @@
+﻿global type f_color_from_inifile from function_object
+end type
+
+forward prototypes
+global function long f_color_from_inifile (string as_sectionname, string as_paramname)
+end prototypes
+
+global function long f_color_from_inifile (string as_sectionname, string as_paramname);// extrait les paramètres de couleur du fichier .INI sous format R,G,B et les convertit en valeur long
+// as_sectionname = nom de la section du fichier .INI
+// as_paramname = nom du paramètre
+
+string	ls_rgb
+long		ll_pos, ll_len
+integer	li_col1, li_col2, li_col3
+
+ls_rgb = ProfileString(gs_inifile,as_sectionname,as_paramname,"255,255,255")
+
+ll_pos = PosA(ls_rgb,",",1)
+ll_len = ll_pos - 1
+li_col1 = integer (MidA(ls_rgb,1,ll_len))
+ls_rgb = MidA(ls_rgb, ll_pos + 1)
+
+ll_pos = PosA(ls_rgb,",",1)
+ll_len = ll_pos - 1
+li_col2 = integer (MidA(ls_rgb,1,ll_len))
+ls_rgb = MidA(ls_rgb, ll_pos + 1)
+
+li_col3 = integer (ls_rgb)
+
+return(RGB(li_col1, li_col2, li_col3))
+
+end function
+

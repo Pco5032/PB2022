@@ -1,0 +1,12 @@
+begin
+dbms_scheduler.create_job (
+   job_name           =>  'INSERT_DNFSTAT',
+   job_type           =>  'PLSQL_BLOCK',
+   job_action         =>  'INSERT INTO DNF_STAT SELECT SYSDATE, Count(userid), Count(DISTINCT lastdb) FROM dnf_user 
+                                  WHERE To_Char(lastlogon,''DD/MM/YYYY'') = To_Char(SYSDATE,''DD/MM/YYYY''); COMMIT;',
+   start_date         =>  SYSTIMESTAMP,
+   repeat_interval    =>  'TRUNC(SYSDATE+1)+20/24',
+   enabled            =>  TRUE,
+   comments           =>  'Garnissage du nombre de connexions réalisées dans la journée dans DNF_STAT'
+);
+END;

@@ -1,0 +1,16 @@
+﻿global type f_runwait from function_object
+end type
+
+forward prototypes
+global function boolean f_runwait (string as_command)
+end prototypes
+
+global function boolean f_runwait (string as_command);uo_runwait	lu_runwait
+boolean		lb_stat
+
+lu_runwait = CREATE uo_runwait
+lb_stat = lu_runwait.uf_runandwait(as_command)
+DESTROY uo_runwait
+return(lb_stat)
+end function
+

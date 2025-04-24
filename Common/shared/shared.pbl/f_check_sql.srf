@@ -1,0 +1,44 @@
+﻿global type f_check_sql from function_object
+end type
+
+forward prototypes
+global function integer f_check_sql (transaction atr_1)
+end prototypes
+
+global function integer f_check_sql (transaction atr_1);// vérifier l'objet transaction après une commande ESQL
+// return 0 = pas d'erreur
+// return 100 = no rows (SELECT)
+// return -1 = erreur
+
+// déclarer une variable de type structure dberror
+str_dberror lstr_dberror
+
+// SQLCODE = 0 signifie pas d'erreur
+IF atr_1.SQLCODE = 0 THEN
+	return(0)
+END IF
+
+// SQLCODE = 100 signifie "no rows", pas de traitement par défaut particulier
+IF atr_1.SQLCODE = 100 THEN
+	return(100)
+END IF
+
+// cas ou SQLCODE = -1
+// placer dans la structure globale les variables propres à l'objet transaction
+lstr_dberror.l_sqldbcode = atr_1.sqldbcode
+lstr_dberror.s_sqlerrtext = atr_1.sqlerrtext
+lstr_dberror.s_sqlsyntax = atr_1.sqlreturndata
+lstr_dberror.l_row = atr_1.sqlnrows
+SetNull(lstr_dberror.dwb_buffer)
+lstr_dberror.i_severity = 3
+
+// sauver les infos d'erreur dans l'objet error pour réutiliser + tard
+error.uf_SaveDBerror(lstr_dberror)
+
+// passer la structure globale à la fenêtre d'affichage d'erreur et afficher
+openwithparm (w_dberror,lstr_dberror)
+return(-1)
+
+
+end function
+

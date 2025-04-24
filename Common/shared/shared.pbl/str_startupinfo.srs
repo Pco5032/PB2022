@@ -1,0 +1,21 @@
+﻿global type str_startupinfo from structure
+	long		cb
+	string		lpreserved
+	string		lpdesktop
+	string		lptitle
+	long		dwx
+	long		dwy
+	long		dwxsize
+	long		dwysize
+	long		dwxcountchars
+	long		dwycountchars
+	long		dwfillattribute
+	long		dwflags
+	long		wshowwindow
+	long		cbreserved2
+	long		lpreserved2
+	ulong		hstdinput
+	ulong		hstdoutput
+	ulong		hstderror
+end type
+

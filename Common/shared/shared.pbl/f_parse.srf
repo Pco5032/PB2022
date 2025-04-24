@@ -1,0 +1,37 @@
+﻿//objectcomments Décompose les éléments d'une string séparés par un séparateur et les place dans un array
+global type f_parse from function_object
+end type
+
+forward prototypes
+global function long f_parse (string as_string, character ac_separator, ref string as_result[])
+end prototypes
+
+global function long f_parse (string as_string, character ac_separator, ref string as_result[]);/* à partir du string as_string composé d'éléments séparés par le délimiteur ac_separator, 
+   construire et renvoyer un array d'éléments de type string as_result[] */
+/* PCO Mai 2012 : remplacer integer li_elem par long ll_elem */
+/* PCO 31MARS2016 : return le nombre d'éléments trouvés */
+long		ll_len, ll_i, ll_pos, ll_start, ll_elem
+string	ls_videresult[]
+
+as_result = ls_videresult
+ll_len = LenA(as_string)
+IF ll_len < 1 OR IsNull(ll_len) THEN
+	return(0)
+END IF
+
+ll_start = 1
+ll_pos = PosA(as_string, ac_separator)
+DO WHILE ll_pos > 0
+	ll_elem ++
+	as_result[ll_elem] = trim(MidA(as_string, ll_start, ll_pos - ll_start))
+	ll_start = ll_pos + 1
+	ll_pos = PosA(as_string, ac_separator, ll_start)
+LOOP
+
+// extraction du dernier élément (ou du seul élément quand il n'y en a qu'un)
+ll_elem ++
+as_result[ll_elem] = trim(MidA(as_string, ll_start))
+
+return(ll_elem)
+end function
+

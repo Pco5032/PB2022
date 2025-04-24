@@ -1,0 +1,54 @@
+﻿release 10.5;
+datawindow(units=0 timer_interval=0 color=67108864 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.preview.outline=yes hidegrayline=no )
+header(height=0 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=88 color="536870912" )
+table(column=(type=char(9) updatewhereclause=yes key=yes name=ref_lot dbname="graine_qgerm.ref_lot" )
+ column=(type=decimal(0) updatewhereclause=yes key=yes name=num_test dbname="graine_qgerm.num_test" )
+ column=(type=datetime updatewhereclause=yes name=dt_debut dbname="graine_qgerm.dt_debut" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep1 dbname="graine_qgerm.qte_rep1" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep2 dbname="graine_qgerm.qte_rep2" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep3 dbname="graine_qgerm.qte_rep3" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep4 dbname="graine_qgerm.qte_rep4" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep5 dbname="graine_qgerm.qte_rep5" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep6 dbname="graine_qgerm.qte_rep6" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep7 dbname="graine_qgerm.qte_rep7" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep8 dbname="graine_qgerm.qte_rep8" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep9 dbname="graine_qgerm.qte_rep9" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep10 dbname="graine_qgerm.qte_rep10" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep11 dbname="graine_qgerm.qte_rep11" )
+ column=(type=decimal(2) updatewhereclause=yes name=qte_rep12 dbname="graine_qgerm.qte_rep12" )
+ column=(type=char(1) updatewhereclause=yes name=type_test dbname="graine_qgerm.type_test" )
+ column=(type=decimal(0) updatewhereclause=yes name=nb_rep dbname="graine_qgerm.nb_rep" )
+ retrieve="PBSELECT( VERSION(400) TABLE(NAME=~"graine_qgerm~" ) COLUMN(NAME=~"graine_qgerm.ref_lot~") COLUMN(NAME=~"graine_qgerm.num_test~") COLUMN(NAME=~"graine_qgerm.dt_debut~") COLUMN(NAME=~"graine_qgerm.qte_rep1~") COLUMN(NAME=~"graine_qgerm.qte_rep2~") COLUMN(NAME=~"graine_qgerm.qte_rep3~") COLUMN(NAME=~"graine_qgerm.qte_rep4~") COLUMN(NAME=~"graine_qgerm.qte_rep5~") COLUMN(NAME=~"graine_qgerm.qte_rep6~") COLUMN(NAME=~"graine_qgerm.qte_rep7~") COLUMN(NAME=~"graine_qgerm.qte_rep8~") COLUMN(NAME=~"graine_qgerm.qte_rep9~") COLUMN(NAME=~"graine_qgerm.qte_rep10~") COLUMN(NAME=~"graine_qgerm.qte_rep11~") COLUMN(NAME=~"graine_qgerm.qte_rep12~") COLUMN(NAME=~"graine_qgerm.type_test~") COLUMN(NAME=~"graine_qgerm.nb_rep~")WHERE(    EXP1 =~"graine_qgerm.ref_lot~"   OP =~"=~"    EXP2 =~":as_reflot~"    LOGIC =~"And~" ) WHERE(    EXP1 =~"graine_qgerm.num_test~"   OP =~"=~"    EXP2 =~":ai_numtest~" ) ) ARG(NAME = ~"as_reflot~" TYPE = string)  ARG(NAME = ~"ai_numtest~" TYPE = number) " update="graine_qgerm" updatewhere=0 updatekeyinplace=no arguments=(("as_reflot", string),("ai_numtest", number)) )
+text(band=detail alignment="0" text="Référence interne du lot" border="0" color="33554432" x="18" y="4" height="64" width="640" html.valueishtml="0"  name=ref_lot_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="1" background.color="536870912" )
+column(band=detail id=1 alignment="2" tabsequence=32766 border="5" color="33554432" x="677" y="4" height="64" width="402" format="[general]" html.valueishtml="0"  name=ref_lot visible="1" edit.limit=9 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes  font.face="Arial" font.height="-10" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="0" background.color="16777215~tf_disabcolor()" )
+column(band=detail id=3 alignment="2" tabsequence=32766 border="5" color="33554432" x="2048" y="4" height="64" width="329" format="dd/mm/yyyy" html.valueishtml="0"  name=dt_debut visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes  font.face="Arial" font.height="-10" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="0" background.color="16777215~tf_disabcolor()" )
+text(band=detail alignment="0" text="Test n°" border="0" color="33554432" x="1189" y="4" height="64" width="201" html.valueishtml="0"  name=num_test_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="1" background.color="536870912" )
+column(band=detail id=2 alignment="2" tabsequence=32766 border="5" color="33554432" x="1408" y="4" height="64" width="146" format="[general]" html.valueishtml="0"  name=num_test visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes  font.face="Arial" font.height="-10" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="0" background.color="16777215~tf_disabcolor()" )
+text(band=detail alignment="0" text="Début du test" border="0" color="33554432" x="1664" y="4" height="64" width="366" html.valueishtml="0"  name=dt_debut_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="1" background.color="536870912" )
+compute(band=detail alignment="2" expression="if(nb_rep<1, 0, qte_rep1) + 
+if(nb_rep<2, 0, qte_rep2) + 
+if(nb_rep<3, 0, qte_rep3) +
+if(nb_rep<4, 0, qte_rep4) + 
+if(nb_rep<5, 0, qte_rep5) +
+if(nb_rep<6, 0, qte_rep6) +
+if(nb_rep<7, 0, qte_rep7) +
+if(nb_rep<8, 0, qte_rep8) +
+if(nb_rep<9, 0, qte_rep9) +
+if(nb_rep<10, 0, qte_rep10) +
+if(nb_rep<11, 0, qte_rep11) +
+if(nb_rep<12, 0, qte_rep12)
+"border="0" color="255" x="2469" y="4" height="64" width="146" format="[GENERAL]" html.valueishtml="0"  name=c_nbredepart visible="0"  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="553648127" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 

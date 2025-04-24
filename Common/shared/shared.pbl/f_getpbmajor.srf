@@ -1,0 +1,19 @@
+﻿global type f_getpbmajor from function_object
+end type
+
+forward prototypes
+global function integer f_getpbmajor ()
+end prototypes
+
+global function integer f_getpbmajor ();// returns PB major version
+// Just add the result to the window's height in the open event. 
+environment e_env
+
+IF GetEnvironment(e_env) = 1 THEN
+	return(e_env.PBMajorRevision)
+ELSE
+	return(-1)
+END IF
+
+end function
+

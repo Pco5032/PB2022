@@ -1,0 +1,633 @@
+DNF_23727/COUVREUR/11-08-2008 11:30
+20000/942 - ORA-00942: Table ou vue inexistante
+(Problème SELECT PARAMS) /w_mdiframe/w_mdiframe/ue_login/26
+
+DNF_23727/COUVREUR/11-08-2008 11:32
+20000/942 - ORA-00942: Table ou vue inexistante
+(Problème SELECT PARAMS) /w_mdiframe/w_mdiframe/ue_login/26
+
+DNF_23727/COUVREUR/11-08-2008 11:39
+20000/942 - ORA-00942: Table ou vue inexistante
+(Erreur SELECT DNFUSERS) /uo_privs/uo_privs/uf_initprivs/15
+
+DNF_23727/COUVREUR/19-08-2008 14:28
+20000/1401 - ORA-01401: valeur insérée trop grande pour colonne
+
+
+No changes made to database.
+
+UPDATE region_prov SET code_origine = '412/20' WHERE code_regprov = 348 AND code_origine = '412/2' AND nom = 'Rattlesnake - Chester Morse Lake' AND pays = 'US' AND region = '0' (REGION_PROV : Erreur lors de la mise à jour de la base de données) /w_regionprov/w_regionprov/ue_enregistrer/12
+
+DNF_23727/COUVREUR/19-08-2008 14:28
+20000/1401 - ORA-01401: valeur insérée trop grande pour colonne
+
+
+No changes made to database.
+
+UPDATE region_prov SET code_origine = '412/20' WHERE code_regprov = 348 AND code_origine = '412/2' AND nom = 'Rattlesnake - Chester Morse Lake' AND pays = 'US' AND region = '0' (REGION_PROV : Erreur lors de la mise à jour de la base de données) /w_regionprov/w_regionprov/ue_enregistrer/12
+
+DNF_23727/COUVREUR/19-08-2008 14:28
+20000/1401 - ORA-01401: valeur insérée trop grande pour colonne
+
+
+No changes made to database.
+
+UPDATE region_prov SET code_origine = '412/20' WHERE code_regprov = 348 AND code_origine = '412/2' AND nom = 'Rattlesnake - Chester Morse Lake' AND pays = 'US' AND region = '0' (REGION_PROV : Erreur lors de la mise à jour de la base de données) /w_regionprov/w_regionprov/ue_enregistrer/12
+
+DNF_23727/COUVREUR/02-09-2008 16:03
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."AUTORISATION"."DT_DEMANDE")
+
+
+No changes made to database.
+
+INSERT INTO autorisation ( an_aut, num_aut, nature_mat, code_sp, num_prov ) VALUES ( 2008, 2, '2', 'tpl', 1 )(AUTORISATION : Erreur lors de la mise à jour de la base de données) /w_autorisation/w_autorisation/ue_enregistrer/28
+
+DNF_23727/COUVREUR/03-09-2008 11:56
+22/Unknown object type: W_L_SPDNF at line 50 in ue_help event of object dw_1 of w_selection.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_selection/dw_1/ue_help/50
+
+DNF_23727/COUVREUR/05-09-2008 14:29
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."REGISTRE"."MOTIF_DEROG")
+
+
+No changes made to database.
+
+INSERT INTO registre ( ref_lot, dt_creation, type_graine, num_cm, num_df, code_sp, num_prov, melange, admission_prov, qte_initiale, qte_admise, melange_an ) VALUES ( '1', TO_DATE('5-09-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), 'P', 'ABC', 'ffgjgfj', 'aal', 3, 'N', 'S', 0.000, 0.000, 'N' )(REGISTRE : Erreur lors de la mise à jour de la base de données) /w_registre/w_registre/ue_enregistrer/22
+
+DNF_23727/COUVREUR/05-09-2008 14:30
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."REGISTRE"."AN_INVENTAIRE")
+
+
+No changes made to database.
+
+INSERT INTO registre ( ref_lot, dt_creation, type_graine, num_cm, num_df, code_sp, num_prov, melange, admission_prov, motif_derog, qte_initiale, qte_admise, melange_an ) VALUES ( '1', TO_DATE('5-09-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), 'P', 'ABC', 'ffgjgfj', 'aal', 3, 'N', 'S', '0', 0.000, 0.000, 'N' )(REGISTRE : Erreur lors de la mise à jour de la base de données) /w_registre/w_registre/ue_enregistrer/22
+
+DNF_23727/COUVREUR/08-09-2008 16:44
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."AUTORISATION_TR"."AN_AUT")
+
+
+No changes made to database.
+
+INSERT INTO autorisation_tr ( num_tr ) VALUES ( 1 )(AUTORISATION_TR : Erreur lors de la mise à jour de la base de données) /w_autorisation/w_autorisation/ue_enregistrer/36
+
+DNF_23727/COUVREUR/08-09-2008 16:57
+20000/904 - ORA-00904: "DATE_TR" : identificateur non valide
+
+
+No changes made to database.
+
+INSERT INTO autorisation_tr ( an_aut, num_aut, num_tr, date_tr, qte_mfr_tr ) VALUES ( 2008, 1, 1, TO_DATE('2-09-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), 5.000 )(AUTORISATION_TR : Erreur lors de la mise à jour de la base de données) /w_autorisation/w_autorisation/ue_enregistrer/36
+
+DNF_23727/COUVREUR/08-09-2008 17:01
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.AUTORISATION_TR_PK)
+
+
+No changes made to database.
+
+INSERT INTO autorisation_tr ( an_aut, num_aut, num_tr, dt_tr, qte_mfr_tr ) VALUES ( 2008, 1, 2, TO_DATE('2-09-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), 5.000 )(AUTORISATION_TR : Erreur lors de la mise à jour de la base de données) /w_autorisation/w_autorisation/ue_enregistrer/36
+
+DNF_23727/COUVREUR/10-09-2008 13:42
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CARACT_GRAINE"."PURETE_AUTREGRAINE")
+
+
+No changes made to database.
+
+INSERT INTO caract_graine ( ref_lot, dt_caract, purete_graine ) VALUES ( '1', TO_DATE('31-12-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), 0.00 )(CARACT_GRAINE : Erreur lors de la mise à jour de la base de données) /w_registre/w_registre/ue_enregistrer/32
+
+DNF_23727/COUVREUR/12-09-2008 14:15
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CAT_VENTE_LOT"."PU1")
+
+
+No changes made to database.
+
+INSERT INTO cat_vente_lot ( num_cat, ref_lot ) VALUES ( 2, 'PME06002b' )(CAT_VENTE_LOT : Erreur lors de la mise à jour de la base de données) /w_catalogue/w_catalogue/ue_enregistrer/36
+
+DNF_23727/COUVREUR/12-09-2008 14:16
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CAT_VENTE_LOT"."REF_LOT")
+
+
+No changes made to database.
+
+INSERT INTO cat_vente_lot ( num_cat ) VALUES ( 1 )(CAT_VENTE_LOT : Erreur lors de la mise à jour de la base de données) /w_catalogue/w_catalogue/ue_enregistrer/36
+
+DNF_23727/COUVREUR/12-09-2008 14:16
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CAT_VENTE_LOT"."NUM_CAT")
+
+
+No changes made to database.
+
+INSERT INTO cat_vente_lot ( ref_lot, pu1, pu2, pu3, rem ) VALUES ( 'PME06002b', 1.00, 2.00, 3.00, '4' )(CAT_VENTE_LOT : Erreur lors de la mise à jour de la base de données) /w_catalogue/w_catalogue/ue_enregistrer/36
+
+DNF_23727/COUVREUR/12-09-2008 14:39
+2/Null object reference at line 10 in ue_help event of object dw_cat of w_catalogue.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_catalogue/dw_cat/ue_help/10
+
+DNF_23727/COUVREUR/17-09-2008 10:14
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(ESPECE : Erreur lors de la mise à jour de la base de données) /w_espece/w_espece/ue_enregistrer/16
+
+DNF_23727/COUVREUR/17-09-2008 10:15
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(ESPECE : Erreur lors de la mise à jour de la base de données) /w_espece/w_espece/ue_enregistrer/16
+
+DNF_23727/COUVREUR/17-09-2008 10:16
+20000/1401 - ORA-01401: valeur insérée trop grande pour colonne
+
+
+No changes made to database.
+
+UPDATE espece SET nom_fr = 'Sapin d''Espagne', sp_dnf = 'AB', genre = 'R', lim_pu1 = 0.100, unit_pu1 = 'Ex.: les 100g' WHERE code_sp = 'api' AND nom_lat = 'Abies pinsapo' AND nom_fr = 'Sapin d''Esapgne' AND sp_dnf IS NULL AND genre IS NULL AND lim_pu1 IS NULL AND lim_pu2 IS NULL AND lim_pu3 IS NULL AND unit_pu1 IS NULL AND unit_pu2 IS NULL AND unit_pu3 IS NULL AND comm_cat IS NULL (ESPECE : Erreur lors de la mise à jour de la base de données) /w_espece/w_espece/ue_enregistrer/16
+
+DNF_23727/COUVREUR/18-09-2008 09:35
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.REGION_PROV_I1)
+
+
+No changes made to database.
+
+UPDATE region_prov SET code_origine = '1' WHERE code_regprov = 10 AND code_origine = '10' AND nom = 'Nord Sillon Sambre et Meuse' AND pays = 'BE' AND region = 'V' (REGION_PROV : Erreur lors de la mise à jour de la base de données) /w_regionprov/w_regionprov/ue_enregistrer/12
+
+DNF_23727/COUVREUR/18-09-2008 09:41
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.REGION_PROV_I1)
+
+
+No changes made to database.
+
+UPDATE region_prov SET code_origine = '1' WHERE code_regprov = 10 AND code_origine = '10' AND nom = 'Nord Sillon Sambre et Meuse' AND pays = 'BE' AND region = 'V' (REGION_PROV : Erreur lors de la mise à jour de la base de données) /w_regionprov/w_regionprov/ue_enregistrer/12
+
+DNF_23727/COUVREUR/18-09-2008 09:45
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.REGION_PROV_I1)
+
+
+No changes made to database.
+
+UPDATE region_prov SET code_origine = '1' WHERE code_regprov = 10 AND code_origine = '10' AND nom = 'Nord Sillon Sambre et Meuse' AND pays = 'BE' AND region = 'V' (REGION_PROV : Erreur lors de la mise à jour de la base de données) /w_regionprov/w_regionprov/ue_enregistrer/12
+
+DNF_23727/COUVREUR/24-09-2008 09:47
+6/Invalid DataWindow row/column specified at line 54 in function wf_init of object w_registre.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_registre/w_registre/wf_init/54
+
+DNF_23727/COUVREUR/24-09-2008 16:52
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.REGISTRE_I1)
+
+
+No changes made to database.
+
+UPDATE registre SET num_cm = 'BRW08CF0102', code_sp = 'tpl', num_prov = 1 WHERE ref_lot = '1' AND dt_creation = TO_DATE('5-09-2008 00:00:00','DD-MM-YYYY HH24:MI:SS') AND type_graine = 'P' AND num_fiche IS NULL AND num_cm = 'BRW07CF0507' AND num_df_recu IS NULL AND code_sp = 'tpl' AND num_prov = 1 AND melange = 'N' AND admission_prov = 'O' AND motif_derog = '1' AND qte_initiale = 7 AND qte_admise = 7 AND rem_qte IS NULL AND melange_an = 'N' AND proportion IS NULL AND an_inventaire = 2008 AND num_farde IS NULL AND num_cm_frn IS NULL AND an_maturite IS NULL AND ogm = 'S' (REGISTRE : Erreur lors de la mise à jour de la base de données) /w_registre/w_registre/ue_enregistrer/43
+
+DNF_23727/COUVREUR/26-09-2008 10:59
+20000/1407 - ORA-01407: impossible de mettre à jour ("COMPTOIR"."CERTIFICAT"."MELANGE") avec NULL
+
+
+No changes made to database.
+
+UPDATE certificat SET type_mfr = '3', pollinisation = '0', reprod_vegetative = 'N', famille_composant = NULL, clone_composant = NULL, pc_hybridation = NULL, hybridation = NULL, melange = NULL, info_melange = 'sgdfsgdfsg' WHERE num_cm = 'BRW07CF0507' AND type_mfr = '2' AND com_mfr = '1' AND nature_mfr = '1' AND an_aut = 2008 AND num_aut = 2 AND pollinisation = '0' AND qte_mfr = 10 AND qte_lot_initial IS NULL AND subdiv_lot = 'N' AND num_cert_ant IS NULL AND tps_elevage = '10 jours' AND reprod_vegetative = 'N' AND meth_reprod = 'sdfsdfsdf' AND nb_cycle = 1 AND famille_composant IS NULL AND clone_composant IS NULL AND nb_clone_mel IS NULL AND pc_clone_mel IS NULL AND pc_hybridation IS NULL AND hybridation IS NULL AND info = '9' AND melange = 'N' AND scan = '10' AND info_clone IS NULL AND info_melange IS NULL (CERTIFICAT : Erreur lors de la mise à jour de la base de données) /w_certificat/w_certificat/ue_enregistrer/48
+
+DNF_23727/COUVREUR/29-09-2008 10:17
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CM_CLONE"."CLONE")
+
+
+No changes made to database.
+
+INSERT INTO cm_clone ( num_cm, num_clone ) VALUES ( 'BRW07CF0507', 2 )(CM_CLONE : Erreur lors de la mise à jour de la base de données) /w_certificat/w_certificat/ue_enregistrer/66
+
+DNF_23727/COUVREUR/02-10-2008 16:14
+6/Invalid DataWindow row/column specified at line 43 in ue_open event of object w_l_certificat.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_l_certificat/w_l_certificat/ue_open/43
+
+DNF_23727/COUVREUR/02-10-2008 16:14
+2/Null object reference at line 52 in ue_help event of object dw_1 of w_selection.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_selection/dw_1/ue_help/52
+
+DNF_23727/COUVREUR/09-10-2008 11:24
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."REGISTRE"."MELANGE")
+
+
+No changes made to database.
+
+INSERT INTO registre ( ref_lot, dt_creation, type_graine, num_df_recu, code_sp, num_prov, admission_prov, motif_derog, qte_initiale, qte_admise, an_inventaire, ogm ) VALUES ( '2', TO_DATE('9-10-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), 'A', 'ssss', 'ssc', 999, 'S', '0', 0.000, 0.000, 2006, 'S' )(REGISTRE : Erreur lors de la mise à jour de la base de données) /w_registre/w_registre/ue_enregistrer/44
+
+DNF_23727/COUVREUR/13-10-2008 12:03
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."FLUX_REGISTRE"."NUM_FLUX")
+(Erreur insert into flux_registre) /w_melange/w_melange/wf_update/53
+
+DNF_23727/COUVREUR/13-10-2008 15:35
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CM_MELANGE"."QTE")
+
+
+No changes made to database.
+
+INSERT INTO cm_melange ( num_cm, num_cm_melange ) VALUES ( 'BRW08CF0103', 'BRW08CF0104' )(CM_MELANGE : Erreur lors de la mise à jour de la base de données) /w_melange/w_melange/wf_update/130
+
+DNF_23727/COUVREUR/16-10-2008 12:02
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."DOCFRN"."QTE_AVPRETRT")
+
+
+No changes made to database.
+
+INSERT INTO docfrn ( num_df, type_df, ref_lot, conserv, qte_sspretrt, saison, nb_colis, dt_sign, destinataire ) VALUES ( '2', 'E', '4', 'S', 2.00, 'automne 2008', 3, TO_DATE('16-10-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), '6' )(DOCFRN : Erreur lors de la mise à jour de la base de données) /w_docfrn/w_docfrn/ue_enregistrer/16
+
+DNF_23727/COUVREUR/24-10-2008 15:31
+20000/1407 - ORA-01407: impossible de mettre à jour ("COMPTOIR"."DETAIL_CMDE"."QTE_PREPA") avec NULL
+
+
+No changes made to database.
+
+UPDATE detail_cmde SET qte_prepa = NULL WHERE an_cmde = 2008 AND num_cmde = 4 AND ref_lot = 'APR07001' AND num_df_emis IS NULL AND qte_cmde = 5 AND qte_confirm = 4 AND qte_prepa = 0 AND qte_livre = 0 AND qte_facture = 0 AND num_bord IS NULL (DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/49
+
+DNF_23727/COUVREUR/24-10-2008 15:48
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.DETAIL_CMDE_PK)
+
+
+No changes made to database.
+
+INSERT INTO detail_cmde ( an_cmde, num_cmde, ref_lot, qte_cmde, qte_confirm, qte_prepa, qte_livre, qte_facture ) VALUES ( 2008, 4, 'PRT06001', 1.000, 1.000, 0, 0, 0 )(DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/52
+
+DNF_23727/COUVREUR/24-10-2008 17:03
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.FLUX_REGISTRE_PK)
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot, num_flux, utilisation, lieu_stock, dt_op, qte, destinataire, remarque, an_cmde, num_cmde ) VALUES ( 'PME97023', 2, 'V', '-', TO_DATE('24-10-2008','DD-MM-YYYY'), 0.5, '3', '', 2008, 5 )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/59
+
+DNF_23727/COUVREUR/27-10-2008 09:10
+39/Error accessing external object property deleted at line 79 in ue_enregistrer event of object w_commande.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_commande/w_commande/ue_enregistrer/79
+
+DNF_23727/COUVREUR/27-10-2008 09:11
+20000/2292 - ORA-02292: violation de contrainte (COMPTOIR.FK_FLUX_DETAIL_CMDE) d'intégrité - enregistrement fils existant
+
+
+No changes made to database.
+
+DELETE FROM detail_cmde WHERE an_cmde = 2008 AND num_cmde = 4 AND ref_lot = 'LKA05001' AND num_df_emis IS NULL AND qte_cmde = 2 AND qte_confirm = 0.5 AND qte_prepa = 0 AND qte_livre = 0 AND qte_facture = 0 AND num_bord IS NULL (DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/143
+
+DNF_23727/COUVREUR/27-10-2008 10:39
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."FLUX_REGISTRE"."NUM_FLUX")
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot ) VALUES ( 'APR07001' )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/82
+
+DNF_23727/COUVREUR/27-10-2008 10:42
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."FLUX_REGISTRE"."NUM_FLUX")
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot ) VALUES ( 'APR07001' )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/82
+
+DNF_23727/COUVREUR/28-10-2008 17:18
+20000/904 - ORA-00904: "II_NUMCMDE" : identificateur non valide
+(Erreur update COMMANDE) /w_bord_liv/w_bord_liv/ue_enregistrer/32
+
+DNF_23727/COUVREUR/31-10-2008 13:41
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/116
+
+DNF_23727/COUVREUR/31-10-2008 13:42
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/116
+
+DNF_23727/COUVREUR/31-10-2008 13:43
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.FLUX_REGISTRE_PK)
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot, num_flux, utilisation, lieu_stock, dt_op, qte, destinataire, remarque, an_cmde, num_cmde ) VALUES ( 'LKA05001', 8, 'V', '-', TO_DATE('31-10-2008','DD-MM-YYYY'), 0.850, '6', 'Commande 2008/7', 2008, 7 )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/88
+
+DNF_23727/COUVREUR/03-11-2008 11:27
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.FLUX_REGISTRE_PK)
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot, num_flux, utilisation, lieu_stock, dt_op, qte, destinataire, remarque, an_cmde, num_cmde ) VALUES ( '1', 9, 'V', '-', TO_DATE('3-11-2008','DD-MM-YYYY'), 0.100, '6', 'Commande 2008/8', 2008, 8 )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/88
+
+DNF_23727/COUVREUR/03-11-2008 11:27
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.FLUX_REGISTRE_PK)
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot, num_flux, utilisation, lieu_stock, dt_op, qte, destinataire, remarque, an_cmde, num_cmde ) VALUES ( '2', 8, 'V', '-', TO_DATE('3-11-2008','DD-MM-YYYY'), 0.100, '6', 'Commande 2008/8', 2008, 8 )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/88
+
+DNF_23727/COUVREUR/03-11-2008 14:15
+91/Cannot convert any in Any variable to string. Possible cause uninitialized value. at line 17 in ue_open event of object w_l_registre.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_l_registre/w_l_registre/ue_open/17
+
+DNF_23727/COUVREUR/03-11-2008 14:25
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.FLUX_REGISTRE_PK)
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot, num_flux, utilisation, lieu_stock, dt_op, qte, destinataire, remarque, an_cmde, num_cmde ) VALUES ( 'BPU99001', 2, 'V', '-', TO_DATE('3-11-2008','DD-MM-YYYY'), 0.100, '6', 'Commande 2008/10', 2008, 10 )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/106
+
+DNF_23727/COUVREUR/03-11-2008 14:26
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.FLUX_REGISTRE_PK)
+
+
+No changes made to database.
+
+INSERT INTO flux_registre ( ref_lot, num_flux, utilisation, lieu_stock, dt_op, qte, destinataire, remarque, an_cmde, num_cmde ) VALUES ( 'BPU99001', 2, 'V', '-', TO_DATE('3-11-2008','DD-MM-YYYY'), 0.100, '6', 'Commande 2008/10', 2008, 10 )(FLUX_REGISTRE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/106
+
+DNF_23727/COUVREUR/04-11-2008 13:57
+/(Erreur update COMMANDE : update commande set statut='T', dt_bord_recap='04/11/2008' where statut='L' and    COMMANDE.AN_CMDE = '2008') ////
+
+DNF_23727/COUVREUR/05-11-2008 11:10
+2000/1756 - ORA-01756: une chaîne entre apostrophes ne se termine pas correctement
+(Erreur update COMMANDE : update commande set statut='F'05/11/2008' where statut='T' and    V_MONTANT_CMDE.AN_CMDE = '2008' and V_MONTANT_CMDE.NUM_CMDE = '11,00000000') /w_rpt_recette/w_rpt_recette/ue_print/16
+
+DNF_23727/COUVREUR/05-11-2008 11:12
+2000/904 - ORA-00904: "V_MONTANT_CMDE"."NUM_CMDE" : identificateur non valide
+(Erreur update COMMANDE : update commande set statut='F' where statut='T' and    V_MONTANT_CMDE.AN_CMDE = '2008' and V_MONTANT_CMDE.NUM_CMDE = '11') /w_rpt_recette/w_rpt_recette/ue_print/16
+
+DNF_23727/COUVREUR/12-11-2008 10:51
+/(Erreur update COMMANDE : update commande set statut='F' where (an_cmde, num_cmde) in (SELECT c.an_cmde, c.num_cmde   FROM v_montant_cmde c, detail_cmde d   WHERE c.an_cmde=d.an_cmde and c.num_cmde=d.num_cmde and c.statut = 'T' and c.pv + c.port > 0 and 1=1   GROUP BY c.an_cmde, c.num_cmde   HAVING sum(decode(d.qte_confirm,0,0,1)) = sum(decode(num_df_emis, null, 0, 1)))) ////
+
+DNF_23727/COUVREUR/14-11-2008 11:20
+20000/1401 - ORA-01401: valeur insérée trop grande pour colonne
+
+
+No changes made to database.
+
+INSERT INTO docfrn ( num_df, type_df, ref_lot, conserv, qte_sspretrt, saison, nb_colis, dt_sign, destinataire, qte_avpretrt ) VALUES ( 'ABCDEFGHIJKLMNOP', 'E', '1', 'S', 1.00, '1', 1, TO_DATE('14-11-2008 00:00:00','DD-MM-YYYY HH24:MI:SS'), '3', 1.00 )(DOCFRN : Erreur lors de la mise à jour de la base de données) /w_docfrn/w_docfrn/ue_enregistrer/16
+
+DNF_23727/COUVREUR/17-11-2008 10:42
+39/Error accessing external object property client at line 12 in function wf_init of object w_annulation_commande.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_annulation_commande/w_annulation_commande/wf_init/12
+
+DNF_23727/COUVREUR/17-11-2008 14:10
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.DETAIL_CMDE_I1)
+
+
+No changes made to database.
+
+UPDATE detail_cmde SET num_df_emis = '20071', qte_prepa = 0 WHERE an_cmde = 2008 AND num_cmde = 2 AND ref_lot = '1' AND num_df_emis IS NULL AND qte_cmde = 0.8 AND qte_confirm = 0.8 AND qte_prepa = 0 AND qte_livre = 0 AND qte_facture = 0 AND num_bord IS NULL AND pu = 40 (DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/106
+
+DNF_23727/COUVREUR/17-11-2008 14:11
+20000/1 - ORA-00001: violation de contrainte unique (COMPTOIR.DETAIL_CMDE_I1)
+
+
+No changes made to database.
+
+UPDATE detail_cmde SET num_df_emis = '20071', qte_prepa = 0 WHERE an_cmde = 2008 AND num_cmde = 2 AND ref_lot = '1' AND num_df_emis IS NULL AND qte_cmde = 0.8 AND qte_confirm = 0.8 AND qte_prepa = 0 AND qte_livre = 0 AND qte_facture = 0 AND num_bord IS NULL AND pu = 40 (DETAIL_CMDE : Erreur lors de la mise à jour de la base de données) /w_commande/w_commande/ue_enregistrer/106
+
+DNF_23727/COUVREUR/19-11-2008 13:53
+39/Error accessing external object property statut at line 10 in ue_init_menu event of object w_commande.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_commande/w_commande/ue_init_menu/10
+
+DNF_23727/COUVREUR/10-12-2008 12:25
+20000/insert into t_etiqadr select 2391,3,1, locu, interlocuteur, intitule, attention, rue, v_pays.abbr||' '||cpost,localite, decode(pays,'BE','',v_pays.trad), '1' from interlocuteur, v_pays where interlocuteur.pays=v_pays.code(Erreur insert t_etiqadr) /w_rpt_etiqadr/w_rpt_etiqadr/ue_postopen/56
+
+DNF_23727/COUVREUR/10-12-2008 15:38
+35/Error calling external object function opendatasource at line 98 in function f_fusion_word of object f_fusion_word.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /f_fusion_word/f_fusion_word/f_fusion_word/98
+
+DNF_23727/COUVREUR/10-12-2008 16:22
+20000/insert into t_etiqadr select 2406,3,1, type, locu, interlocuteur, intitule, attention, rue, v_pays.abbr||' '||cpost,localite, decode(pays,'BE','',v_pays.trad), '1' from interlocuteur, v_pays where interlocuteur.pays=v_pays.code where    INTERLOCUTEUR.TYPE = 'PEW'(Erreur insert t_etiqadr) /w_rpt_etiqadr/w_rpt_etiqadr/ue_postopen/56
+
+DNF_23727/COUVREUR/11-12-2008 11:03
+20000/942 - ORA-00942: Table ou vue inexistante
+(Problème dans la suppression des données temporaires t_etiqadr, session 57) /w_rpt_etiqadr/w_rpt_etiqadr/closequery/11
+
+DNF_23727/COUVREUR/22-12-2008 14:09
+35/Error calling external object function open at line 95 in function f_fusion_word of object f_fusion_word.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /f_fusion_word/f_fusion_word/f_fusion_word/95
+
+DNF_23727/COUVREUR/22-12-2008 15:41
+35/Error calling external object function opendatasource at line 98 in function f_fusion_word of object f_fusion_word.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /f_fusion_word/f_fusion_word/f_fusion_word/98
+
+DNF_23727/COUVREUR/15-12-2009 14:34
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."CAT_VENTE_LOT"."NUM_CAT")
+
+
+No changes made to database.
+
+INSERT INTO cat_vente_lot ( ref_lot, pu1, pu2, pu3 ) VALUES ( 'AAL09002', 1.00, 0.00, 0.00 )(CAT_VENTE_LOT : Erreur lors de la mise à jour de la base de données) /w_catalogue/w_catalogue/ue_enregistrer/36
+
+DNF_23727/COUVREUR/04-02-2011 14:00
+19/Cannot convert any in Any variable to datawindow at line 19 in ue_open event of object w_print_setup.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_print_setup/w_print_setup/ue_open/19
+
+D39552/AL223/25-04-2013 11:30
+
+SELECT distinct df.num_df, df.dt_sign
+ FROM docfrn df, interlocuteur i, localite l 
+ WHERE df.type_df = 'E' and df.destinataire=i.locu  
+      and (i.cpost=to_char(l.cpcom) OR i.cpost=to_char(l.cploc))
+      and l.iprov not in (5,6,7,8,9) and 1=1
+UNION
+SELECT distinct df.num_df, df.dt_sign
+ FROM docfrn df, interlocuteur i  
+ WHERE df.type_df = 'E' and df.destinataire=i.locu 
+      and i.cpost not in (select to_char(l.cpcom) from localite l)
+      and i.cpost not in (select to_char(l.cploc) from localite l)
+		and 1=1
+ORDER BY NUM_DF
+
+
+D39552/AL223/25-04-2013 11:31
+
+
+D39552/AL223/25-04-2013 11:31
+SELECT distinct df.num_df, df.dt_sign
+ FROM docfrn df, interlocuteur i, localite l 
+ WHERE df.type_df = 'E' and df.destinataire=i.locu  
+      and (i.cpost=to_char(l.cpcom) OR i.cpost=to_char(l.cploc))
+      and l.iprov not in (5,6,7,8,9) and 1=1
+UNION
+SELECT distinct df.num_df, df.dt_sign
+ FROM docfrn df, interlocuteur i  
+ WHERE df.type_df = 'E' and df.destinataire=i.locu 
+      and i.cpost not in (select to_char(l.cpcom) from localite l)
+      and i.cpost not in (select to_char(l.cploc) from localite l)
+		and 1=1
+ORDER BY NUM_DF
+
+
+D39552/AL223/25-04-2013 11:31
+is_sql = SELECT distinct df.num_df, df.dt_sign
+ FROM docfrn df, interlocuteur i, localite l 
+ WHERE df.type_df = 'E' and df.destinataire=i.locu  
+      and (i.cpost=to_char(l.cpcom) OR i.cpost=to_char(l.cploc))
+      and l.iprov not in (5,6,7,8,9) and 1=1
+UNION
+SELECT distinct df.num_df, df.dt_sign
+ FROM docfrn df, interlocuteur i  
+ WHERE df.type_df = 'E' and df.destinataire=i.locu 
+      and i.cpost not in (select to_char(l.cpcom) from localite l)
+      and i.cpost not in (select to_char(l.cploc) from localite l)
+		and 1=1
+ORDER BY NUM_DF
+
+
+D39552/AL223/25-04-2013 11:31
+ls_sql = 
+
+D39552/AL223/12-09-2013 14:38
+20000/926 - ORA-00926: Mot-clé VALUES absent
+(Erreur INSERT INTO REGISTRE_CPHYS) /w_cphys/w_cphys/ue_enregistrer/64
+
+D39552/AL223/12-09-2013 14:38
+20000/926 - ORA-00926: Mot-clé VALUES absent
+(Erreur INSERT INTO REGISTRE_CPHYS) /w_cphys/w_cphys/ue_enregistrer/64
+
+D39552/AL223/12-09-2013 14:39
+20000/984 - ORA-00984: Un nom de colonne n'est pas autorisé ici
+(Erreur INSERT INTO REGISTRE_CPHYS) /w_cphys/w_cphys/ue_enregistrer/63
+
+D39552/AL223/12-09-2013 14:44
+20000/904 - ORA-00904: "PDS_1000" : identificateur non valide
+(Erreur UPDATE REGISTRE_CPHYS) /w_cphys/w_cphys/ue_enregistrer/76
+
+D39552/AL223/12-09-2013 14:45
+20000/2291 - ORA-02291: violation de contrainte (COMPTOIR.FK_REGISTRE_CPHYS_GRAINE_CPHYS) d'intégrité - touche parent introuvable
+(Erreur INSERT INTO REGISTRE_CPHYS) /w_cphys/w_cphys/ue_enregistrer/63
+
+D39552/AL223/19-09-2013 14:58
+36/Name not found accessing external object property c_lastcpt at line 4 in function wf_lastcpt of object w_qgerm.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm/w_qgerm/wf_lastcpt/4
+
+D39552/AL223/19-09-2013 15:11
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."GRAINE_QGERM"."QTE_REP")
+
+
+No changes made to database.
+
+INSERT INTO graine_qgerm ( ref_lot, num_test, type_test, dt_debut, nb_rep, qte_rep1, qte_rep2, qte_rep3, qte_rep4 ) VALUES ( '1', 3, 'P', TO_DATE('19-09-2013 00:00:00','DD-MM-YYYY HH24:MI:SS'), 4, 100.00, 100.00, 100.00, 100.00 )(GRAINE_QGERM : Erreur lors de la mise à jour de la base de données) /w_qgerm/w_qgerm/ue_enregistrer/51
+
+D39552/AL223/19-09-2013 15:11
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COMPTOIR"."GRAINE_QGERM"."QTE_REP")
+
+
+No changes made to database.
+
+INSERT INTO graine_qgerm ( ref_lot, num_test, type_test, dt_debut, nb_rep, qte_rep1, qte_rep2, qte_rep3, qte_rep4, qte_rep5 ) VALUES ( '1', 3, 'P', TO_DATE('19-09-2013 00:00:00','DD-MM-YYYY HH24:MI:SS'), 5, 100.00, 100.00, 100.00, 100.00, 100.00 )(GRAINE_QGERM : Erreur lors de la mise à jour de la base de données) /w_qgerm/w_qgerm/ue_enregistrer/51
+
+D39552/AL223/20-09-2013 11:10
+20000/904 - ORA-00904: "DT_CPHYS" : identificateur non valide
+(Erreur SELECT REGISTRE_QGERM) /w_docfrn_new/w_docfrn_new/wf_infocaract/22
+
+D39552/AL223/20-09-2013 11:10
+20000/904 - ORA-00904: "DT_CPHYS" : identificateur non valide
+(Erreur SELECT REGISTRE_QGERM) /w_docfrn_new/w_docfrn_new/wf_infocaract/22
+
+D39552/AL223/24-09-2013 09:35
+6/Invalid DataWindow row/column specified at line 94 in ue_checkitem event of object dw_viab of w_viabilite.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_viabilite/dw_viab/ue_checkitem/94
+
+D39552/AL223/25-09-2013 14:54
+19/Cannot convert string in Any variable to boolean at line 13 in ue_open event of object w_qgerm.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm/w_qgerm/ue_open/13
+
+D39552/AL223/01-10-2013 13:12
+35/Error calling external object function open at line 129 in function f_fusion_word of object f_fusion_word.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /f_fusion_word/f_fusion_word/f_fusion_word/129
+
+D39552/AL223/04-10-2013 11:43
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COUVREUR"."GRAINE_QGERM_CPT"."REF_LOT")
+
+
+No changes made to database.
+
+INSERT INTO graine_qgerm_cpt ( rem, nbre1 ) VALUES ( 'relevé 2', 10 )(GRAINE_QGERM_CPT : Erreur lors de la mise à jour de la base de données) /w_qgerm_barcode/cb_ok/clicked/27
+
+D39552/AL223/04-10-2013 11:47
+20000/1400 - ORA-01400: impossible d'insérer NULL dans ("COUVREUR"."GRAINE_QGERM_CPT"."NUM_CPT")
+
+
+No changes made to database.
+
+INSERT INTO graine_qgerm_cpt ( ref_lot, num_test, dt_cpt, nbre1 ) VALUES ( 'AAL05001', 2, TO_DATE('4-10-2013 00:00:00','DD-MM-YYYY HH24:MI:SS'), 0 )(GRAINE_QGERM_CPT : Erreur lors de la mise à jour de la base de données) /w_qgerm_barcode/cb_ok/clicked/27
+
+D39552/AL223/04-10-2013 15:03
+36/Name not found accessing external object property c_numrep at line 65 in function wf_init of object w_qgerm_barcode.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm_barcode/w_qgerm_barcode/wf_init/65
+
+D39552/AL223/04-10-2013 16:31
+39/Error accessing external object property expression
+(Line 1  Column 26: incorrect syntax.)
+ at line 28 in function wf_init_substrat of object w_qgerm_barcode.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm_barcode/w_qgerm_barcode/wf_init_substrat/28
+
+D39552/AL223/04-10-2013 16:33
+39/Error accessing external object property expression
+(Line 1  Column 26: incorrect syntax.)
+ at line 28 in function wf_init_substrat of object w_qgerm_barcode.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm_barcode/w_qgerm_barcode/wf_init_substrat/28
+
+D39552/AL223/07-10-2013 15:10
+20000/1438 - ORA-01438: valeur incohérente avec la précision indiquée pour cette colonne
+
+
+No changes made to database.
+
+INSERT INTO graine_qgerm_cpt ( ref_lot, num_test, num_cpt, dt_cpt, rem, nbre1, nbre2, nbre3, nbre4, nbre5, nbre6, nbre7, nbre8, nbre9, nbre10, idbac ) VALUES ( 'AAL05001', 2, 9, TO_DATE('7-10-2013 00:00:00','DD-MM-YYYY HH24:MI:SS'), 'test', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13 )(GRAINE_QGERM_CPT : Erreur lors de la mise à jour de la base de données) /w_qgerm_barcode/cb_ok/clicked/52
+
+D39552/AL223/21-11-2013 11:15
+39/Error accessing external object property expression
+(Line 1  Column 25: incorrect syntax.)
+ at line 4 in function wf_initcalcngv of object w_registre_new.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_registre_new/w_registre_new/wf_initcalcngv/4
+
+D39552/AL223/21-11-2013 11:16
+39/Error accessing external object property expression
+(Line 1  Column 25: incorrect syntax.)
+ at line 4 in function wf_initcalcngv of object w_registre_new.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_registre_new/w_registre_new/wf_initcalcngv/4
+
+D39552/AL223/16-12-2013 10:40
+35/Error calling external object function open at line 129 in function f_fusion_word of object f_fusion_word.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /f_fusion_word/f_fusion_word/f_fusion_word/129
+
+D39552/AL223/14-01-2014 15:04
+19/Cannot convert w_qgerm in Any variable to window at line 8 in clicked event of object w_qgerm_validation of m_base.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /m_base/w_qgerm_validation/clicked/8
+
+D39552/AL223/14-01-2014 16:18
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(GRAINE_QGERM : Erreur lors de la mise à jour de la base de données) /w_qgerm/w_qgerm/ue_enregistrer/74
+
+D39552/AL223/14-01-2014 16:19
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(GRAINE_QGERM : Erreur lors de la mise à jour de la base de données) /w_qgerm/w_qgerm/ue_enregistrer/74
+
+D39552/AL223/14-01-2014 16:20
+20000/-3 - Les données ont été modifiées (par un autre utilisateur) entre leur lecture et leur mise à jour. Vous devez annuler et recommencer votre mise à jour.(GRAINE_QGERM : Erreur lors de la mise à jour de la base de données) /w_qgerm/w_qgerm/ue_enregistrer/74
+
+D39552/AL223/14-01-2014 16:26
+2/Null object reference at line 17 in doubleclicked event of object dw_qgerm of w_registre.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_registre/dw_qgerm/doubleclicked/17
+
+D39552/AL223/14-01-2014 16:26
+2/Null object reference at line 17 in doubleclicked event of object dw_qgerm of w_registre.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_registre/dw_qgerm/doubleclicked/17
+
+D39552/AL223/20-02-2014 10:46
+2/Null object reference at line 96 in function wf_valid_registre of object w_qgerm.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm/w_qgerm/wf_valid_registre/96
+
+D39552/AL223/20-02-2014 10:47
+2/Null object reference at line 97 in function wf_valid_registre of object w_qgerm.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_qgerm/w_qgerm/wf_valid_registre/97
+
+D39552/AL223/24-02-2014 08:34
+6/Invalid DataWindow row/column specified at line 46 in clicked event of object cb_ok of w_rpt_etiqgerm.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_rpt_etiqgerm/cb_ok/clicked/46
+
+D39552/AL223/03-12-2014 15:30
+21/Bad runtime function reference at line 1 in ue_checkitem event of object dw_cphys of w_cphys.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_cphys/dw_cphys/ue_checkitem/1
+
+D39552/AL223/03-12-2014 15:32
+39/Error accessing external object property text
+(Line 1  Column 50: incorrect syntax.)
+ at line 48 in ue_checkitem event of object dw_docfrn of w_docfrn.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_docfrn/dw_docfrn/ue_checkitem/48
+
+D86675/AL223/08-11-2016 14:51
+20000/0 - Transaction not connected(Erreur SELECT DNFUSERS) /uo_privs/uo_privs/uf_initprivs/15
+
+D86675/AL223/16-04-2018 13:16
+91/Cannot convert any in Any variable to string. Possible cause: uninitialized value. at line 23 in ue_open event of object w_cantonnement.(Erreur système. 
+Faut-il stopper l'application (conseillé) ?) /w_cantonnement/w_cantonnement/ue_open/23
+

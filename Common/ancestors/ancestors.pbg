@@ -1,0 +1,47 @@
+Save Format v3.0(19990112)
+@begin Libraries
+ "common\\ancestors\\ancestors.pbl" "";
+@end;
+@begin Objects
+ "common\\ancestors\\uo_privs.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\w_ancestor_rptpreview.srw" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_cb.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_cb_cancel.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_ds.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_dw.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_ddlb_message.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_editmask.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_cb_ok.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_ancestor_cpteur.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_ancestor_dwbrowse.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_ancestor_dwreport.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_pipeline.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\w_ancestor_dataentry.srw" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\w_ancestor.srw" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\w_ancestor_global.srw" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_radiobutton.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_groupbox.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_treeview.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\d_superprivs.srd" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_ancestor_dw.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_cbx.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_listbox.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_mle.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\d_privslu.srd" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\str_itemprop.srs" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\w_ancestor_rpt.srw" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_picture.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_sle.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\d_privs.srd" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_dropdownlistbox.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_hprogressbar.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_statichyperlink.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_menu.srm" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_datawindow_multiplerow.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\d_superprivslu.srd" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_pictbutton.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_rte.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_datawindow_singlerow.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\uo_statictext.sru" "common\\ancestors\\ancestors.pbl";
+ "common\\ancestors\\w_ancestor_rptbatch.srw" "common\\ancestors\\ancestors.pbl";
+@end;

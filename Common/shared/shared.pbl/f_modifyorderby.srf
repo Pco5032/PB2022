@@ -1,0 +1,58 @@
+﻿//objectcomments Modifier ou remplacer le ORDER BY d'un ordre SQL par un autre
+global type f_modifyorderby from function_object
+end type
+
+forward prototypes
+global function string f_modifyorderby (string as_originalselect, string as_order, boolean ab_replace)
+end prototypes
+
+global function string f_modifyorderby (string as_originalselect, string as_order, boolean ab_replace);// remplace ou complète le ORDER BY du SQL passé en paramètre par/avec le 'ORDER BY' passé en paramètre
+// as_originalselect = ordre sql à modifier
+// as_ordre = order by à placer ou ajouter à l'existant (sans le mot-clé ORDER BY !)
+// ab_replace = TRUE si on veut remplacer le ORDER BY existant, FALSE si on veut ajouter as_order au ORDER BY déjà présent
+// return = le nouvel ordre SQL
+
+long		ll_pos
+string	ls_suite, ls_newselect, ls_oldorderby
+
+IF f_IsEmptyString(as_order) THEN
+	return(as_originalselect)
+END IF
+
+ls_newselect = as_originalselect
+
+// repérer la position où il faut placer la clause ORDER BY
+ll_pos = PosA(upper(ls_newselect), " FOR UPDATE")
+// isoler tout ce qui se trouve après la position où le ORDER BY doit prendre place
+IF ll_pos > 0 THEN
+	ls_suite = MidA(ls_newselect, ll_pos)
+	ls_newselect = LeftA(ls_newselect, ll_pos)
+ELSE
+	ls_suite = ""
+END IF
+
+// voir si présence d'un ORDER BY dans SQL original
+ll_pos = PosA(upper(ls_newselect), " ORDER BY")
+IF ll_pos > 0 THEN
+	ls_oldorderby = MidA(ls_newselect, ll_pos + 10)
+	ls_newselect = LeftA(ls_newselect, ll_pos)
+ELSE
+	ls_oldorderby = ""
+END IF
+
+IF NOT f_IsEmptyString(ls_oldorderby) THEN
+	ls_oldorderby = ls_oldorderby + ","
+END IF
+
+// reconstruire la clause SELECT en insérant le ORDER BY
+IF ab_replace THEN
+	ls_newselect = trim(ls_newselect) + " ORDER BY " + trim(as_order) + " " + trim(ls_suite)
+ELSE
+	ls_newselect = trim(ls_newselect) + " ORDER BY " + trim(ls_oldorderby) + trim(as_order) + " " + trim(ls_suite)
+END IF
+
+// renvoyer le nouvel ordre SQL complet
+return(ls_newselect)
+
+end function
+

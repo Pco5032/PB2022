@@ -1,0 +1,10 @@
+﻿//objectcomments copie des paramètres du DBERROR event d'un Datawindow
+global type str_dberror from structure
+	long		l_sqldbcode
+	string		s_sqlerrtext
+	string		s_sqlsyntax
+	long		l_row
+	dwbuffer		dwb_buffer
+	integer		i_severity
+end type
+

@@ -1,0 +1,28 @@
+﻿global type f_presskey from function_object
+end type
+
+forward prototypes
+global subroutine f_presskey (string as_key)
+end prototypes
+
+global subroutine f_presskey (string as_key);// simule la pression d'une touche au clavier
+CHOOSE CASE upper(as_key)
+	CASE "TAB"	// Tabulation
+		// CTRL-TAB ne produit pas de TAB, donc on simule le relachement de la touche CTRL pour le cas
+		// où on appelerait cette fonction suite à l'appel d'un point de menu via un raccourci CTRL-lettre
+		Keybd_event (17,0,2,0)
+		Keybd_event (9,0,0,0)
+		Keybd_event (9,0,2,0)
+	CASE "ADA"  // Alt Down Arrow
+		Keybd_event (18,0,0,0) //press ALT
+		Keybd_event (40,0,0,0) //press DOWN
+		Keybd_event (40,0,2,0) //release DOWN
+		Keybd_event (18,0,2,0) //releas ALT
+	CASE "CTRLC"
+		Keybd_event (17,0,0,0)
+		Keybd_event (67,0,0,0)
+		Keybd_event (67,0,2,0)
+END CHOOSE
+
+end subroutine
+

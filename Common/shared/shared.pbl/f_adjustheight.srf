@@ -1,0 +1,27 @@
+﻿global type f_adjustheight from function_object
+end type
+
+forward prototypes
+global function integer f_adjustheight ()
+end prototypes
+
+global function integer f_adjustheight ();// The function below calculates the difference in PBUs between the current titlebar height and the standard height. 
+// Just add the result to the window's height in the open event. 
+CONSTANT Integer SM_CYCAPTION = 4 
+Integer li_pixels, li_pbunits, li_diff
+
+li_pixels = GetSystemMetrics(SM_CYCAPTION) 
+li_pbunits = PixelsToUnits(li_pixels, YPixelsToUnits!) 
+li_diff = li_pbunits - 76
+IF li_diff > 0 THEN 
+	IF f_getPBMajor() < 22 THEN
+		li_diff += 12
+	ELSE
+		li_diff += 40
+	END IF
+END IF
+	
+Return(li_diff)
+
+end function
+

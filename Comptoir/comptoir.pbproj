@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project>
+  <Type Name="pb"/>
+  <Application Name="comptoir"/>
+  <Libraries AppEntry="comptoir\comptoir.pbl">
+    <Library Path="..\common\ancestors\ancestors.pbl"/>
+    <Library Path="..\common\shared\shared.pbl"/>
+    <Library Path="comptoir\comptoir.pbl"/>
+  </Libraries>
+</Project>

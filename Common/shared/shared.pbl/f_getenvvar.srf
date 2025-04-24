@@ -1,0 +1,27 @@
+﻿global type f_getenvvar from function_object
+end type
+
+forward prototypes
+global function string f_getenvvar (string as_keyword)
+end prototypes
+
+global function string f_getenvvar (string as_keyword);// renvoie la valeur de la variable d'environnement passée en argument
+// Si la variables n'existe pas, renvoie une string NULL
+
+String	ls_values[]
+Integer	li_count, li_return
+ContextKeyword lcx_key
+
+IF GetContextService("ContextKeyword", lcx_key) <> 1 THEN
+	return(gu_c.s_null)
+END IF
+
+lcx_key.GetContextKeywords(as_keyword, ls_values)
+IF upperBound(ls_values) <> 1 THEN
+	return(gu_c.s_null)
+ELSE
+	return(ls_values[1])
+END IF
+
+end function
+

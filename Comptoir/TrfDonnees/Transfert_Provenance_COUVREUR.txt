@@ -1,0 +1,771 @@
+Code_SP	Num_Prov	Num_RegProv	Code_Prov	Nom	Latitude	Longitude	Alt1	Alt2	Surface	Fins	Type_MB	Autotochnie	Categorie	Origine	Abattu	Code_Leg	RemListe_MB	Presence_Liste_MB	Code_DNF_Dict	Presence_Dict	Carte_Scan	Prop_MB	Nature_Prop	Gest_MB_Prive	Gest_MB_Public	Sit_Admin_MB
+aal	1	4	2WB0175	PRÉTHIRY	50.07N	5.28E	450		3,36	F	2	2	S	Inconnue	N			O	175	O			A			
+aal	2	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M01	O			A			
+aal	3	76		/						F	2	0	S		S			N	G30	O			A			
+aal	4	77		/						F	2	0	S		S			N	G31	O			A			
+aal	5	103		Massif vosgien - Altitude < 900m						F	2	0	S		S			N	N37	O			A			
+aal	6	104		Normandie - Altitude < 900m						F	2	0	S		S			N	N38	O			A			
+aal	7	105		Jura - Altitude < 900m						F	2	0	S		S			N	N39	O			A			
+aal	8	551		Bacau alt. < 900 m						F	2	0	S		S	2		N	B95	O			A			
+aal	9	551		Maramures						F	2	0	S		S	2		N	B97	O			A			
+aal	10	551		Strimbu-Baiuti-Maramures alt. <900m						F	2	0	S		S	2		N	B99	O			A			
+agl	1	20	0WB0564	CIERGNON	50.11N	5.04E	200		3,53	F	3	1	Q		N			O	564	O			A			
+agl	2	9	4VB1008	NEER HOXENTER BEMDEN	51.10N	5.26E	53	54	0,98	F	2	1	S		N			O	1008	O			A			
+agl	3	9	4VB1009	DUIVELSBROEK ZUID	51.07N	5.30E	57,5	60	0,71	F	2	1	S		N			O	1009	O			A			
+agl	4	9	4VB1010	DUIVELSBROEK CENTRAAL	51.07N	5.31E	57,5	60	0,54	F	2	1	S		N			O	1010	O			A			
+agl	5	9	4VB1011	DUIVELSBROEK NOORD	51.07N	5.31E	57,5	58,75	0,9	F	2	1	S		N			O	1011	O			A			
+agl	6	9	4VB1012	HOOG HOXENT	51.09N	5.24E	57		1,06	F	2	1	S		N			O	1012	O			A
+agl	7	9	4VB1037	LAPSE HEIDE	51.02N	5.05O	25		0,13	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1037	O			A
+agl	8	11	5VB1014	TERHULST	50.47N	2.46E	80	82,5	0,4	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1014	O			A
+agl	9	11	5VB1027	VIJFBUNDERS	50.59N	4.25E	10		0,54	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1027	O			A
+agl	10	11	5VB1040	KOLLINTENBOS	50.59N	4.24O	10		0,26	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1040	O			A
+agl	11	16	7WB0319	LA BOULOYE	50.06N	4.19E	245		0,3	F	2	1	S		N			O	319	O			A
+agl	12	16	7WB0320	GRANDS VIVIERS	50.07N	4.35E	170		0,2	F	2	1	S		N			O	320	O			A
+agl	13	17	8WB0216	BIZEUX-CHAMISON	49.45N	5.33E	375		0,92	F	2	1	S		N			O	216	O			A
+agl	14	17	8WB0295	GOBAILLE	50.02N	5.16E	280		0,6	F	2	1	S		N			O	295	O			A
+agl	15	18	9WB0296	GUÉ DU ROI	49.44N	5.11E	330		0,9	F	2	1	S		N			O	296	O			A
+agl	16	17	8WB0322	NEUPONT	50.04N	5.09E	195		0,46	F	2	1	S		N			O	322	O			A
+agl	17	17	8WB0323	FALISEUL 	49.46N	5.27E	410		0,57	F	2	1	S		N			O	323	O			A
+agl	18	17	8WB0328	RY DES GLANDS	50.03N	5.09E	240		2,1	F	2	1	S		N			O	328	O			A
+agl	19	17	8WB0337	VIRÉE DEL HALLE	50.02N	4.59E	380		1,4	F	2	1	S		N			O	337	O			A
+agl	20	17	8WB0338	L'ECHELLE	50.04N	4.50E	175		0,6	F	2	1	S		N			O	338	O			A
+agl	21	17	8WB0376	BORCHÊNE	50.36N	5.58E	265		1	F	2	1	S		N			O	376	O			A
+agl	22	17	8WB0379	VALLEE DE LA MASBLETTE	50.05N	5.22E	345		12,54	F	2	1	S		N			O	379	O			A
+agl	23	17	8WB0380	LONGS BOYAUX	50.03N	5.08E	200		0,55	F	2	1	S		N			O	380	O			A
+agl	24	16		Mélange de  peuplements à graines						F	2	1	S		N			O	M06	O			A
+agl	25	17		Mélange de  peuplements à graines						F	2	1	S		N			O	M07	O			A
+agl	26	55		/						F	2	0	S		S			N	G11	O			A
+agl	27	56		/						F	2	0	S		S			N	G12	O			A
+agl	28	55		Harzer Gebiergstäler						F	3	0	Q		S			N	N47	O			A
+agl	29	55		Uetze-Wienhausen						F	3	0	Q		S			N	N48	O			A
+agr	1	4	2WB0277	ORNEAU 	50.24N	4.55E	255	255	0,9	F	2	2	S	Inconnue	N			O	277	O			A
+agr	2	4	2WB0278	FAYS 	50.14N	4.55E	255	255	2,6	F	2	2	S	Inconnue	N			O	278	O			A
+agr	3	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M02	O			A
+agr	4	106		Calvados Saint-Germain-Langot						F	2	0	I		S	5		N	N33	O			A
+agr	5	106		Nord-Est France. Forêt domaniale du DER						F	2	0	I		S	5		N	N34	O			A
+agr	6	106		Verger des Barres						F	2	0	I		S	5		N	N35	O			A
+agr	7	106		Puy-de-Dôme Saint-Avit						F	2	0	I		S	5		N	N36	O			A
+agr	8	252		Washington : Hoquiam (Alt <610m) - SIB						F	1	0	I		S	3		N	B61	O			A
+agr	9	261		Washington : West Centralia (Alt. <610m) -SIB						F	1	0	I		S	3		N	B63	O			A
+agr	10	262		Washington : East Centralia (Alt. <610m) - SIB						F	1	0	I		S	3		N	B65	O			A
+agr	11	264		Washington : Darrington (Alt. <610m) - SIB						F	1	0	I		S	3		N	B67	O			A
+agr	12	267		Washington : Snoqualmie Falls - Enumclaw (Alt. <610m) -SIB						F	1	0	I		S	3		N	B69	O			A
+agr	13	256		Washington : Mont VerN - Arlington (Alt. <610m) - SIB						F	1	0	I		S	3		N	B71	O			A
+agr	14	265		Washington : Skykomish Stratup (Alt. <610m) - SIB						F	1	0	I		S	3		N	B73	O			A
+agr	15	251		Washington : Forks-Quinault  (Alt. <610m) - SIB						F	1	0	I		S	3		N	B75	O			A
+agr	16	260		Washington : Olympia - Puyallup (Alt. <610m) -SIB						F	1	0	I		S	3		N	B77	O			A
+agr	17	268		Washington : Ashford (Alt. <610m) - SIB						F	1	0	I		S	3		N	B79	O			A
+agr	18	257		Washington : Port Angeles - Sequim (Alt. <610m) - SIB						F	1	0	I		S	3		N	E01	O			A
+apl	1	4	2WB0333	LOUVROI	50.19N	4.28E	235	235	1,6	F	2	1	S		N			O	333	O			A
+apl	2	4		Mélange de  peuplements à graines						F	2	0	S		N			O	M03	O			A
+apr	1	301		/						F	2	0	I		S	6		N	B93	O			A
+apr	2	101		/						F	2	0	I		S	6		N	N43	O			A
+apr	3	265		411 / Stevens Pass -SIB						F	1	0	I		S	6		N	B81	O			A
+apr	4	269		430 / Randle - SIA						F	1	0	I		S	6		N	B83	O			A
+apr	5	258		Etat de Washington (Elina)						F	1	0	I		S	6		N	B85	O			A
+apr	6	272		Washington : Ouest des Cascades (Alt. <1070m)						0	1	0	I		S	6		N	O3	O			A
+apr	7	270		Washington : Cowlitz - Randle (Alt. <1070m) - SIB						F	1	0	I		S	6		N	B87	O			A
+apr	8	255		Washington : Vancouver - Portland (Alt. <1070m) - SIB						F	1	0	I		S	6		N	B89	O			A
+apr	9	254		042 / Larch-Mountain - SIA						F	1	0	I		S	6		N	B91	O			A
+apr	10	271		440 / Mont Saint Hélène - SIB						F	1	0	I		S	6		N	E03	O			A
+apr	11	271		440 / Skamania - SIB						F	1	0	I		S	6		N	H02	O			A
+aps	1	20	0WB0559	MONT-YVOIR	50.21N	5.05E	270		2,85	F	3	1	Q		N		Pollinisation libre. 124 clones.	O	559	O			A
+aps	2	2	1WB0327	SARTAGE	50.36N	4.34E	145		1,1	F	2	1	S		N			O	327	O			A
+aps	3	4	2VB1002	KONENBOS	50.45N	5.51E	230	240	0,6	F	2	2	S	Inconnue	N			O	1002	O			A
+aps	4	4	2WB0283	GRANDES HAYES	49.40N	5.31E	360		8,9	F	2	2	S	Inconnue	N			O	283	O			A
+aps	5	4	2WB0284	TACHÈTES	49.39N	5.29E	350		2,35	F	2	3	S		N			O	284	O			A
+aps	6	4	2WB0285	TIE D'LA L'EWE			200			F	2	1	S		N		DECLASSE(Taille)	N	285	O			A
+aps	7	4	2WB0318	BRUNETIAU	50.17N	4.11E	185		0,7	F	2	1	S		N			O	318	O			A
+aps	8	4	2WB0329	WARICHET	50.28N	5.03E	160		0,9	F	2	2	S	Inconnue	N			O	329	O			A
+aps	9	4	2WB0331	ROSÉE	50.14N	4.42E	270		2,5	F	2	1	S		N			O	331	O			A
+aps	10	4	2WB0332	MARTINSART	50.09N	4.22E	275		1,4	F	2	1	S		N			O	332	O			A
+aps	11	4	2WB0343	SART COLLIGNON	50.26N	5.03E	155		1,4	F	2	2	S	Inconnue	N			O	343	O			A
+aps	12	4	2WB0350	HAMMERMÜHLE	50.42N	6.02E	210		0,4	F	2	2	S	Inconnue	N			O	350	O			A
+aps	13	4	2WB0351	SCHIMPERBOS	50.45N	6.00E	295		0,3	F	2	2	S	Inconnue	N			O	351	O			A
+aps	14	2		Mélange de  peuplements à graines						F	2	0	S		N			O	M04	O			A
+aps	15	4		Mélange de  peuplements à graines						F	2	0	S		N			O	M05	O			A
+aps	16	51		/						F	2	0	S		S			N	G07	O			A
+aps	17	52		/						F	2	0	S		S			N	G08	O			A
+aps	18	53		/						F	2	0	S		S			N	G09	O			A
+aps	19	54		/						F	2	0	S		S			N	G10	O			A
+aps	20	107		/						F	2	0	S		S			N	N19	O			A
+aps	21	108		/						F	2	0	S		S			N	N20	O			A
+bpe	1	11	5VB1013	DE DRIE EIKEN	50.48N	4.41E	72,5	75	1,4	F	2	2	S	Inconnue	N			O	1013	O			A
+bpe	2	12	5WB0326	AGNISSART	50.38N	4.30E	120		2,4	F	2	1	S		N			O	326	O			A
+bpe	3	17	8WB0298	NEUFORST	50.39N	6.06E	345		235	F	2	1	S		N			O	298	O			A
+bpe	4	17	8WB0368	ENTRE LES BOIS	49.48N	5.15E	400		3,2	F	2	1	S		N			O	368	O			A
+bpe	5	12		Mélange de  peuplements à graines						F	2	0	S		N			O	M08	O			A
+bpe	6	17		Mélange de  peuplements à graines						F	2	0	S		N			O	M09	O			A
+bpu	1	17	8WB0299	GRÜNKLOSTERBERG	50.37N	6.13E	535		0,3	F	2	1	S		N			O	299	O			A
+bpu	2	17		Mélange de  peuplements à graines						F	2	1	S		N			O	M10	O			A
+cav	1	11	5VB1016	GALGEBOSSEN	50.52N	2.47E	21		0,18	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1016	O			A
+cav	2	13	6VB1030	CLAYBOS	50.54N	5.00E	60	67,5	0,22	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1030	O			A
+cav	3	11	5VB1041	KOLLINTENBOS	51.00N	4.24O	10		0,18	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1041	O			A
+cav	4	9	4VB1052	ZEGGEMAN	51.07N	5.03E	33		0,11	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1052	O			A
+cav	5	9	4VB1062	VARENBROEK	51.05N	4.56E	15		2,27	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1062	O			A
+cav	6	13	6VB1065	WILLEKENSBLOK	50.50N	4.47E	72,5	77,5	0,1	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1065	O			A
+cav	7	9	4VB1067	ZOERSELBOS	51.15N	4.41E	12,5	 	0,37	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1067	O			A
+cav	8	9	4VB1068	HOOIDONKSE BEEMDEN	51.15N	4.41E	11,25		0,33	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1068	O			A
+cbe	1	11	5VB1034	HAYESBOS	50.47N	3.46O	62,5	65	0,29	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1034	O			A
+cbe	2	11	5VB1051	BERTEMBOS	50.53N	4.38E	52,5	90	1,3	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1051	O			A
+cbe	3	13	6VB1038	HASSELBOS	50.45N	5.27O	80	97,5	3,59	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1038	O			A
+cmo	1	6	3.1VB1026	MARKELINDENHOEK	50.53N	3.30E	25		0,59	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1026	O			A
+cmo	2	6	3.1VB1029	DE BUREN	50.59N	3.50E	12,5		0,07	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1029	O			A
+cmo	3	11	5VB1031	REYNIERSBOSSCHEN	50.50N	3.50E	50	60	0,15	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1031	O			A
+cmo	4	11	5VB1032	GEMELDORPKOUTER	50.48N	3.52E	27,5	27,5	0,14	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1032	O			A
+cmo	5	11	5VB1054	ZEVENHOEK	50.49N	3.57E	27,5	35	0,2	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1054	O			A
+cmo	6	11	5VB1057	VOGELZANG	50.53N	3.55E	40	45	0,14	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1057	O			A
+cmo	7	11	5VB1058	FIERENS VELD	50.53N	3.57E	35,2		0,04	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1058	O			A
+cmo	8	11	5VB1064	STELLEVELD	50.53N	3.55E	40	47,5	0,34	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1064	O			A
+cmo	9	11	5VB1069	NEDERMEERS	50.49N	3.54E	25		0,19	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1069	O			A
+cmo	10	13	6VB1042	ZEVEN BUNDERS	50.47N	5.33E	117,5		0,03	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1042	O			A
+cmo	11	13	6VB1044	PLATEAU CAESTERT	50.48N	5.41E	80	90	87	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1044	O			A
+cmo	12	13	6VB1053	OP DE BOSCH	50.48N	5.37E	92,5	95	0,47	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1053	O			A
+csa	1	2	1WB0345	GLORI	50.38N	4.35E	100		0,5	F	2	2	S	Inconnue	N			O	345	O			A
+csa	2	2	1WB0346	CHAMPEAU	50.39N	4.35E	85		0,6	F	2	2	S	Inconnue	N			O	346	O			A
+csa	3	2	1WB0367	TIENES	50.30N	4.39E	165		8	F	2	2	S	Inconnue	N			O	367	O			A
+csa	4	4	2WB0381	BOIS DE GOZEE	50.21N	4.22E	210		19	F	2	2	S	Inconnue	N			O	381	O			A
+csa	5	2		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M11	O			A
+csa	6	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M12	O			A
+csa	7	109		91 Essonne (lot importé par Comptoir DNF)						F	1	0	I		S			N	H21	O			A
+csa	8	109		France 02 Aisne (lot importé par le Comptoir DNF)						F	1	0	I		S			N	H25	O			A
+csa	9	109		/						F	2	0	S		S			N	N41	O			A
+csg	1	6	3.1VB1059	MEIKENSBOSSEN	50.59N	3.22E	20	25	0,31	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1059	O			A
+csg	2	6	3.1VB1075	KRIEPHOEK	50.57N	3.40E	7,5		0,15	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1075	O			A
+eeu	1	6	3.1VB1048	MEIKENSBOSSEN	50.59N	3.23E	21,25	25	0,32	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1048	O			A
+eeu	2	11	5VB1050	BOS'T ENAME	50.51N	3.31E	62,5		0,1	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1050	O			A
+fex	1	10	5BB0701	SENTIER DUCHESSE	50.47N	4.23E	125		4,2	F	2	1	S		N		 Surprising productivity	O	701	O			A
+fex	2	11	5VB1001	T HOGE BOS	50.50N	2.57E	45		1,3	F	2	2	S	Inconnue	N			O	1001	O			A
+fex	3	16	7WB0286	TIE D' LA L'EWE	50.24N	5.34E	200		28	F	2	1	S		N			O	286	O			A
+fex	4	16	7WB0290	CROIX DES DAMES	50.13N	4.39E	300		32,5	F	2	1	S		N			O	290	O			A
+fex	5	16	7WB0291	ROSÉE	50.14N	4.43E	260		10,61	F	2	1	S		N			O	291	O			A
+fex	6	16	7WB0335	AU PLAISIR	50.18N	5.10E	330		12,3	F	2	1	S		N			O	335	O			A
+fex	7	16	7WB0336	STRU HAUGIMONT	50.26N	5.03E	190		11,7	F	2	1	S		N			O	336	O			A
+fex	8	18	9WB0235	AISANCES	49.33N	5.31E	240		16	F	2	2	S	Inconnue	N			O	235	O			A
+fex	9	16		Mélange de  peuplements à graines						F	2	0	S		N			O	M17	O			A			
+fex	10	18		Mélange de  peuplements à graines						F	2	0	S		N			O	M18	O			A			
+fex	11	62		/						F	2	0	S		S			N	G17	O			A			
+fex	12	63		/						F	2	0	S		S			N	G18	O			A			
+fex	13	64		/						F	2	0	S		S			N	G19	O			A			
+fex	14	65		/						F	2	0	S		S			N	G20	O			A			
+fsy	1	10	5BB0155	FORET DE SOIGNES- ZONIENWOOD	50.47N	4.23E	90		380	F	2	2	S	Inconnue	N		Deserves Category 4 (blue) for : growth and late flushing (Galoux 1966)	O	155	O			S			
+fsy	2	10	5BB0706	LAERBEEK	50.53N	4.19E	55		1169	F	2	1	S		N		 Very good but ageing: to conserve	O	706	O			A			614
+fsy	3	10	5BB0707	VERREWINKEL	50.47N	4.21E	100		9,16	F	2	1	S		N		 Good but ageing: to conserve	O	707	O			A			
+fsy	4	11	5VB0255	ZONIËNWOUD			110		1452,57	F	2	2	S	Inconnue	N			O	255	O			A			
+fsy	5	12	5WB0157	LA HOUSSIÈRE	50.37N	4.11E	130		36	F	2	1	S		N			O	157	O			A			
+fsy	6	12	5WB0289	LA LOUVIÈRE	50. 4N	3.45E	95		12,5	F	2	1	S		N			O	289	O			A			
+fsy	7	12	5WB0355	FORÊT DE SOIGNES	50.44N	4.26E	105		65	F	2	2	S	Inconnue	N			O	355	O			A			
+fsy	8	12	5WB0366	BOIS D'HÉ/COCO	50.36N	4.31E	130		2,5	F	2	3	S		N			O	366	O			A			
+fsy	9	16	7WB0287	GRANDE HAURE	50.10N	5.15E	270		3,1	F	2	2	S	Inconnue	N			O	287	O			A			
+fsy	10	16	7WB0288	SUR HARD	50.06N	5.09E	260		3,3	F	2	1	S		N			O	288	O			A			
+fsy	11	16	7WB0294	BELLE HÊTRAIE	50.24N	4.46E	240		6,2	F	2	2	S	Inconnue	N			O	294	O			A
+fsy	12	16	7WB0330	BOUCHIRE	50.18N	5.13E	320		25,9	F	2	1	S		N			O	330	O			A
+fsy	13	17	8WB0152	LES CINQ CHÊNES	50.06N	5.22E	445		16,8	F	2	1	S		N			O	152	O			A
+fsy	14	17	8WB0153	NOIRBIN	50.04N	5.22E	400		21,8	F	2	1	S		N			O	153	O			A
+fsy	15	17	8WB0154	HÊTRE AU CORBEAU	50.05N	5.21E	390		5,5	F	2	1	S		N			O	154	O			A
+fsy	16	17	8WB0167	BELLES TAILLES	50.03N	5.10E	390		30,5	F	2	1	S		N			O	167	O			A
+fsy	17	17	8WB0219	LA NASSE	49.45N	5.42E	440		14,37	F	2	1	S		N			O	219	O			A
+fsy	18	17	8WB0227	BANDE	50.09N	5.25E	400		36	F	2	1	S		N			O	227	O			A
+fsy	19	17	8WB0247	LE BANNET	49.56N	5.19E	475		26,6	F	2	1	S		N			O	247	O			A
+fsy	20	17	8WB0261	SPÈCHE DU CHAT	50.02N	5.02E	400		9,7	F	2	1	S		N			O	261	O			A
+fsy	21	17	8WB0262	BEAU MOUSSEAU	50.02N	5.01E	400		16,87	F	2	1	S		N			O	262	O			A
+fsy	22	17	8WB0279	ABANAGES	50.04N	5.23E	520		150	F	2	1	S		N			O	279	O			A
+fsy	23	17	8WB0300	FÈCHE	49.52N	5.14E	432		11,46	F	2	1	S		N			O	300	O			A
+fsy	24	17	8WB0316	LES EAUMONTS	49.47N	5.28E	445		3,33	F	2	1	S		N			O	316	O			A
+fsy	25	17	8WB0339	SUR WAHA	50.14N	5.24E	380		20,68	F	2	1	S		N			O	339	O			A
+fsy	26	17	8WB0340	FAYEHÉ	50.18N	5.38E	360		19,9	F	2	1	S		N			O	340	O			A
+fsy	27	17	8WB0341	CORYS	50.20N	5.29E	390		23,26	F	2	1	S		N			O	341	O			A
+fsy	28	17	8WB0342	RONGOTTE	50.20N	5.40E	420		16,6	F	2	1	S		N			O	342	O			A
+fsy	29	18	9WB0151	LES SADRANS	49.44N	5.22E	375		46	F	2	1	S		N			O	151	O			A
+fsy	30	18	9WB0168	UDANGE 3	49.38N	5.46E	375		23,7	F	2	1	S		N			O	168	O			A
+fsy	31	18	9WB0236	LA DAME	49.32N	5.31E	340		16,4	F	2	2	S	Inconnue	N			O	236	O			A
+fsy	32	18	9WB0237	REILLY SAINT - VINCENT	49.40N	5.26E	350		10,8	F	2	3	S		N			O	237	O			A
+fsy	33	18	9WB0362	MORHOMME	49.40N	5.26E	350		2,8	F	2	1	S		N			O	362	O			A
+fsy	34	12		Mélange de  peuplements à graines						F	2	0	S		N			O	M13	O			A
+fsy	35	16		Mélange de  peuplements à graines						F	2	0	S		N			O	M14	O			A
+fsy	36	17		Mélange de  peuplements à graines						F	2	0	S		N			O	M15	O			A
+fsy	37	18		Mélange de  peuplements à graines						F	2	0	S		N			O	M16	O			A
+fsy	38	58		/						F	2	0	S		S			N	G13	O			A
+fsy	39	59		/						F	2	0	S		S			N	G14	O			A
+fsy	40	60		/						F	2	0	S		S			N	G15	O			A
+fsy	41	61		/						F	2	0	S		S			N	G16	O			A
+fsy	42	110		/						F	2	0	S		S			N	N21	O			A
+fsy	43	111		/						F	2	0	S		S			N	N22	O			A
+fsy	44	181		Tous peuplement à graines 						F	2	0	S		S			N	N40	O			A
+jni	1	101		67 Bas Rhin (Lot importé par le Comptoir DNF)						F	1	0	I		S	6		N	N27	O			A
+lde	1	20	0VB0507	HALLE	50.43N	4.17E	90		0,6	F	3	2	Q	Sans objet	O			N	507	O			A
+lde	2	2	1WB0363	L'ERMITAGE	50.36N	4.33E	130		2,2	F	2	2	S	Inconnue	N			O	363	O			A
+lde	3	4	2WB0109	MARECHAUX			260			F	2	2	S	Inconnue	O			N	109	O			A
+lde	4	4	2WB0110	PESSOUX			280			F	2	2	S	Inconnue	O			N	110	O			A
+lde	5	4	2WB0111	BOIS DES ETANGS			200			F	2	2	S	Inconnue	O			N	111	O			A
+lde	6	2		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M19	O			A
+lde	7	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M20	O			A
+lde	8	78		/						F	2	0	S		S			N	G32	O			A
+lde	9	301		Tous vergers à graines						F	3	0	Q		S			N	N01	O			A
+lde	10	101		LDE-VG-001 (Sudètes -Le Theil VG)						F	3	0	Q		S			N	N23	O			A
+lde	11	501		Wroclaw alt. <800 m						F	2	0	S		S			N	B45	O			A
+lde	12	501		Sudètes-VII/8 Klodzko alt. <800m						F	2	0	S		S			N	H03	O			A
+lde	13	601		STRAZA (Sudètes)						F	3	0	Q		S			N	H26	O			A
+lde	14	601		POLICKO (Sudètes)						F	3	0	Q		S			N	O2	O			A
+leu	1	20	0VB0506	HALLE	50.43N	4.18E	90		3	F	3	2	Q	Sans objet	O			N	506	O			A
+leu	2	20	0VB7021	BELGICA	NA	NA				F	6	2	Q	Sans objet	O			N	7021	O			A
+leu	3	20	0WB0554	FENFFE	50.11N	5.05E	200		1,3	F	3	2	Q	Inconnue	N		Pollinisation libre. 91 clones.	O	554	O			A
+leu	4	20	0WB0557	CIERGNON	50.11N	5.04E	200		2,9	F	3	2	Q	Inconnue	N		Pollinisation libre. 197 clones.	O	557	O			A
+leu	5	20	0WB7022	BELGICA	NA	NA				F	6	2	Q	Inconnue	O			N	7022	O			A
+leu	6	20	0WB7023	BELGICA	NA	NA				F	6	2	Q	Inconnue	O			N	7023	O			A
+leu	7	20	0WB7024	BELGICA	NA	NA				F	6	2	Q	Inconnue	O			N	7024	O			A
+leu	8	20	0WB7025	BELGICA	NA	NA				F	6	2	Q	Inconnue	O			N	7025	O			A
+leu	9	2	1WB0365	BOIS D'HÉ	50.35N	4.30E	110		1,4	F	2	2	S	Inconnue	N			O	365	O			A
+leu	10	4	2WB0223	GROSSE HAIE	50.01N	5.18E	400		6,27	F	2	2	S	Inconnue	N			O	223	O			A
+leu	11	4	2WB0224	DE TACHENIRES	49.59N	5.19E	440		6,3	F	2	2	S	Inconnue	N			O	224	O			A
+leu	12	4	2WB0238	HARPIGNY	50.02N	5.32E	320		4,28	F	2	2	S	Inconnue	N			O	238	O			A
+leu	13	4	2WB0315	HAUT DE LA BANDE	49.48N	5.26E	430		7,6	F	2	2	S	Inconnue	N			O	315	O			A
+leu	14	10	5BB0703	KADOLLEKES	50.47N	4.26E	90		2,55	F	2	2	S	Inconnue	N			O	/	O			A
+leu	15	2		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M21	O			A
+leu	16	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M22	O			A
+leu	17	301		DK-FP 201 Faarefolden						F	3	0	Q		S			N	B48	O			A
+leu	18	301		DK-FP 211 Sondeskov						F	3	0	Q		S			N	B51	O			A
+leu	19	101		LEU-VG-001 (FH 201 Lavercantière-PF)						F	3	0	Q		S			N	N24	O			A
+lka	1	3	1VB0104	ZWART GOOR	51.22N	5.03E	35		0,8	F	2	2	S	Inconnue	N			O	104	O			A
+lka	2	3	1VB0106	ZEVENSTER			125		0,3	F	2	2	S	Inconnue	O			N	106	O			A
+lka	3	4	2WB0102	RONCHIRES	49.58N	4.58E	385		2,5	F	2	2	S	Inconnue	N			O	102	O			A
+lka	4	4	2WB0103	HOLIN	49.59N	4.58E	380		0,5	F	2	2	S	Inconnue	N			O	103	O			A
+lka	5	4	2WB0105	HUQUENY	49.52N	5.20E	460		0,3	F	2	2	S	Inconnue	N			O	105	O			A
+lka	6	4	2WB0107	VIVIERS FAYS	50.24N	5.45E	260		0,5	F	2	2	S	Inconnue	N			O	107	O			A
+lka	7	4	2WB0108	CORNICHAY	49.50N	5.12E	405		5,6	F	2	2	S	Inconnue	N			O	108	O			A
+lka	8	4	2WB0218	VIELLE ROCHETTE			430			F	2	2	S	Inconnue	O			N	218	O			A
+lka	9	4	2WB0229	BLANCHE TERRE	50.00N	5.27E	470		3,4	F	2	2	S	Inconnue	N			O	229	O			A
+lka	10	4	2WB0231	FONDS BAWEZ			360			F	2	2	S	Inconnue	O			N	231	O			A
+lka	11	4	2WB0276	A FAZONE 	50.04N	5.43E	480		0,8	F	2	2	S	Inconnue	N			O	276	O			A
+lka	12	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M23	O			A
+lka	13	79		/						F	2	0	S		S			N	G33	O			A
+lka	14	401		Hokkaïdo 						F	1	0	I		S	4		N	B36	O			A
+lka	15	401		Nagano Ken 						F	1	0	I		S	4		N	B39	O			A
+pab	1	20	0VB0501	HALLE	50.43N	4.17E	90		1,5	F	3	2	Q	Sans objet	O			N	501	O			A
+pab	2	16	7WB0311	BOIS L'ABBÉ	50.22N	4.42E	265		3,93	F	2	2	S	Inconnue	N			O	311	O			A
+pab	3	17	8WB0002	AISANCE			390			F	2	2	S	Inconnue	O	7		N	2	O			A
+pab	4	17	8WB0005	HEBORN	50.22N	6.19E	560		2,7	F	2	2	S	Inconnue	N			O	5	O			A
+pab	5	17	8WB0006	GILBUSCHHECK	50.22N	6.19E	550		7,3	F	2	2	S	Inconnue	N			O	6	O			A
+pab	6	17	8WB0007	SCHWARZBRUCH			640			F	2	2	S	Inconnue	O	7		N	7	O			A
+pab	7	17	8WB0008	SCHWARZBRUCH			640			F	2	2	S	Inconnue	O	7		N	8	O			A
+pab	8	17	8WB0009	SCHURBUSCH			615			F	2	2	S	Inconnue	O	7		N	9	O			A
+pab	9	17	8WB0010	SAINT-VITHERWALD2			525			F	2	2	S	Inconnue	O	7		N	10	O			A
+pab	10	17	8WB0012	HEUEM	50.19N	6.13E	520		3,2	F	2	2	S	Inconnue	N			O	12	O			A
+pab	11	17	8WB0013	DURTH			560			F	2	2	S	Inconnue	O	7		N	13	O			A
+pab	12	17	8WB0014	DURTH			580			F	2	2	S	Inconnue	O	7		N	14	O			A
+pab	13	17	8WB0020	CHAULETTE-GROSSY			420			F	2	2	S	Inconnue	O	7		N	20	O			A
+pab	14	17	8WB0021	RAFROUCEAU			360			F	2	2	S	Inconnue	O	7		N	21	O			A
+pab	15	17	8WB0022	BOIS DE HETRE			520		2,4	F	2	0	S		N	7	DECLASSE (Taille)	N	22	O			A
+pab	16	17	8WB0023	BAYAI			400		0,1	F	2	0	S		N	7	DECLASSE (Taille)	N	23	O			A
+pab	17	17	8WB0024	VECMONT			500			F	2	2	S	Inconnue	O	7		N	24	O			A
+pab	18	17	8WB0025	ST. JEAN CHAMOINE			500			F	2	2	S	Inconnue	O	7		N	25	O			A
+pab	19	17	8WB0026	HERTOGENWALD			455			F	2	2	S	Inconnue	O	7		N	26	O			A
+pab	20	17	8WB0027	HERTOGENWALD			440			F	2	2	S	Inconnue	O	7		N	27	O			A
+pab	21	17	8WB0031	CEDROGNE	50.12N	5.47E	550		30,7	F	2	2	S	Inconnue	N			O	31	O			A
+pab	22	17	8WB0032	SOUS LA DEMI LUNE			530			F	2	2	S	Inconnue	O	7		N	32	O			A
+pab	23	17	8WB0033	ERLIFONTAINE			540			F	2	2	S	Inconnue	O	7		N	33	O			A
+pab	24	17	8WB0034	ARBORETUM	50.12N	5.43E	545		3,4	F	2	2	S	Inconnue	N			O	34	O			A
+pab	25	17	8WB0035	DEFRICHEMENT			550			F	2	2	S	Inconnue	O	7		N	35	O			A
+pab	26	17	8WB0036	BURMECHAMPS-LES-COTES			375			F	2	2	S	Inconnue	O	7		N	36	O			A
+pab	27	17	8WB0040	FANGE-JEAN-JACQUES			400			F	2	2	S	Inconnue	O	7		N	40	O			A
+pab	28	17	8WB0041	FONDS DES STOCKS			400			F	2	2	S	Inconnue	O	7		N	41	O			A
+pab	29	17	8WB0043	CARRE			400			F	2	2	S	Inconnue	O	7		N	43	O			A
+pab	30	17	8WB0044	ES DONEUX			320			F	2	2	S	Inconnue	O	7		N	44	O			A
+pab	31	17	8WB0045	LAVAUX	49.47N	5.30E	400		1	F	2	2	S	Inconnue	N			O	45	O			A
+pab	32	17	8WB0208	HAUT DES MULES			420			F	2	2	S	Inconnue	O	7		N	208	O			A
+pab	33	17	8WB0209	TAILLE JEAN LENOIR			415			F	2	2	S	Inconnue	O	7		N	209	O			A
+pab	34	17	8WB0210	PATUREAU			415			F	2	2	S	Inconnue	O	7		N	210	O			A
+pab	35	17	8WB0211	ZIRLANGOTTE			530			F	2	2	S	Inconnue	O	7		N	211	O			A
+pab	36	17	8WB0212	JUBILE			560			F	2	2	S	Inconnue	O	7		N	212	O			A
+pab	37	17	8WB0213	COTE DU MOULIN			530			F	2	2	S	Inconnue	O	7		N	213	O			A
+pab	38	17	8WB0214	POINTE COUPE BRIART			560			F	2	2	S	Inconnue	O	7		N	214	O			A
+pab	39	17	8WB0215	ROCHE PERETTE			315			F	2	2	S	Inconnue	O	7		N	215	O			A
+pab	40	17	8WB0220	GROSSY	50.00N	5.19E	420		6,5	F	2	2	S	Inconnue	N			O	220	O			A
+pab	41	17	8WB0221	FONT MAHET	50.00N	5.15E	440		5,9	F	2	2	S	Inconnue	N			O	221	O			A
+pab	42	17	8WB0222	CONTRANHEZ	49.58N	5.19E	420		5,14	F	2	2	S	Inconnue	N			O	222	O			A
+pab	43	17	8WB0225	SCIERIE			390			F	2	2	S	Inconnue	O	7		N	225	O			A
+pab	44	17	8WB0226	BOIS DE JOURNAL	50.08N	5.27E	440		6,5	F	2	2	S	Inconnue	N			O	226	O			A
+pab	45	17	8WB0228	RONGELON	50.00N	5.25E	510		3,9	F	2	2	S	Inconnue	N			O	228	O			A
+pab	46	17	8WB0230	CÔTE DES FORGES	49.45N	5.32E	400		1,98	F	2	2	S	Inconnue	N			O	230	O			A
+pab	47	17	8WB0256	HANSBUSCH			550			F	2	2	S	Inconnue	O	7		N	256	O			A
+pab	48	17	8WB0257	ROTENBERG			580			F	2	2	S	Inconnue	O	7		N	257	O			A
+pab	49	17	8WB0258	WENDELBERG			540			F	2	2	S	Inconnue	O	7		N	258	O			A
+pab	50	17	8WB0271	DIEPBACH	50.38N	6.05E	340		6,9	F	2	2	S	Inconnue	N			O	271	O			A
+pab	51	17	8WB0273	LES AMEUROIS			400			F	2	2	S	Inconnue	O	7		N	273	O			A
+pab	52	17	8WB0301	PRÉ DU WÉ	49.49N	5.13E	340		1,1	F	2	2	S	Inconnue	N			O	301	O			A
+pab	53	17	8WB0302	ARDOISIÈRES	49.49N	5.18E	380		14,5	F	2	2	S	Inconnue	N			O	302	O			A
+pab	54	17	8WB0303	CHASSELAN	49.48N	5.18E	425		13,1	F	2	2	S	Inconnue	N			O	303	O			A
+pab	55	17	8WB0305	SEHANS	49.51N	5.11E	300		0,57	F	2	2	S	Inconnue	N			O	305	O			A
+pab	56	17	8WB0306	CLOSSART	49.54N	5.19E	480		4,42	F	2	2	S	Inconnue	N			O	306	O			A
+pab	57	17	8WB0307	LAMBÉTERME	49.55N	5.19E	470		9,2	F	2	2	S	Inconnue	N			O	307	O			A
+pab	58	17	8WB0308	BERNIHET CHÂTEAU D'EAU	49.56N	5.23E	520		29	F	2	2	S	Inconnue	N			O	308	O			A
+pab	59	17	8WB0309	WAUTIENAU	49.47N	5.22E	405		17,7	F	2	2	S	Inconnue	N			O	309	O			A
+pab	60	17	8WB0325	HAIES DE JOURNAL	50.08N	5.29E	500		5,94	F	2	2	S	Inconnue	N			O	325	O			A
+pab	61	17	8WB0356	BAN NOTRE DAME	49.57N	4.54E	380		10,87	F	2	2	S	Inconnue	N			O	356	O			A
+pab	62	17	8WB0371	PESCHHOF	50.38N	6.05E	340		2,3	F	2	2	S	Inconnue	N			O	371	O			A
+pab	63	17	8WB0551	FENFFE	50.11N	5.05E	200		8,7	F	3	2	S	Inconnue	N		Pollinisation libre. 135 clones.	O	551	O			A
+pab	64	17	8WB7002	ARDENNE	NA	NA				F	6	2	S	Inconnue	O			N	7002	O			A
+pab	65	17	8WB7003	ARDENNE	NA	NA				F	6	2	S	Inconnue	O			N	7003	O			A
+pab	66	17	8WB7004	ARDENNE	NA	NA				F	6	2	S	Inconnue	O			N	7004	O			A
+pab	67	17		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M24	O			A
+pab	68	651		C. Dudejovica						F	2	0	S		S			N	B44	O			A
+pab	69	651		Banska Bystrica						F	2	0	S		S			N	B47	O			A
+pab	70	651		Mikulas 'B409						F	2	0	S		S			N	B50	O			A
+pab	71	651		Zakemenne Pozehov						F	2	0	S		S			N	B53	O			A
+pab	72	80		/						F	2	0	S		S			N	G34	O			A
+pab	73	81		/						F	2	0	S		S			N	G35	O			A
+pab	74	82		/						F	2	0	S		S			N	G36	O			A
+pab	75	83		/						F	2	0	S		S			N	G37	O			A
+pab	76	84		/						F	2	0	S		S			N	G38	O			A
+pab	77	85		/						F	2	0	S		S			N	G39	O			A
+pab	78	86		/						F	2	0	S		S			N	G40	O			A
+pab	79	87		/						F	2	0	S		S			N	G41	O			A
+pab	80	88		/						F	2	0	S		S			N	G42	O			A
+pab	81	501		Istebna alt< 800 m .						F	2	0	S		S			N	B01	O			A
+pab	82	551		Peuplements à graines						F	2	0	S		S	2		N	N42	O			A
+pav	1	20	0VB1502	MOMMEDEEL	50.49N	4.45E	75	80	0,85	F	3	2	Q		N			O	1502	O			A
+pav	2	20	0WB0553	FENFFE	50.11N	5.05E	200		2,1	F	3	2	Q	Inconnue	N		Pollinisation libre. 87 clones.	O	553	O			A
+pav	3	20	0WB0558	CIERGNON	50.11N	5.04E	200		1,7	F	3	1	Q		N		Pollinisation libre. 102 clones.	O	558	O			A
+pav	4	11	5VB1005	VREBOS	50.52N	4.32E	78	78	0,26	F	2	2	S	Inconnue	N			O	1005	O			A
+pav	5	11	5VB1039	RATTENBERG	50.45N	4.02O	40	57,5	0,37	F	2	2	S	Nord Fr. et Be.(Hainaut)	N			O	1039	O			A
+pav	6	12	5WB0359	SOYE	50.27N	4.43E	110		5,7	F	2	1	S		N			O	359	O			A
+pav	7	16	7WB0254	BOIS D' YVES	50.13N	4.29E	265		15,54	F	2	1	S		N			O	254	O			A
+pav	8	16	7WB0269	BOIS DE BERSILLIES	50.16N	4.09E	165		2	F	2	1	S		N			O	269	O			A
+pav	9	16	7WB0297	BOIS DES VIVIERS	50.13N	4.11E	210		0,4	F	2	1	S		N			O	297	O			A
+pav	10	16	7WB0312	VI PRÉ	50.18N	4.48E	220		11,8	F	2	1	S		N			O	312	O			A
+pav	11	12		Mélange de  peuplements à graines						F	2	1	S		N			O	M28	O			A
+pav	12	16		Mélange de  peuplements à graines						F	2	1	S		N			O	M29	O			A
+pav	13	66		/						F	2	0	S		S			N	N45	O			A
+pav	14	112		Tous peuplement à graines PAV901						F	2	0	S		S			N	N26	O			A
+plo	1	3	1VB0129	PASTOORSBOS	51.24N	4.33E	20		1,7	F	2	2	S	Inconnue	N		var. corsicana	O	129	O			A
+plo	2	3	1VB0132	PIJNVEN	51.10N	5.20E	40		1,4	F	2	2	S	Inconnue	N		var. corsicana	O	132	O			A
+plo	3	3	1VB0134	BOVEN BEVERBEEK			35		1	F	2	2	S	Inconnue	N		var. corsicana	O	134	O			A
+plo	4	3	1VB0135	HALLEVELD	51.14N	4.39E	10		1	F	2	2	S	Inconnue	N		var. corsicana	O	135	O			A
+plo	5	3	1VB0136	HALLEVELD	51.14N	4.39E	10		0,9	F	2	2	S	Inconnue	N		var. corsicana	O	136	O			A
+plo	6	3	1VB0137	SMISJESBOS	51.10N	3.12E	10		2,7	F	2	2	S	Inconnue	N		var. corsicana	O	137	O			A
+plo	7	3	1VB0138	RAVELS	51.24N	5.03E	35		9,3	F	2	2	S	Inconnue	N		var. corsicana	O	138	O			A
+plo	8	3	1VB0139	RAVELS	51.24N	5.03E	35		7,5	F	2	2	S	Inconnue	N		var. corsicana	O	139	O			A
+plo	9	3	1VB0140	RAVELS	51.24N	5.03E	35		9,6	F	2	2	S	Inconnue	N		var. corsicana	O	140	O			A
+plo	10	3	1VB0145	VENNEKEN I			30		1	F	2	2	S	Inconnue	O		var. corsicana	N	145	O			A
+plo	11	3	1VB0146	VENNEKEN II			30		1	F	2	2	S	Inconnue	O		var. corsicana	N	146	O			A
+plo	12	4	2WB0126	BANNEUX	50.33N	5.44E	260		6,41	F	2	2	S	Inconnue	N		var. corsicana	O	126	O			A
+plo	13	4	2WB0127	BRUYERE D'ANDOUMONT	50.33N	0. 4E	280		5,36	F	2	2	S	Inconnue	N		var. corsicana	O	127	O			A
+plo	14	10	5BB0704	PLATE-FORME	50.48N	4.28E	105		1,39	F	2	2	S	Inconnue	N		 var. corsicana	O		N			A
+plo	15	10	5BB0705	ROUGE-GORGE	50.47N	4.26E	92		2,15	F	2	2	S	Inconnue	N		 var.corsicana	O		N			A
+plo	16	113		Valdoniello						F	2	0	S		S			N	N28	O			A
+plo	17	113		Vivario-Vizzavone						F	2	0	S		S			N	N29	O			A
+plo	18	101		PLO-VG-002 (Corse-Haute Serre VG)						F	3	0	Q		S			N	N30	O			A
+plo	19	101		PLO-VG-001 (Sologne-Vayrières-VG)						F	3	0	T		S			N	N31	O			A
+pme	1	20	0VB0503	HALLE	50.43N	4.18E	90		1,5	F	3	2	Q	Sans objet	O			N	503	O			A
+pme	2	4	2WB0082	GRAND MOINIL	49.55N	4.57E	380		0,8	F	2	2	S	Inconnue	N			O	82	O			A
+pme	3	4	2WB0083	DEVANT BELLEFONTAINE	49.55N	4.58E	375		0,3	F	2	2	S	Inconnue	N			O	83	O			A
+pme	4	4	2WB0084	GARIGEAI	49.59N	4.59E	420		4	F	2	2	S	Inconnue	N			O	84	O			A
+pme	5	4	2WB0085	PETIT HESTRAIT	50.00N	4.59E	415		2,2	F	2	2	S	Inconnue	N			O	85	O			A
+pme	6	4	2WB0086	BOIS DE HÊTRE	49.54N	5.31E	500		3	F	2	2	S	Inconnue	N			O	86	O			A
+pme	7	4	2WB0087	CEDROGNE	50.13N	5.47E	540		154,21	F	2	2	S	Inconnue	N			O	87	O			A
+pme	8	4	2WB0088	GRANDE HUQUENY	49.52N	5.20E	450		5,4	F	2	2	S	Inconnue	N			O	88	O			A
+pme	9	4	2WB0089	DEFOY	49.53N	5.06E	425		0,5	F	2	2	S	Inconnue	N			O	89	O			A
+pme	10	4	2WB0090	BOIS DE SMUID	50.02N	5.16E	340		1,1	F	2	2	S	Inconnue	N			O	90	O			A
+pme	11	4	2WB0091	DEFRICHEMENT			55			F	2	2	S	Inconnue	O			N		N			A
+pme	12	4	2WB0092	SENTIER DU PRINCE			550			F	2	2	S	Inconnue	O			N		N			A
+pme	13	4	2WB0093	SOUS LA DEMI LUNE 	50.13N	5.43E	560		11,6	F	2	2	S	Inconnue	N			O	93	O			A
+pme	14	4	2WB0094	ARBORETUM			530			F	2	2	S	Inconnue	N		DECLASSE(Qualité-limites)	N		N			A
+pme	15	4	2WB0095	AUX ALLOUX			300			F	2	2	S	Inconnue	O			N		N			A
+pme	16	4	2WB0096	WERPIN			220			F	2	2	S	Inconnue	O			N		N			A
+pme	17	4	2WB0097	WERPIN			220			F	2	2	S	Inconnue	O			N		N			A
+pme	18	4	2WB0100	LANGA			425			F	2	2	S	Inconnue	O			N		N			A
+pme	19	4	2WB0101	HODINFOSSE	50.18N	5.53E	445		6	F	2	2	S	Inconnue	N			O	101	O			A
+pme	20	4	2WB0204	TROU COLAS	50.33N	5.55E	300		0,8	F	2	2	S	Inconnue	N			O	204	O			A
+pme	21	4	2WB0205	PARC VISART	49.59N	5.38E	545		1,9	F	2	2	S	Inconnue	N			O	205	O			A
+pme	22	4	2WB0206	PARC VISART			540			F	2	2	S	Inconnue	O			N		N			A
+pme	23	4	2WB0207	PARC VISART			540			F	2	2	S	Inconnue	O			N		N			A
+pme	24	4	2WB0217	GEDINNE-ARBORETUM	50.00N	4.59E	425		1,6	F	2	2	S	Inconnue	N			O	217	O			A
+pme	25	4	2WB0239	BRIQUEMONT	50.10N	5.10E	220		2,3	F	2	2	S	Inconnue	N			O	239	O			A
+pme	26	4	2WB0246	SLIFAYS 	49.51N	5.09E	400		4,4	F	2	2	S	Inconnue	N			O	246	O			A
+pme	27	4	2WB0268	LES GOTTALES	50.18N	6.00E	540		4,5	F	2	2	S	Inconnue	N			O	268	O			A
+pme	28	4	2WB0282	DEVANT TIENNE	50.04N	5.11E	320		13,5	F	2	2	S	Inconnue	N			O	282	O			A
+pme	29	4	2WB0304	HALLIETTE	49.50N	5.12E	380		4	F	2	2	S	Inconnue	N			O	304	O			A
+pme	30	4	2WB0313	HAULE	50.05N	5.15E	320		3,84	F	2	2	S	Inconnue	N			O	313	O			A
+pme	31	4	2WB0314	BOIS DES DAMES	50.13N	5.14E	232		5,5	F	2	2	S	Inconnue	N			O	314	O			A
+pme	32	4	2WB0324	BOIS DES MOINES	50.07N	5.28E	505		0,91	F	2	2	S	Inconnue	N			O	324	O			A
+pme	33	4	2WB0349	RONDFÂHAI	50.31N	6.00E	540		2,1	F	2	2	S	Inconnue	N			O	349	O			A
+pme	34	4	2WB0353	L'ABÎME	50.16N	5.13E	260		0,7	F	2	2	S	Inconnue	N			O	353	O			A
+pme	35	4	2WB0354	LIMECONS	49.45N	5.04E	410		2,6	F	2	2	S	Inconnue	N			O	354	O			A
+pme	36	4	2WB0364	BAN NOTRE DAME	49.57N	4.54E	380		10,87	F	2	2	S	Inconnue	N			O	364	O			A
+pme	37	4	2WB0372	CEDRON	50.13N	5.03E	220		1	F	2	2	S	Inconnue	N			O	372	O			A
+pme	38	4	2WB0373	SANZINE	50.12N	5.03E	230		2,84	F	2	2	S	Inconnue	N			O	373	O			A
+pme	39	4	2WB0374	RONDCHAMP	50.11N	5.08E	220		1,26	F	2	2	S	Inconnue	N			O	374	O			A
+pme	40	4	2WB0377	CABARET	50.18N	5.59E	425		1,83	F	2	2	S	Inconnue	N			O	377	O			A
+pme	41	4	2WB0378	SUR LES SARTS	50.18N	5.53E	430		0,82	F	2	2	S	Inconnue	N			O	378	O			A
+pme	42	4	2WB0521	ROCHEFORT I	50.10N	5.10E	230		1,3	F	3	2	Q	Inconnue	N		Pollinisation libre. 92 familles.	O	521	O			A
+pme	43	4	2WB0522	GRAIDE	49.57N	5.05E	415		1	F	3	2	Q	Inconnue	N		Pollinisation libre. 90 familles.	O	522	O			A
+pme	44	4	2WB0552	FENFFE	50.11N	5.05E	200		7,8	F	3	2	Q	Inconnue	N		Pollinisation libre. 156 clones.	O	552	O			A
+pme	45	4	0	Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M30	O			A
+pme	46	101		PME-VG-001 (Darrington VG)						F	3	0	Q		S			N	N17	O			A
+pme	47	101		PME-VG-002 (La Luzette VG)						F	3	0	Q		S			N	N18	O			A
+pme	48	252		Washington : Hoquiam (Alt <610m) - SIB						F	1	0	I		S	1		N	B03	O			A
+pme	49	261		Washington : West Centralia (Alt. <610m) -SIB						F	1	0	I		S	1		N	B06	O			A
+pme	50	262		Washington : East Centralia (Alt. <610m) - SIB						F	1	0	I		S	1		N	B09	O			A
+pme	51	264		Washington : Darrington (Alt. <610m) - SIB						F	1	0	I		S	1		N	B12	O			A
+pme	52	267		Washington : Snoqualmie Falls - Enumclaw (Alt. <610m) -SIB						F	1	0	I		S	1		N	B15	O			A
+pme	53	256		Washington : Mont VerN - Arlington (Alt. <610m) - SIB						F	1	0	I		S	1		N	B18	O			A
+pme	54	265		Washington : Skykomish Stratup (Alt. <610m) - SIB						F	1	0	I		S	1		N	B21	O			A
+pme	55	251		Washington : Forks-Quinault  (Alt. <610m) - SIB						F	1	0	I		S	1		N	B24	O			A
+pme	56	260		Washington : Olympia - Puyallup (Alt. <610m) -SIB						F	1	0	I		S	1		N	B27	O			A
+pme	57	268		Washington : Ashford (Alt. <610m) - SIB						F	1	0	I		S	1		N	B30	O			A
+pme	58	251		012/10 Lake Quinault - SIA						F	2	0	I		S	1a		N	F01	O			A
+pme	59	251		012/20 Forks - Iverson - SIA						F	2	0	I		S	1a		N	F02	O			A
+pme	60	251		012/30 Lake Crescent IUFRO extension -SIA						F	2	0	I		S	1a		N	F03	O			A
+pme	61	251		012/31 Goodman/Tom Creek - SIA						F	2	0	I		S	1a		N	F04	O			A
+pme	62	252		030/10 Matlock - Elma General -SIA						F	2	0	I		S	1a		N	F05	O			A
+pme	63	252		030/11 Deckerville - SIA						F	2	0	I		S	1a		N	F06	O			A
+pme	64	252		030/12 Matlock (Low) IUFRO Extension - SIA						F	2	0	I		S	1a		N	F07	O			A
+pme	65	252		030/20 Humptulips Highway 101-Donkey Creek Road - SIA						F	2	0	I		S	1a		N	F08	O			A
+pme	66	252		030/21 ITT Rayonier - Logging Road 3470 - SIA						F	2	0	I		S	1a		N	F09	O			A
+pme	67	252		030/22 ITT Rayonier - Logging Roads 3200-3400 - SIA						F	2	0	I		S	1a		N	F10	O			A
+pme	68	252		030/23 Power Line Road - SIA						F	2	0	I		S	1a		N	F11	O			A
+pme	69	252		030/30 Upper Wishkah Valley - SIA						F	2	0	I		S	1a		N	F12	O			A
+pme	70	252		030/40 Brooklyn to Oakville Road -SIA						F	2	0	I		S	1a		N	F13	O			A
+pme	71	252		030/41 Fir Creek - SIA						F	2	0	I		S	1a		N	F14	O			A
+pme	72	252		030/42 Smith Creek Road -SIA						F	2	0	I		S	1a		N	F15	O			A
+pme	73	252		030/43 Brooklyn - N line - SIA						F	2	0	I		S	1a		N	F16	O			A
+pme	74	252		030/50 Mc Donald Tree Farm - SIA						F	2	0	I		S	1a		N	F17	O			A
+pme	75	252		030/60 Lebam - Pluvius - Highway 6 - SIA						F	2	0	I		S	1a		N	F18	O			A
+pme	76	252		030/70 Norris Spur, Grisdale - SIA						F	2	0	I		S	1a		N	F19	O			A
+pme	77	252		030/81 Matolck (High) IUFRO extension - Kellyhaul Road -SIA						F	2	0	I		S	1a		N	F20	O			A
+pme	78	253		041/21 Extension of Cathlamet IUFRO Stand (1089) - SIA						F	2	0	I		S	1a		N	F21	O			A
+pme	79	253		041/30 Rose Valley Road - SIA						F	2	0	I		S	1a		N	F22	O			A
+pme	80	253		041/31 Camp Coweman - SIA						F	2	0	I		S	1a		N	F23	O			A
+pme	81	253		041/40 Longview - Cathlamet - SIA						F	2	0	I		S	1a		N	F24	O			A
+pme	82	253		041/41 Mill Creek - Oak Point - SIA						F	2	0	I		S	1a		N	F25	O			A
+pme	83	253		041/42 Old Cathlamet Road - SIA						F	2	0	I		S	1a		N	F26	O			A
+pme	84	253		041/50 Upper Salmon Creek - SIA						F	2	0	I		S	1a		N	F27	O			A
+pme	85	253		041/51 Naselle IUFRO Stand (1086) - SIA						F	2	0	I		S	1a		N	F28	O			A
+pme	86	253		041/52 Road 4900 - Salmon Creek - SIA						F	2	0	I		S	1a		N	F29	O			A
+pme	87	254		042/10 Dayton - Amboy - SIA						F	2	0	I		S	1a		N	F30	O			A
+pme	88	254		042/11 Merwin Lake South Shore - SIA						F	2	0	I		S	1a		N	F31	O			A
+pme	89	254		042/20 Pridle - SIA						F	2	0	I		S	1a		N	F32	O			A
+pme	90	254		042/21 Ariel - SIA						F	2	0	I		S	1a		N	F33	O			A
+pme	91	256		202/11 Lake mc Murray - SIA						F	2	0	I		S	1a		N	F34	O			A
+pme	92	256		202/20 Arlington General - SIA						F	2	0	I		S	1a		N	F35	O			A
+pme	93	256		202/30 Bear Creek/Jordan - SIA						F	2	0	I		S	1a		N	F36	O			A
+pme	94	256		202/31 Russian Road - SIA						F	2	0	I		S	1a		N	F37	O			A
+pme	95	256		202/60 Granite Falls General - SIA						F	2	0	I		S	1a		N	F38	O			A
+pme	96	256		202/70 Nooksack River - SIA						F	2	0	I		S	1a		N	F39	O			A
+pme	97	257		221/10 Louella - SIA						F	2	0	I		S	1a		N	F40	O			A
+pme	98	258		222/10 Lake Cushman to Hamma River - SIA						F	2	0	I		S	1a		N	F41	O			A
+pme	99	258		222/11 Lake Cushman - SIA						F	2	0	I		S	1a		N	F42	O			A
+pme	100	258		222/21 Duckabush River - SIA						F	2	0	I		S	1a		N	F43	O			A
+pme	101	258		222/30 Olympic Foothills - SIA						F	2	0	I		S	1a		N	F44	O			A
+pme	102	259		231/10 Dayton - Shelton - SIA						F	2	0	I		S	1a		N	F45	O			A
+pme	103	259		231/21 Johns Prairie - SIA						F	2	0	I		S	1a		N	F46	O			A
+pme	104	259		231/22 Tatlor Towne -SIA						F	2	0	I		S	1a		N	F47	O			A
+pme	105	260		232/10 Yelm - Nisqually - SIA						F	2	0	I		S	1a		N	F48	O			A
+pme	106	261		241/10 Mc Cleary - Kamilche - SIA						F	2	0	I		S	1a		N	F49	O			A
+pme	107	261		241/11 Mud Lake - Lost Lake - SIA						F	2	0	I		S	1a		N	F50	O			A
+pme	108	261		241/12 Mc Cleary - SIA						F	2	0	I		S	1a		N	F51	O			A
+pme	109	261		241/13 Cloquallum Road - SIA						F	2	0	I		S	1a		N	F52	O			A
+pme	110	261		241/20 Chehalis Creek -SIA						F	2	0	I		S	1a		N	F53	O			A
+pme	111	261		241/21 Ryderwood - SIA						F	2	0	I		S	1a		N	F54	O			A
+pme	112	261		241/31 Bunker Creek Road - SIA						F	2	0	I		S	1a		N	F55	O			A
+pme	113	261		241/40 Chelton Creek, Capitol Forest - SIA						F	2	0	I		S	1a		N	F56	O			A
+pme	114	261		241/41 Bordeaux, Capitol Forest - SIA						F	2	0	I		S	1a		N	F57	O			A
+pme	115	263		402/10 Bacon Creek - SIA						F	2	0	I		S	1a		N	F58	O			A
+pme	116	263		402/20 Baker Lake - SIA						F	2	0	I		S	1a		N	F59	O			A
+pme	117	263		402/21 Anderson Lake Road - SIA						F	2	0	I		S	1a		N	F60	O			A
+pme	118	263		402/31 Marble Creek Campground - SIA						F	2	0	I		S	1a		N	F61	O			A
+pme	119	263		402/40 Rockport - Marblemount Loop Road - SIA						F	2	0	I		S	1a		N	F62	O			A
+pme	120	263		402/50 Concrete - Rockport General - SIA						F	2	0	I		S	1a		N	F63	O			A
+pme	121	264		403/10 Darrington Flats - SIA						F	2	0	I		S	1a		N	F64	O			A
+pme	122	264		403/11 Round Mountain - SIA						F	2	0	I		S	1a		N	F65	O			A
+pme	123	264		403/12 Round Mountain Foothills - SIA						F	2	0	I		S	1a		N	F66	O			A
+pme	124	264		403/13 Texas Pond - SIA						F	2	0	I		S	1a		N	F67	O			A
+pme	125	264		403/14 French Creek/White horse - SIA						F	2	0	I		S	1a		N	F68	O			A
+pme	126	264		403/15 North Brooks Creek -SIA						F	2	0	I		S	1a		N	F69	O			A
+pme	127	264		403/20 Caskey Lake Area - SIA						F	2	0	I		S	1a		N	F70	O			A
+pme	128	264		403/31 Gold Mountain Foothills - SIA						F	2	0	I		S	1a		N	F71	O			A
+pme	129	264		403/41 Sauk River - SIA						F	2	0	I		S	1a		N	F72	O			A
+pme	130	264		403/50 Sauk Prairie Flats - SIA						F	2	0	I		S	1a		N	F73	O			A
+pme	131	264		403/51 Central Sauk Prairie - SIA						F	2	0	I		S	1a		N	F74	O			A
+pme	132	264		403/61 Suiattle River Flats  - SIA						F	2	0	I		S	1a		N	F75	O			A
+pme	133	264		403/71 Tenas Creek - SIA						F	2	0	I		S	1a		N	F76	O			A
+pme	134	264		403/80 Hamilton - Dalles Bridge - SIA						F	2	0	I		S	1a		N	F77	O			A
+pme	135	264		403/91 Bedal Creek Campground - SIA						F	2	0	I		S	1a		N	F78	O			A
+pme	136	265		411/10 Swartz Lake - Menzel Lake - SIA						F	2	0	I		S	1a		N	F79	O			A
+pme	137	265		411/20 Lake Chaplain - Olney Creek - SIA						F	2	0	I		S	1a		N	F80	O			A
+pme	138	265		411/30 Stossel Creek - SIA						F	2	0	I		S	1a		N	F81	O			A
+pme	139	265		411/40 Carnation - SIA						F	2	0	I		S	1a		N	F82	O			A
+pme	140	265		411/50 Foss River Camp -SIA						F	2	0	I		S	1a		N	F83	O			A
+pme	141	265		411/51 Grotto - SIA						F	2	0	I		S	1a		N	F84	O			A
+pme	142	267		412/10 Sallal Prairie - SIA						F	2	0	I		S	1a		N	F85	O			A
+pme	143	267		412/20 Rattlesnake - Chester Morse Lake -SIA						F	2	0	I		S	1a		N	F86	O			A
+pme	144	267		412/30 Tinkham - Bandera - SIA						F	2	0	I		S	1a		N	F87	O			A
+pme	145	267		412/41 Illinois Creek - SIA						F	2	0	I		S	1a		N	F88	O			A
+pme	146	267		412/50 Black Diamond - SIA						F	2	0	I		S	1a		N	F89	O			A
+pme	147	267		412/61 Greenwater - SIA						F	2	0	I		S	1a		N	F90	O			A
+pme	148	267		412/70 Huckleberry Creek - The Dalles - SIA						F	2	0	I		S	1a		N	F91	O			A
+pme	149	268		422/10 Pack Demonstration Forest - SIA						F	2	0	I		S	1a		N	F92	O			A
+pme	150	268		422/20 Mineral - SIA						F	2	0	I		S	1a		N	F93	O			A
+pme	151	268		422/31 National (Weyerhaueser and Wold Road) - SIA						F	2	0	I		S	1a		N	F94	O			A
+pme	152	269		430/10 Cowlitz River Area - SIA						F	2	0	I		S	1a		N	F95	O			A
+pme	153	269		430/11 Skate Creek, Packwood - SIA						F	2	0	I		S	1a		N	F96	O			A
+pme	154	269		430/20 Johnson creek - SIA						F	2	0	I		S	1a		N	F97	O			A
+pme	155	269		430/31 Cispus River - SIA						F	2	0	I		S	1a		N	F98	O			A
+pme	156	269		430/40 Carlton Creek - Cowlitz River - SIA						F	2	0	I		S	1a		N	F99	O			A
+pme	157	269		430/50 Castle Rock - SIA						F	2	0	I		S	1a		N	G01	O			A
+pme	158	269		430/61 Taylor Road - Weyerhaeuser 700 Road - SIA						F	2	0	I		S	1a		N	G02	O			A
+pme	159	271		440/10 Yale - Cougar - SIA						F	2	0	I		S	1a		N	G03	O			A
+pme	160	271		440/21 Cougar IUFRO Stand (1090) - SIA						F	2	0	I		S	1a		N	G04	O			A
+pme	161	271		440/22 Merril Lake - SIA						F	2	0	I		S	1a		N	G05	O			A
+pme	162	271		440/23 Swift Reservoir - SIA						F	2	0	I		S	1a		N	G06	O			A
+pna	1	351		Steinfeld						F	2	1	S		S			N	B10	O			A
+pna	2	351		Hoke Wand						F	2	1	S		S			N	B13	O			A
+pna	3	351		Hernstein						F	2	1	S		S			N	B16	O			A
+pna	4	351		Peuplement à graines autrichiens						F	2	1	S		S			N	B19	O			A
+pna	5	351		Wüchtsgebiet III / 4						F	2	1	S		S			N	B22	O			A
+pna	6	351		Wüchtsgebiet III / 3						F	2	1	S		S			N	B25	O			A
+pna	7	4	2WB0112	COHISSE	50.26N	5.33E	205		17,3	F	2	2	S	Inconnue	N		var. austriaca	O	112	O			A
+pna	8	4	2WB0113	MAURAINY	50.04N	4.33E	200		3,3	F	2	2	S	Inconnue	N		var. austriaca	O	113	O			A
+pna	9	4	2WB0114	MOUSTY	50.04N	4.33E	220		4,6	F	2	2	S	Inconnue	N		var. austriaca	O	114	O			A
+pna	10	4	2WB0115	NIAUX	50.06N	5.11E	230		6,45	F	2	2	S	Inconnue	N		var. austriaca	O	115	O			A
+pna	11	4	2WB0116	LES PAIRÉES	50.06N	5.12E	200		12,3	F	2	2	S	Inconnue	N		var. austriaca	O	116	O			A
+pna	12	4	2WB0117	LES PAIREES			200			F	2	2	S	Inconnue	O		var.austriaca	N		N			A
+pna	13	4	2WB0118	QUAUX			225			F	2	2	S	Inconnue	O		var.austriaca	N		N			A
+pna	14	4	2WB0119	QUAUX	50.06N	5.12E	300		11,2	F	2	2	S	Inconnue	N		var. austriaca	O	119	O			A
+pna	15	4	2WB0120	SENTIER DE COINTE			250			F	2	2	S	Inconnue	O		var.austriaca	N		N			A
+pna	16	4	2WB0122	HOSIVAUX	50.07N	5.13E	220		8,7	F	2	2	S	Inconnue	N		var. austriaca	O	122	O			A
+pna	17	4	2WB0123	SUR HARD II	50.06N	5.09E	270		2,3	F	2	2	S	Inconnue	N		var. austriaca	O	123	O			A
+pna	18	4	2WB0125	SUR BIERRE	50.07N	5.13E	220		7,5	F	2	2	S	Inconnue	N		var. austriaca	O	125	O			A
+pna	19	4	2WB0142	LE RADOUX			120			F	2	2	S	Inconnue	O		var.austriaca	N		N			A
+pna	20	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M26	O			A
+pnk	1	20	0VB0505	HALLE	50.43N	4.17E	90		3	F	3	2	Q	Sans objet	O		Koekelare'	N	505	O			A
+pnk	2	3	1VB0147	GROTE VIJVER	51.04N	2.58E	18		1	F	2	2	S	Inconnue	N		Koekelare'	O	147	O			A
+pnk	3	3	1VB0148	VROUWENVIJVER	51.05N	2.57E	18		0,4	F	2	2	S	Inconnue	N		Koekelare'	O	148	O			A
+pnk	4	3	1VB0150	HEIWIJK	50.58N	5.37E	90		2,1	F	2	2	S	Inconnue	N		Koekelare'	O	150	O			A
+pop	1	20	0VB9001	BLAUWE VAN EXAERDE	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Blauwe van Exaerde'	O	9001	O			A
+pop	2	20	0VB9002	GELRICA	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Gelrica'	O	9002	O			A
+pop	3	20	0VB9003	HARFF	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Harff'	O	9003	O			A
+pop	4	20	0VB9004	HEIDEMIJ	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Heidemij'	O	9004	O			A
+pop	5	20	0VB9005	I 214	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'I 214'	O	9005	O			A
+pop	6	20	0VB9006	MARILANDICA	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Marilandica'	O	9006	O			A
+pop	7	20	0VB9007	REGENERATA VAN NEEROETEREN	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Regenerata van Neeroeteren'	O	9007	O			A
+pop	8	20	0VB9008	ROBUSTA	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Robusta'	O	9008	O			A
+pop	9	20	0VB9009	SEROTINA	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Serotina'	O	9009	O			A
+pop	10	20	0VB9010	SEROTINA ERECTA	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Serotina Erecta'	O	9010	O			A
+pop	11	20	0VB9011	SEROTINA DE SELYS	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Serotina de Selys'	O	9011	O			A
+pop	12	20	0VB9012	TARDIF DE CHAMPAGNE	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Tardif de Champagne'	O	9012	O			A
+pop	13	20	0VB9013	PRIMO	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Primo'	O	9013	O			A
+pop	14	20	0VB9014	GHOY	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Ghoy'	O	9014	O			A
+pop	15	20	0VB9015	GAVER	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Gaver'	O	9015	O			A
+pop	16	20	0VB9016	GIBECQ	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Gibecq'	O	9016	O			A
+pop	17	20	0VB9017	OGY	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Ogy'	O	9017	O			A
+pop	18	20	0VB9018	ISIÈRES	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Isières'	O	9018	O			A
+pop	19	20	0VB9019	KOSTER	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Koster'	O	9019	O			A
+pop	20	20	0VB9020	FLACHSLANDEN	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Flachslanden'	O	9020	O			A
+pop	21	20	0VB9021	LOENS	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Loens'	O	9021	O			A
+pop	22	20	0VB9022	NEUPOTZ	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Neupotz'	O	9022	O			A
+pop	23	20	0VB9023	ZEELAND	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Zeeland'	O	9023	O			A
+pop	24	20	0VB9041	COLUMBIA RIVER	NA	NA				F	5	2	T	Sans objet	N		trichocarpa 'Columbia River'	O	9041	O			A
+pop	25	20	0VB9042	TRICHOBEL	NA	NA				F	5	2	T	Sans objet	N		trichocarpa 'Trichobel'	O	9042	O			A
+pop	26	20	0VB9043	FRITZI PAULEY	NA	NA				F	5	2	T	Sans objet	N		trichocarpa 'Fritzi Pauley'	O	9043	O			A
+pop	27	20	0VB9051	UNAL	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Unal'	O	9051	O			A
+pop	28	20	0VB9052	BEAUPRÉ	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Baupré'	O	9052	O			A
+pop	29	20	0VB9053	BOELARE	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Boelare'	O	9053	O			A
+pop	30	20	0VB9054	HUNNEGEM	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Hunnegem'	O	9054	O			A
+pop	31	20	0VB9055	RASPALJE	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Raspalje'	O	9055	O			A
+pop	32	20	0VB9056	HAZENDANS	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Hazendans'	O	9056	O			A
+pop	33	20	0VB9057	HOOGVORST	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x deltoides 'Hoogvorst'	O	9057	O			A
+pop	34	20	0VB9058	MUUR	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Muur'	O	9058	O			A
+pop	35	20	0VB9059	VESTEN	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Vesten'	O	9059	O			A
+pop	36	20	0VB9060	OUDENBERG	NA	NA				F	5	2	T	Sans objet	N		x euramericana 'Oudenberg'	O	9060	O			A
+pop	37	20	0VB9061	GRIMMINGE	NA	NA				F	5	2	T	Sans objet	N		deltoides x (trichocarpa x deltoides) 'Grimminge'	O	9061	O			A
+pop	38	20	0VB9062	BAKAN	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x maximowiczii 'Bakan'	O	9062	O			A
+pop	39	20	0VB9063	SKADO	NA	NA				F	5	2	T	Sans objet	N		trichocarpa x maximowiczii 'Skado'	O	9063	O			A
+ppd	1	6	3.1VB1061	MEIKENSBOSSEN	50.59N	3.23E	20	23,75	0,3	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1061	O			A
+psi	1	4	2WB0281	PISSEROTTE	50.13N	5.47E	580		8,5	F	2	2	S	Inconnue	N			O	281	O			A
+psi	2	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M25	O			A
+psi	3	251		Washington : Forks-Quinault  (Alt. <610m) - SIB						F	1	0	I		S	3		N	B88	O			A
+psi	4	252		Washington : Hoquiam (Alt <610m) - SIB						F	1	0	I		S	3		N	B90	O			A
+psp	1	6	3.1VB1073	MEIKENSBOSSEN	50.59N	3.23E	20	25	0,29	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1073	O			A
+psp	2	6	3.1VB1074	KRIEPHOEK	50.57N	3.40E	7,5		0,14	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1074	O			A
+psp	3	11	5VB1017	GALGEBOSSEN	50.52N	2.47E	20		0,12	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1017	O			A
+psp	4	11	5VB1021	HAZELAARSTRAAT	50.47N	3.51E	40	42,5	0,06	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1021	O			A
+psp	5	11	5VB1056	SCHELF VELD	50.54N	3.58E	32,5		0,02	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1056	O			A
+psp	6	13	6VB1033	LUMMENDAAL	50.46N	4.53E	82,5	85	0,03	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1033	O			A
+pst	1	102		/						F	2	0	I		N	6		N	N32	O			A
+psy	1	20	0VB0502	GROENENDAAL	50.46N	4.26E	110		2,5	F	3	2	Q	Sans objet	O			N	502	O			A
+psy	2	3	1VB0061	KATTEVENNEHEI	50.58N	5.32E	90		15,98	F	2	2	S	Inconnue	O			N	61	O			A
+psy	3	3	1VB0063	PIJNVEN H.	51.11N	5.21E	40		2,69	F	2	2	S	Inconnue	O			N	63	O			A
+psy	4	3	1VB0064	PIJNVEN H.	51.10N	5.21E	40		1,7	F	2	2	S	Inconnue	O			N	64	O			A
+psy	5	3	1VB0065	PIJNVEN H.	51.10N	5.21E	40		1,22	F	2	2	S	Inconnue	O			N	65	O			A
+psy	6	3	1VB0067	BINNENHEIDE			90		2,82	F	2	2	S	Inconnue	O			N	67	O			A
+psy	7	3	1VB0069	DEN OTTER	51.15N	4.38E	12		1,7	F	2	2	S	Inconnue	O			N	69	O			A
+psy	8	3	1VB0070	SCHEURBLOK	51.14N	4.37E	12		1,5	F	2	2	S	Inconnue	N			O	70	O			A
+psy	9	3	1VB0072	SCHOOTSHEIDE NEEROETEREN			33		10,8	F	2	2	S	Inconnue	O			N	72	O			A
+psy	10	3	1VB0073	SCHOOTSHEIDE	51.03N	5.41E	35		4,1	F	2	2	S	Inconnue	N			O	73	O			A
+psy	11	3	1VB0080	RAVELS	51.23N	5.02E	30		4,7	F	2	2	S	Inconnue	O			N	80	O			A
+psy	12	3	1VB0081	RAVELS	51.23N	5.03E	30		8,4	F	2	2	S	Inconnue	O			O	81	O			A
+psy	13	3	1VB1006	DE MEREL	51.07N	5.13E	48		1,6	F	2	2	S	Inconnue	N			O	1006	O			A
+psy	14	3	1VB1007	HENGELHOEF	51.00N	5.28E	80		1,8	F	2	2	S	Inconnue	N			O	1007	O			A
+psy	15	4	2WB0046	CHENOIS	49.36N	5.34E	250		8	F	2	2	S	Inconnue	N			O	46	O			A
+psy	16	4	2WB0047	TASSENIÈRE	49.39N	5.28E	350		7,7	F	2	2	S	Inconnue	N			O	47	O			A
+psy	17	4	2WB0049	ROYSSEAU / SART-CUSTINNE	49.59N	4.54E	360		11,2	F	2	2	S	Inconnue	N			O	49	O			A
+psy	18	4	2WB0050	BOUQUETTES	50.05N	4.54E	355		8,4	F	2	2	S	Inconnue	N			O	50	O			A
+psy	19	4	2WB0051	FOSSE DES LIMITES 	50.31N	5.52E	340		4	F	2	2	S	Inconnue	N			O	51	O			A
+psy	20	4	2WB0052	HESTROY			427			F	2	2	S	Inconnue	O			N	52	O			A
+psy	21	4	2WB0053	MOSSAIRE	50.21N	5.37E	280		20,65	F	2	2	S	Inconnue	N			O	53	O			A
+psy	22	4	2WB0055	GRANDE VIRÉE ANGLÉE	50.02N	4.54E	275		4,7	F	2	2	S	Inconnue	N			O	55	O			A
+psy	23	4	2WB0077	CHAMPAGNE	50.18N	5.27E	180		22,5	F	2	2	S	Inconnue	N			O	77	O			A
+psy	24	4	2WB0270	PONT LIGNEUVILLE	50.21N	6.02E	430		3	F	2	2	S	Inconnue	N			O	270	O			A
+psy	25	4	2WB0272	KIEFERNKOPF	50.37N	6.05E	480		1,4	F	2	2	S	Inconnue	N			O	272	O			A
+psy	26	4	2WB0334	HAUGIMONT	50.25N	5.02E	240		3,4	F	2	2	S	Inconnue	N			O	334	O			A
+psy	27	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M27	O			A
+qpe	1	9	4VB1018	WINDELSTEEN	51.00N	5.38E	90		4,97	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1018	O			A
+qpe	2	9	4VB1019	KIKBEEKBRON	50.58N	5.39E	70	90	9,62	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1019	O			A
+qpe	3	9	4VB1025	KLAVERBERG	51.01N	5.32E	85	87,5	10,3	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1025	O			A
+qpe	4	11	5VB1003	BUGGENHOUT KROKKEBAAS	51.00N	4.13E	15		8,5	F	2	2	S	Inconnue	N			O	1003	O			A
+qpe	5	11	5VB1004	BUGGENHOUT BOSKAPEL	51.00N	4.12E	25		5,4	F	2	2	S	Inconnue	N			O	1004	O			A
+qpe	6	16	7WB0174	CULÉE DE FAULX	50.14N	4.37E	290		7	F	2	2	S	Inconnue	N			O	174	O			A
+qpe	7	16	7WB0264	NOTRE - DAME RODRIGUE	50.06N	4.24E	250		4,1	F	2	1	S		N			O	264	O			A
+qpe	8	16	7WB0266	QUEUE DE L' HERSE	50.05N	4.23E	230		11,9	F	2	1	S		N			O	266	O			A
+qpe	9	16	7WB0267	LA POINTE	50.06N	4.19E	245		1,7	F	2	1	S		N			O	267	O			A
+qpe	10	17	8WB0263	DURHEZ	50.02N	5.09E	300		10	F	2	1	S		N			O	263	O			A
+qpe	11	17	8WB0352	DIE WESER	50.37N	6.04E	320		4	F	2	1	S		N			O	352	O			A
+qpe	12	17	8WB0357	COQUEREY	50.01N	4.53E	340		18,01	F	2	2	S	Inconnue	N			O	357	O			A
+qpe	13	17	8WB0358	LANGES	50.38N	6.04E	330		6,7	F	2	2	S	Inconnue	N			O	358	O			A
+qpe	14	17	8WB0361	L'HERMITAGE	49.55N	5.14E	430		2,5	F	2	1	S		N			O	361	O			A
+qpe	15	16		Mélange de  peuplements à graines						F	2	0	S		N			O	M31	O			A
+qpe	16	17		Mélange de  peuplements à graines						F	2	0	S		N			O	M32	O			A
+qpe	17	70		/						F	2	0	S		S			N	G24	O			A
+qpe	18	71		/						F	2	0	S		S			N	G25	O			A
+qpe	19	72		/						F	2	0	S		S			N	G26	O			A
+qpe	20	116		QPE106 Secteur ligérien (plants: ---> juin 2007)						F	2	0	S		S	0		N	T1	O			A
+qpe	21	114		/						F	2	0	S		S			N	N09	O			A
+qpe	22	119		/						F	2	0	S		S			N	N10	O			A
+qpe	23	123		/						F	2	0	S		S			N	N11	O			A
+qpe	24	115		/						F	2	0	S		S			N	N12	O			A
+qpe	25	117		/						F	2	0	S		S			N	N13	O			A
+qpe	26	122		/						F	2	0	S		S			N	N14	O			A
+qpe	27	120		/						F	2	0	S		S			N	N15	O			A
+qpe	28	121		/						F	2	0	S		S			N	N16	O			A
+qpe	29	118		/						F	2	0	S		S			N	N44	O			A
+qro	1	6	3.1VB1020	WARANDEDUINEN	51.00N	3.54E	15	17,5	5,75	A	2	1	I		N		conservation des ressources génétiques autochtones	O	1020	O			A
+qro	2	6	3.1VB1022	MEERSKANT	51.03N	3.50E	6,25		0,2	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1022	O			A
+qro	3	9	4VB0250	LOERSCHOTTEN-60 HALLE	51.14N	4.39E	11		1,19	F	2	3	S		N			O	250	O			A
+qro	4	9	4VB0253	BERKENBROEK	51.09N	5.42E	33		3,13	F	2	2	S	Inconnue	N			O	253	O			A
+qro	5	10	5BB0702	BONNIERS	50.46N	4.26E	110		8,8	F	2	1	S		N		" Near n° 5BV0244 ""Kwekerijweg"""	O	702	O			A
+qro	6	11	5VB0172	ROOD KLOOSTER	50.49N	4.28E	100		5	F	2	3	S		N			O	172	O			A
+qro	7	11	5VB0240	KWEKERIJ	50.46N	4.25E	105		7,1	F	2	3	S		N			O	240	O			A
+qro	8	11	5VB0241	VEKEDELLE WEST	50.49N	4.29E	100		12	F	2	3	S		N			O	241	O			A
+qro	9	11	5VB0243	DRONKENMANSWEG	50.48N	4.30E	105		4	F	2	2	S	Inconnue	N			O	243	O			A
+qro	10	11	5VB0244	KWEKERIJWEG	50.49N	4.31E	90		5	F	2	1	S		N			O	244	O			A
+qro	11	11	5VB0245	EGENHOVENBOS	50.52N	4.40E	25		8,1	F	2	3	S		N			O	245	O			A
+qro	12	11	5VB0249	KAPELLEKENSBOS	51.08N	4.31E	7		10	F	2	2	S	Inconnue	N			O	249	O			A
+qro	13	13	6VB0251	TAFELENBOS	50.53N	4.53E	70		5,6	F	2	3	S		N			O	251	O			A
+qro	14	13	6VB0252	DE SLUI	50.56N	4.53E	20		3,6	F	2	3	S		N			O	252	O			A
+qro	15	16	7WB0171	MINIÈRES	50.16N	4.34E	270		20,3	F	2	1	S		N			O	171	O			A
+qro	16	17	8WB0173	FRAICHE BOIS	49.43N	5.42E	360		9,4	F	2	3	S		N			O	173	O			A
+qro	17	17	8WB0232	JOUET FONTAINE	49.50N	5.09E	370		5,2	F	2	3	S		N			O	232	O			A
+qro	18	17	8WB0233	SAINT - PIERRE	49.21N	5.03E	310		7,9	F	2	3	S		N			O	233	O			A
+qro	19	18	9WB0169	BOCHET	49.34N	5.31E	250		15	F	2	2	S	Inconnue	N			O	169	O			A
+qro	20	18	9WB0170	AISANCES - LA BOURBIEUSE	49.41N	5.20E	335		16,7	F	2	1	S		N			O	170	O			A
+qro	21	18	9WB0234	AISANCES	49.33N	5.31E	240		16	F	2	2	S	Inconnue	N			O	234	O			A
+qro	22	18	9WB0274	NAU DU P'TIT THIRY	49.41N	5.19E	335		5	F	2	2	S	Inconnue	N			O	274	O			A
+qro	23	18	9WB0275	NAU CORNEZ	49.41N	5.19E	340		6,1	F	2	2	S	Inconnue	N			O	275	O			A
+qro	24	16		Mélange de  peuplements à graines						F	2	0	S		N			O	M33	O			A
+qro	25	17		Mélange de  peuplements à graines						F	2	0	S		N			O	M34	O			A
+qro	26	18		Mélange de  peuplements à graines						F	2	0	S		N			O	M35	O			A
+qro	27	69		/						F	2	0	S		S			N	G23	O			A
+qro	28	124		/						F	2	0	S		S			N	N02	O			A
+qro	29	125		/						F	2	0	S		S			N	N03	O			A
+qro	30	127		/						F	2	0	S		S			N	N04	O			A
+qro	31	126		/						F	2	0	S		S			N	N05	O			A
+qro	32	181		Seifen						F	2	0	S		S			N	B56	O			A
+qro	33	201		Pays-Bas (région non spécifiée) pour plant. <350m.						F	2	0	S		S			N	B60	O			A
+qru	1	19	0WB0523	LE CERISIER	50.19N	4.34E	250		2,2	F	3	2	Q	Inconnue	N		Pollinisation libre. 64 familles.	O	523	O			A
+qru	2	3	1VB0182	WEG RETIE-KASTERLEE	51.16N	5.03E	23		3,05	F	2	2	S	Inconnue	N			O	182	O			A
+qru	3	3	1VB0183	WEG RETIE-KASTERLEE	51.15N	4.59E	23		0,8	F	2	2	S	Inconnue	O			N	183	O			A
+qru	4	3	1VB0185	WEG KASTERLEE-HERENTALS	51.12N	4.53E	20		5,35	F	2	2	S	Inconnue	N			O	185	O			A
+qru	5	3	1VB0186	WEG HERENTALS-OOSTMALLE	51.13N	4.49E	30		1,1	F	2	2	S	Inconnue	O			N	186	O			A
+qru	6	3	1VB0187	WEG RIJKEVORSEL-MERKSPLAS	51.21N	4.46E	28	30	5	F	2	2	S	Inconnue	O			N	187	O			A
+qru	7	3	1VB0188	WEG MERKSPLAS-WEELDE	51.26N	4.54E	25	27	6,9	F	2	2	S	Inconnue	N			O	188	O			A
+qru	8	3	1VB0189	WEG RAVELS-ARENDONK	51.23N	5.01E	35		1,1	F	2	2	S	Inconnue	N			O	189	O			A
+qru	9	3	1VB0190	WEG RAVELS-ARENDONK	51.21N	5.04E	35		6,9	F	2	2	S	Inconnue	N			O	190	O			A
+qru	10	3	1VB0193	WEG OOSTHAM-KWAADMECHELEN	51.06N	5.10E	35		0,15	F	2	2	S	Inconnue	O			N	193	O			A
+qru	11	3	1VB0199	WEG TURNHOUT-OOSTMALLE	51.19N	4.52E	24		1,9	F	2	2	S	Inconnue	N			O	199	O			A
+qru	12	3	1VB0200	WEG GIERLE-LILLE	51.16N	4.52E	17		0,4	F	2	2	S	Inconnue	O			N	200	O			A
+qru	13	3	1VB0202	WEG EKSEL-BOCHOLT-LOZEN	51.10N	5.27E	50		5,8	F	2	2	S	Inconnue	N			O	202	O			A
+qru	14	3	1VB0203	WEG BREE-PEER	51.08N	5.35E	60		6,8	F	2	2	S	Inconnue	N			O	203	O			A
+qru	15	3	1VB0242	RAVENSTEIN	50.49N	4.29E	105		1,6	F	2	2	S	Inconnue	O			N	242	O			A
+qru	16	2	1WB0344	CHAMPEAU	50.39N	4.35E	75		2,2	F	2	2	S	Inconnue	N			O	344	O			A
+qru	17	2	1WB0360	BIERWART	50.33N	5.03E	205		2	F	2	2	S	Inconnue	N			O	360	O			A
+qru	18	4	2WB0259	LES DAUBES	49.55N	5.01E	395		3	F	2	2	S	Inconnue	N			O	259	O			A
+qru	19	4	2WB0260	LES GOTTES	50.04N	5.08E	250		6,8	F	2	2	S	Inconnue	N			O	260	O			A
+qru	20	2	1WB0280	BOIS SEROUX	50.41N	4.15E	80		0,5	F	2	2	S	Inconnue	N			O	280	O			A
+qru	21	4	2WB0292	FORT DE MALONNE	50.27N	4.49E	200		0,6	F	2	2	S	Inconnue	N			O	292	O			A
+qru	22	4	2WB0293	CABACA	50.26N	4.50E	215		3	F	2	2	S	Inconnue	N			O	293	O			A
+qru	23	4	2WB0310	BOIS L'ABBÉ	50.22N	4.42E	265		1,64	F	2	2	S	Inconnue	N			O	310	O			A
+qru	24	4	2WB0317	BRUNETIAU	50.17N	4.11E	185		0,21	F	2	2	S	Inconnue	N			O	317	O			A
+qru	25	4	2WB0369	FRANC BOIS	49.56N	5.12E	420		1,07	F	2	2	S	Inconnue	N			O	369	O			A
+qru	26	4	2WB0370	GIPPENHAAG	50.42N	6.01E	245		3,5	F	2	2	S	Inconnue	N			O	370	O			A
+qru	27	4	2WB0375	COLNI	50.14N	5.30E	280		3,1	F	2	2	S	Inconnue	N			O	375	O			A
+qru	28	2		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M36	O			A
+qru	29	4		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M37	O			A
+qru	30	67		/						F	2	0	S		S			N	G21	O			A
+qru	31	68		/						F	2	0	S		S			N	G22	O			A
+qru	32	130		/						F	2	0	S		S			N	N06	O			A
+qru	33	129		/						F	2	0	S		S			N	N07	O			A
+qru	34	128		/						F	2	0	S		S			N	N08	O			A
+qru	35	201		Pays-Bas (Région non spécifiée)						F	2	0	S		S			N	B82	O			A
+rar	1	6	3.1VB1046	KRIEPHOEK	50.57N	3.40E	7,5		0,25	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1046	O			A
+rar	2	6	3.1VB1047	MEIKENSBOSSEN	50.59N	3.23E	20	23,75	0,32	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1047	O			A
+rar	3	11	5VB1049	BOS'T ENAME	50.51N	3.39E	62,5		0,04	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1049	O			A
+rca	1	6	3.1VB1045	HEIDEBOS	51.11N	3.55E	6,25		3,42	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1045	O			A
+rfr	1	6	3.1VB1028	MOERKENSHEIDE	50.59N	3.39E	10		4,66	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1028	O			A
+rfr	2	9	4VB1035	HEESACKERHEIDE	51.11N	5.26O	49		2	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1035	O			A
+rfr	3	9	4VB1043	ROLLEKESBERGEN	51.17N	4.50E	19		0,46	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1043	O			A
+rfr	4	9	4VB1070	DE SCHAPEN BEMDEN	51.15N	4.40E	12,5		0,23	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1070	O			A
+rfr	5	11	5VB1023	STEENTJESBOS	50.58N	4.32E	10		2,69	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1023	O			A
+rps	1	2	1WB0347	HAVRÉ / OCHES	50.28N	4.00E	60		36,48	F	2	2	S	Inconnue	N			O	347	O			A
+rps	2	2	1WB0348	CLÉ DU BOIS	50.24N	3.49E	110		5,2	F	2	2	S	Inconnue	N			O	348	O			A
+rps	3	2		Mélange de  peuplements à graines						F	2	2	S	Inconnue	N			O	M38	O			A
+rps	4	19	0WB0562	MARCHE-EN-FAMENNE	50.13N	5.13E	190		2,9	F	3	2	Q	Inconnue	N		Pollinisation libre.	O	562	O			A
+rps	5	451		Peuplements à graines - région Pusztavacs						F	2	0	S		S			N	N46	O			A
+rps	6	451		Peuplements à graines - région KISKUNSAGI						F	2	0	S		S			N	O1	O			A
+sau	1	9	4VB1036	HEESACKERHEIDE	51.11N	5.26O	48	49	0,24	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1036	O			A
+sau	2	9	4VB1063	BEDAFSEDIJK	51.26N	5.00E	26		1,13	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1063	O			A
+sau	3	9	4VB1066	OVERHEIDE	51.26N	5.03E	27		0,55	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1066	O			A
+sau	4	11	5VB1015	DOUVEVALLEI	50.47N	2.45E	100	107	1,28	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1015	O			A
+sau	5	11	5VB1024	STEENTJESBOS	50.58N	4.32E	10	10	2,69	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1024	O			A
+sau	6	11	5VB1077	EEUWENHOUT	50.46N	2.47E	72,5	75	1,12	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1077	O			A
+sto	1	4	2WB0321	MATIGNOLLE	50.06N	4.40E	240		15,6	F	2	1	S		N	6a		O	321	O			A
+sto	2	4		Mélange de  peuplement à graines						F	2	1	S		N	6a		O	M39	O			A
+sto	3	101		Fontaine Française (lot importé par le Comptoir DNF)						F	1	0	I		S	6a		N	E06	O			A
+tco	1	73		/						F	2	0	S		S			N	G27	O			A
+tco	2	74		/						F	2	0	S		S			N	G28	O			A
+tco	3	75		/						F	2	0	S		S			N	G29	O			A
+the	1	252		Washington : Hoquiam (Alt <610m) - SIB						F	1	0	I		S	6		N	B96	O			A
+the	2	261		Washington : West Centralia (Alt. <610m) -SIB						F	1	0	I		S	6		N	B98	O			A
+the	3	262		Washington : East Centralia (Alt. <610m) - SIB						F	1	0	I		S	6		N	C00	O			A
+the	4	264		Washington : Darrington (Alt. <610m) - SIB						F	1	0	I		S	6		N	C02	O			A
+the	5	267		Washington : Snoqualmie Falls - Enumclaw (Alt. <610m) -SIB						F	1	0	I		S	6		N	C04	O			A
+the	6	256		Washington : Mont Vernon - Arlington (Alt. <610m) -SIB						F	1	0	I		S	6		N	C06	O			A
+the	7	265		Washington : Skykomish Stratup (Alt. <610m) - SIB						F	1	0	I		S	6		N	C08	O			A
+the	8	251		Washington : Forks-Quinault  (Alt. <610m) - SIB						F	1	0	I		S	6		N	C10	O			A
+the	9	260		Washington : Olympia - Puyallup (Alt. <610m) -SIB						F	1	0	I		S	6		N	C12	O			A
+the	10	268		Washington : Ashford (Alt. <610m) - SIB						F	1	0	I		S	6		N	C14	O			A
+tpi	1	19	0WB0555	FENFFE	50.11N	5.05E	200		0,7	F	3	2	Q	Inconnue	N	6a	Pollinisation libre. 29 clones.	O	555	O			A
+tpi	2	19	0WB7051	ARBOR-88/40	NA	NA				F	6	2	Q	Inconnue	N	6a		O	7051	O			A
+tpi	3	252		Washington : Hoquiam (Alt <610m) - SIB						F	1	1	I		S	6		N	C15	O			A
+tpi	4	261		Washington : West Centralia (Alt. <610m) -SIB						F	1	1	I		S	6		N	C16	O			A
+tpi	5	262		Washington : East Centralia (Alt. <610m) - SIB						F	1	1	I		S	6		N	C17	O			A
+tpi	6	264		Washington : Darrington (Alt. <610m) - SIB						F	1	1	I		S	6		N	C18	O			A
+tpi	7	267		Washington : Snoqualmie Falls - Enumclaw (Alt. <610m) -SIB						F	1	1	I		S	6		N	C19	O			A
+tpi	8	256		Washington : Mont Vernon - Arlington (Alt. <610m) -SIB						F	1	1	I		S	6		N	C20	O			A
+tpi	9	265		Washington : Skykomish Stratup (Alt. <610m) - SIB						F	1	1	I		S	6		N	C21	O			A
+tpi	10	251		Washington : Forks-Quinault  (Alt. <610m) - SIB						F	1	1	I		S	6		N	C22	O			A
+tpi	11	260		Washington : Olympia - Puyallup (Alt. <610m) -SIB						F	1	1	I		S	6		N	C23	O			A
+tpi	12	268		Washington : Ashford (Alt. <610m) - SIB						F	1	1	I		S	6		N	C24	O			A
+vop	1	6	3.1VB1055	ETBOS	51.09N	3.56E	3,75		0,21	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1055	O			A
+vop	2	6	3.1VB1060	MEIKENSBOSSEN	50.59N	3.23E	20	23,75	0,27	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1060	O			A
+vop	3	6	3.1VB1076	KRIEPHOEK	50.57N	3.40E	7,5		0,3	A	1	1	I		N		conservation des ressources génétiques autochtones	O	1076	O			A

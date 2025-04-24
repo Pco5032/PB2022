@@ -1,0 +1,14 @@
+﻿global type f_disabcolor from function_object
+end type
+
+forward prototypes
+global function long f_disabcolor ()
+end prototypes
+
+global function long f_disabcolor ();IF len(GetTheme()) = 0 THEN
+	return(gl_disabled_bckg_color)
+ELSE
+	return(-1)
+END IF
+end function
+

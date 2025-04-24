@@ -1,0 +1,15 @@
+﻿global type str_iselectionparams from structure
+	string		s_reportname
+	string		s_modele
+	string		s_originalselect
+	boolean		b_isvisible
+	boolean		b_trienabled
+	decimal { 0 }		d_rptseq
+	boolean		b_buttonsenabled
+	string		s_insertionpoint
+	string		s_evalmsg
+	long		l_maxrows
+	string		s_maxmsg
+	any		a_param[]
+end type
+

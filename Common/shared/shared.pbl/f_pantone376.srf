@@ -1,0 +1,11 @@
+﻿global type f_pantone376 from function_object
+end type
+
+forward prototypes
+global function long f_pantone376 ()
+end prototypes
+
+global function long f_pantone376 ();// renvoie la couleur Pantone 376
+return(rgb(127, 186, 0))
+end function
+

@@ -1,0 +1,50 @@
+﻿global type f_gettag from function_object
+end type
+
+forward prototypes
+global function integer f_gettag (string as_tag, string as_keyword, ref string as_value)
+end prototypes
+
+global function integer f_gettag (string as_tag, string as_keyword, ref string as_value);/* extraire la variable correspondant au mot-clé qui se trouve dans la propriété TAG de l'item
+   IN :	
+		as_tag = string où on recherche la valeur de la clé as_keyword
+		as_keyword = clé dont on recherche la valeur dans as_tag
+   OUT :
+		as_value = valeur de as_keyword trouvée dans as_tag, ou null si as_keyword ne se trouve pas dans as_tag
+	RETURN :
+		1 si le mot-clé est présent dans le tag. La valeur attribuée au mot clé est alors dans l'argument as_value
+		0 si le mot-clé n'est pas présent dans le tag. L'argument as_value est alors null
+*/
+
+long	ll_pos1, ll_pos2
+
+ll_pos1 = PosA(upper(as_tag), upper(as_keyword))
+
+// si le mot-clé ne figure pas dans le tag : return(0)
+IF ll_pos1 = 0 THEN
+	SetNull(as_value)
+	return(0)
+END IF
+
+// si le mot-clé figure dans le tag, l'extraire du tag avec sa valeur éventuelle
+ll_pos2 = PosA(as_tag, ";", ll_pos1)
+IF ll_pos2 = 0 THEN
+	ll_pos2 = LenA(as_tag)
+	as_tag = MidA(as_tag, ll_pos1, ll_pos2)
+ELSE
+	as_tag = MidA(as_tag, ll_pos1, ll_pos2 - ll_pos1)
+END IF
+
+
+// si le mot-clé n'est pas suivi du signe "=", cela veut dire qu'on ne lui attribue pas de valeur
+IF MidA(as_tag, ll_pos1 + LenA(as_keyword), 1) <> "=" THEN
+	as_value = ""
+	return(1)
+END IF
+
+// si le mot-clé est suivi du signe "=", extraire la valeur trouvée après le "="
+as_value = MidA(as_tag, ll_pos1 + LenA(as_keyword) + 1, ll_pos2)
+
+return(1)
+end function
+

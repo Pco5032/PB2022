@@ -1,0 +1,10 @@
+﻿global type f_mandcolor from function_object
+end type
+
+forward prototypes
+global function long f_mandcolor ()
+end prototypes
+
+global function long f_mandcolor ();return (gl_mandatory_bckg_color)
+end function
+

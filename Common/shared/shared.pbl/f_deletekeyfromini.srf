@@ -1,0 +1,13 @@
+﻿global type f_deletekeyfromini from function_object
+end type
+
+forward prototypes
+global subroutine f_deletekeyfromini (string as_filename, string as_section, string as_key)
+end prototypes
+
+global subroutine f_deletekeyfromini (string as_filename, string as_section, string as_key);string	ls_null
+
+setNull(ls_null)
+WritePrivateProfileStringA(as_section, as_key, ls_null, as_filename)
+end subroutine
+

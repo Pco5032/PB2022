@@ -1,0 +1,7 @@
+﻿global type str_processinformation from structure
+	ulong		hprocess
+	ulong		hthread
+	long		dwprocessid
+	long		dwthreadid
+end type
+

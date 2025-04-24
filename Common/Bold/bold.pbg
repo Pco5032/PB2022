@@ -1,0 +1,35 @@
+Save Format v3.0(19990112)
+@begin Libraries
+ "Common\\Bold\\bold.pbl" "";
+@end;
+@begin Objects
+ "Common\\Bold\\ds_listdossier.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_searchuserdossierresult.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_userdossier.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_searchuserdossierresult.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_genop.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\uo_bold.sru" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_genop.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_bold_demarche_choix.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_demarche_choix.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_drc_cancel.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_drc_add.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\ddd_bold_pref.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_bold_drc_list.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_drc_list.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_bold_pref.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_bold_drc_target.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\ddd_bold_auteur.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_attachment_add.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\f_boldcreate.srf" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\ddd_bold_status.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\d_bold_attachments_list.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\ddd_bold_service.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_attachments_list.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_userdossier_common.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\ds_import_searchuserdossierresult.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_bold_getuserdossier.srw" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\f_bolddestroy.srf" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\ds_genop_status.srd" "Common\\Bold\\bold.pbl";
+ "Common\\Bold\\w_import_intobold.srw" "Common\\Bold\\bold.pbl";
+@end;

@@ -1,0 +1,25 @@
+﻿//objectcomments Modifier le WHERE et/ou remplacer le ORDER BY d'une ordre SQL
+global type f_modifysql from function_object
+end type
+
+forward prototypes
+global function string f_modifysql (string as_originalselect, string as_where, string as_order, string as_insertionpoint)
+end prototypes
+
+global function string f_modifysql (string as_originalselect, string as_where, string as_order, string as_insertionpoint);// complète l'ordre sql initial avec le 'where' et 'order by' passés en paramètres
+// as_originalselect = ordre sql à modifier
+// as_where (facultatif) = condition where à ajouter (sans le mot-clé WHERE !)
+// as_ordre (facultatif) = order by à ajouter (sans le mot-clé ORDER BY !) 
+//                         !!! : l'order by passé ici va REMPLACER le order by d'origine (voir commentaire avant l'appel de la fonction + loin)
+// as_insertionpoint (facultatif) = dans certains cas, cette fonction ne peut pas déterminer où il faut ajouter la condition where (par exemple, 
+//										 quand il y a un subselect). On peut par ce paramètre lui indiquer l'emplacement à utiliser.
+//										 Par ex. : on met un where 'bidon' dans l'ordre SQL d'origine, qqchose du genre where 1=1, et on passe le paramètre
+//										 '1=1' à la fonction, qui remplacera ce 1=1 par la where à ajouter
+// return = le nouvel ordre SQL
+
+// NB : argument TRUE : remplace le ORDER BY d'origine par le nouveau
+// (si on souhaite que l'argument as_order COMPLETE le order by d'origine, utiliser la fonction f_modifysql2 avec argument FALSE)
+return(f_modifysql2(as_originalselect, as_where, as_order, TRUE, as_insertionpoint))
+
+end function
+

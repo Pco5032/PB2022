@@ -1,0 +1,5574 @@
+﻿forward
+global type m_base from uo_menu
+end type
+type m_fichier from menu within m_base
+end type
+type m_cantonnement from menu within m_fichier
+end type
+type m_interlocuteur from menu within m_fichier
+end type
+type m_espece from menu within m_fichier
+end type
+type m_regionsprov from menu within m_fichier
+end type
+type m_legislation from menu within m_fichier
+end type
+type m_base_-2 from menu within m_fichier
+end type
+type m_provenance from menu within m_fichier
+end type
+type m_autorisation from menu within m_fichier
+end type
+type m_registre from menu within m_fichier
+end type
+type m_catalogue from menu within m_fichier
+end type
+type m_inventaire from menu within m_fichier
+end type
+type m_certificat from menu within m_fichier
+end type
+type m_docfrn from menu within m_fichier
+end type
+type m_base-17 from menu within m_fichier
+end type
+type m_encodagecaractlots from menu within m_fichier
+end type
+type m_cphys from menu within m_encodagecaractlots
+end type
+type m_viabilite from menu within m_encodagecaractlots
+end type
+type w_qgerm from menu within m_encodagecaractlots
+end type
+type w_qgerm_validation from menu within m_encodagecaractlots
+end type
+type m_validqgerm_liste from menu within m_encodagecaractlots
+end type
+type m_base_-12 from menu within m_encodagecaractlots
+end type
+type m_qgerm_barcode from menu within m_encodagecaractlots
+end type
+type m_encodagecaractlots from menu within m_fichier
+m_cphys m_cphys
+m_viabilite m_viabilite
+w_qgerm w_qgerm
+w_qgerm_validation w_qgerm_validation
+m_validqgerm_liste m_validqgerm_liste
+m_base_-12 m_base_-12
+m_qgerm_barcode m_qgerm_barcode
+end type
+type m_base-11 from menu within m_fichier
+end type
+type m_melange from menu within m_fichier
+end type
+type m_flux from menu within m_fichier
+end type
+type m_base-13 from menu within m_fichier
+end type
+type m_commande from menu within m_fichier
+end type
+type m_bordliv from menu within m_fichier
+end type
+type m_base_-3 from menu within m_fichier
+end type
+type m_param from menu within m_fichier
+end type
+type m_traductions from menu within m_param
+end type
+type m_cpteur from menu within m_param
+end type
+type m_base-8 from menu within m_param
+end type
+type m_detail_critere from menu within m_param
+end type
+type m_report_critere from menu within m_param
+end type
+type m_report_predeftri from menu within m_param
+end type
+type m_base_-6 from menu within m_param
+end type
+type m_groupe from menu within m_param
+end type
+type m_user from menu within m_param
+end type
+type m_showprivs from menu within m_param
+end type
+type m_param from menu within m_fichier
+m_traductions m_traductions
+m_cpteur m_cpteur
+m_base-8 m_base-8
+m_detail_critere m_detail_critere
+m_report_critere m_report_critere
+m_report_predeftri m_report_predeftri
+m_base_-6 m_base_-6
+m_groupe m_groupe
+m_user m_user
+m_showprivs m_showprivs
+end type
+type m_base_-4 from menu within m_fichier
+end type
+type m_config_imp from menu within m_fichier
+end type
+type m_imprimer from menu within m_fichier
+end type
+type m_base_-5 from menu within m_fichier
+end type
+type m_quitter from menu within m_fichier
+end type
+type m_fichier from menu within m_base
+m_cantonnement m_cantonnement
+m_interlocuteur m_interlocuteur
+m_espece m_espece
+m_regionsprov m_regionsprov
+m_legislation m_legislation
+m_base_-2 m_base_-2
+m_provenance m_provenance
+m_autorisation m_autorisation
+m_registre m_registre
+m_catalogue m_catalogue
+m_inventaire m_inventaire
+m_certificat m_certificat
+m_docfrn m_docfrn
+m_base-17 m_base-17
+m_encodagecaractlots m_encodagecaractlots
+m_base-11 m_base-11
+m_melange m_melange
+m_flux m_flux
+m_base-13 m_base-13
+m_commande m_commande
+m_bordliv m_bordliv
+m_base_-3 m_base_-3
+m_param m_param
+m_base_-4 m_base_-4
+m_config_imp m_config_imp
+m_imprimer m_imprimer
+m_base_-5 m_base_-5
+m_quitter m_quitter
+end type
+type m_action from menu within m_base
+end type
+type m_ouvrir from menu within m_action
+end type
+type m_enregistrer from menu within m_action
+end type
+type m_ajouter from menu within m_action
+end type
+type m_inserer from menu within m_action
+end type
+type m_supprimer from menu within m_action
+end type
+type m_abandonner from menu within m_action
+end type
+type m_fermer from menu within m_action
+end type
+type m_nullify from menu within m_action
+end type
+type m_action from menu within m_base
+m_ouvrir m_ouvrir
+m_enregistrer m_enregistrer
+m_ajouter m_ajouter
+m_inserer m_inserer
+m_supprimer m_supprimer
+m_abandonner m_abandonner
+m_fermer m_fermer
+m_nullify m_nullify
+end type
+type m_impressions from menu within m_base
+end type
+type m_rpt_cantonnement from menu within m_impressions
+end type
+type m_rpt_interlocuteur from menu within m_impressions
+end type
+type m_rpt_etiqadr from menu within m_impressions
+end type
+type m_rpt_espece from menu within m_impressions
+end type
+type m_rpt_regionprov from menu within m_impressions
+end type
+type m_rpt_legislation from menu within m_impressions
+end type
+type m_base_-1 from menu within m_impressions
+end type
+type m_rpt_provenance from menu within m_impressions
+end type
+type m_rpt_dico_prov_rec from menu within m_impressions
+end type
+type m_rpt_liste_simplifiee_mb from menu within m_impressions
+end type
+type m_rpt_inventaire from menu within m_impressions
+end type
+type m_base-12 from menu within m_impressions
+end type
+type m_rpt_catalogue from menu within m_impressions
+end type
+type m_base_-8 from menu within m_impressions
+end type
+type m_rpt_registre from menu within m_impressions
+end type
+type m_rpt_demautorisation from menu within m_impressions
+end type
+type m_rpt_autorisation from menu within m_impressions
+end type
+type m_autorisationdetransportformulairevierge from menu within m_impressions
+end type
+type m_certificats-maîtres from menu within m_impressions
+end type
+type m_rpt_certificat_1 from menu within m_certificats-maîtres
+end type
+type m_rpt_certificat_2 from menu within m_certificats-maîtres
+end type
+type m_rpt_certificat_3 from menu within m_certificats-maîtres
+end type
+type m_base-10 from menu within m_certificats-maîtres
+end type
+type m_rpt_melangesmfr from menu within m_certificats-maîtres
+end type
+type m_rpt_melangesclonaux from menu within m_certificats-maîtres
+end type
+type m_certificats-maîtres from menu within m_impressions
+m_rpt_certificat_1 m_rpt_certificat_1
+m_rpt_certificat_2 m_rpt_certificat_2
+m_rpt_certificat_3 m_rpt_certificat_3
+m_base-10 m_base-10
+m_rpt_melangesmfr m_rpt_melangesmfr
+m_rpt_melangesclonaux m_rpt_melangesclonaux
+end type
+type m_rpt_docfrn from menu within m_impressions
+end type
+type m_base-14 from menu within m_impressions
+end type
+type m_rpt_bordliv from menu within m_impressions
+end type
+type m_rpt_recapliv from menu within m_impressions
+end type
+type m_rpt_recette from menu within m_impressions
+end type
+type m_rpt_etiqliv from menu within m_impressions
+end type
+type m_base-15 from menu within m_impressions
+end type
+type m_rpt_vteclient from menu within m_impressions
+end type
+type m_rpt_etatstock from menu within m_impressions
+end type
+type m_situationdescommandes from menu within m_impressions
+end type
+type m_base-16 from menu within m_impressions
+end type
+type m_rpt_autorecolte from menu within m_impressions
+end type
+type m_rpt_vtesemences from menu within m_impressions
+end type
+type m_ventesdesemencesparcm from menu within m_impressions
+end type
+type m_rpt_docfrn_horswal from menu within m_impressions
+end type
+type m_base_-9 from menu within m_impressions
+end type
+type m_impressioncaractlots from menu within m_impressions
+end type
+type m_rpt_etiqlot from menu within m_impressioncaractlots
+end type
+type m_rpt_etiqgerm from menu within m_impressioncaractlots
+end type
+type m_base_-14 from menu within m_impressioncaractlots
+end type
+type m_rpt_testgerm from menu within m_impressioncaractlots
+end type
+type m_base_-13 from menu within m_impressioncaractlots
+end type
+type m_formulairevierge_germinationpetri from menu within m_impressioncaractlots
+end type
+type m_formulairevierge_germinationsubstrat from menu within m_impressioncaractlots
+end type
+type m_formulairevierge_caractlotsgraines from menu within m_impressioncaractlots
+end type
+type m_formulairevierge-matricetestecrasement from menu within m_impressioncaractlots
+end type
+type m_impressioncaractlots from menu within m_impressions
+m_rpt_etiqlot m_rpt_etiqlot
+m_rpt_etiqgerm m_rpt_etiqgerm
+m_base_-14 m_base_-14
+m_rpt_testgerm m_rpt_testgerm
+m_base_-13 m_base_-13
+m_formulairevierge_germinationpetri m_formulairevierge_germinationpetri
+m_formulairevierge_germinationsubstrat m_formulairevierge_germinationsubstrat
+m_formulairevierge_caractlotsgraines m_formulairevierge_caractlotsgraines
+m_formulairevierge-matricetestecrasement m_formulairevierge-matricetestecrasement
+end type
+type m_base_-0 from menu within m_impressions
+end type
+type m_impression_parametres from menu within m_impressions
+end type
+type m_rpt_traductions from menu within m_impression_parametres
+end type
+type m_base-9 from menu within m_impression_parametres
+end type
+type m_rpt_usergroups from menu within m_impression_parametres
+end type
+type m_rpt_users from menu within m_impression_parametres
+end type
+type m_rpt_userprivs from menu within m_impression_parametres
+end type
+type m_rpt_progprivs from menu within m_impression_parametres
+end type
+type m_impression_parametres from menu within m_impressions
+m_rpt_traductions m_rpt_traductions
+m_base-9 m_base-9
+m_rpt_usergroups m_rpt_usergroups
+m_rpt_users m_rpt_users
+m_rpt_userprivs m_rpt_userprivs
+m_rpt_progprivs m_rpt_progprivs
+end type
+type m_impressions from menu within m_base
+m_rpt_cantonnement m_rpt_cantonnement
+m_rpt_interlocuteur m_rpt_interlocuteur
+m_rpt_etiqadr m_rpt_etiqadr
+m_rpt_espece m_rpt_espece
+m_rpt_regionprov m_rpt_regionprov
+m_rpt_legislation m_rpt_legislation
+m_base_-1 m_base_-1
+m_rpt_provenance m_rpt_provenance
+m_rpt_dico_prov_rec m_rpt_dico_prov_rec
+m_rpt_liste_simplifiee_mb m_rpt_liste_simplifiee_mb
+m_rpt_inventaire m_rpt_inventaire
+m_base-12 m_base-12
+m_rpt_catalogue m_rpt_catalogue
+m_base_-8 m_base_-8
+m_rpt_registre m_rpt_registre
+m_rpt_demautorisation m_rpt_demautorisation
+m_rpt_autorisation m_rpt_autorisation
+m_autorisationdetransportformulairevierge m_autorisationdetransportformulairevierge
+m_certificats-maîtres m_certificats-maîtres
+m_rpt_docfrn m_rpt_docfrn
+m_base-14 m_base-14
+m_rpt_bordliv m_rpt_bordliv
+m_rpt_recapliv m_rpt_recapliv
+m_rpt_recette m_rpt_recette
+m_rpt_etiqliv m_rpt_etiqliv
+m_base-15 m_base-15
+m_rpt_vteclient m_rpt_vteclient
+m_rpt_etatstock m_rpt_etatstock
+m_situationdescommandes m_situationdescommandes
+m_base-16 m_base-16
+m_rpt_autorecolte m_rpt_autorecolte
+m_rpt_vtesemences m_rpt_vtesemences
+m_ventesdesemencesparcm m_ventesdesemencesparcm
+m_rpt_docfrn_horswal m_rpt_docfrn_horswal
+m_base_-9 m_base_-9
+m_impressioncaractlots m_impressioncaractlots
+m_base_-0 m_base_-0
+m_impression_parametres m_impression_parametres
+end type
+type m_operationsparticulieres from menu within m_base
+end type
+type m_annulation_commande from menu within m_operationsparticulieres
+end type
+type m_operationsparticulieres from menu within m_base
+m_annulation_commande m_annulation_commande
+end type
+type m_outils from menu within m_base
+end type
+type m_prognonprevu from menu within m_outils
+end type
+type m_sql from menu within m_outils
+end type
+type m_sqlspy from menu within m_outils
+end type
+type m_changeconnect from menu within m_outils
+end type
+type m_-9 from menu within m_outils
+end type
+type m_options from menu within m_outils
+end type
+type m_outils from menu within m_base
+m_prognonprevu m_prognonprevu
+m_sql m_sql
+m_sqlspy m_sqlspy
+m_changeconnect m_changeconnect
+m_-9 m_-9
+m_options m_options
+end type
+type m_fenetres from menu within m_base
+end type
+type m_cascade1 from menu within m_fenetres
+end type
+type m_horizontal1 from menu within m_fenetres
+end type
+type m_vertical1 from menu within m_fenetres
+end type
+type m_fenetres from menu within m_base
+m_cascade1 m_cascade1
+m_horizontal1 m_horizontal1
+m_vertical1 m_vertical1
+end type
+type m_2 from menu within m_base
+end type
+type m_environnement from menu within m_2
+end type
+type m_-12 from menu within m_2
+end type
+type m_apropos from menu within m_2
+end type
+type m_2 from menu within m_base
+m_environnement m_environnement
+m_-12 m_-12
+m_apropos m_apropos
+end type
+global type m_base from uo_menu
+m_fichier m_fichier
+m_action m_action
+m_impressions m_impressions
+m_operationsparticulieres m_operationsparticulieres
+m_outils m_outils
+m_fenetres m_fenetres
+m_2 m_2
+end type
+end forward
+
+global type m_base from uo_menu
+m_fichier m_fichier
+m_action m_action
+m_impressions m_impressions
+m_operationsparticulieres m_operationsparticulieres
+m_outils m_outils
+m_fenetres m_fenetres
+m_2 m_2
+end type
+global m_base m_base
+
+forward prototypes
+public subroutine mf_enableaction (string as_itemstoenable[])
+public subroutine mf_hideaction (string as_itemstohide[])
+public subroutine mf_showaction (string as_itemstoshow[])
+public subroutine mf_otheritems ()
+end prototypes
+
+public subroutine mf_enableaction (string as_itemstoenable[]);// disabler toutes les options du menu action (mais pas le menu action lui-même)
+mf_disablemenu(this.m_action, FALSE)
+
+// enabler les options voulues dans le menu action
+mf_enableitems(this.m_action, as_itemstoenable)
+end subroutine
+
+public subroutine mf_hideaction (string as_itemstohide[]);// cacher les options voulues dans le menu action
+mf_hideitems(this.m_action, as_itemstohide)
+end subroutine
+
+public subroutine mf_showaction (string as_itemstoshow[]);// afficher les options voulues dans le menu action
+mf_showitems(this.m_action, as_itemstoshow)
+end subroutine
+
+public subroutine mf_otheritems ();// cocher ou pas l'option "traçage SQL" quand on change de menu, en fonction de l'état de la variable 'gb_sqlspy_on'
+m_outils.m_sqlspy.checked = gb_sqlspy_on
+
+end subroutine
+
+on m_base.create
+m_base=this
+call super::create
+this.text = "m_exemple"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_fichier=create m_fichier
+this.m_action=create m_action
+this.m_impressions=create m_impressions
+this.m_operationsparticulieres=create m_operationsparticulieres
+this.m_outils=create m_outils
+this.m_fenetres=create m_fenetres
+this.m_2=create m_2
+this.Item[UpperBound(this.Item)+1]=this.m_fichier
+this.Item[UpperBound(this.Item)+1]=this.m_action
+this.Item[UpperBound(this.Item)+1]=this.m_impressions
+this.Item[UpperBound(this.Item)+1]=this.m_operationsparticulieres
+this.Item[UpperBound(this.Item)+1]=this.m_outils
+this.Item[UpperBound(this.Item)+1]=this.m_fenetres
+this.Item[UpperBound(this.Item)+1]=this.m_2
+end on
+
+on m_base.destroy
+call super::destroy
+destroy(this.m_fichier)
+destroy(this.m_action)
+destroy(this.m_impressions)
+destroy(this.m_operationsparticulieres)
+destroy(this.m_outils)
+destroy(this.m_fenetres)
+destroy(this.m_2)
+end on
+
+type m_fichier from menu within m_base
+m_cantonnement m_cantonnement
+m_interlocuteur m_interlocuteur
+m_espece m_espece
+m_regionsprov m_regionsprov
+m_legislation m_legislation
+m_base_-2 m_base_-2
+m_provenance m_provenance
+m_autorisation m_autorisation
+m_registre m_registre
+m_catalogue m_catalogue
+m_inventaire m_inventaire
+m_certificat m_certificat
+m_docfrn m_docfrn
+m_base-17 m_base-17
+m_encodagecaractlots m_encodagecaractlots
+m_base-11 m_base-11
+m_melange m_melange
+m_flux m_flux
+m_base-13 m_base-13
+m_commande m_commande
+m_bordliv m_bordliv
+m_base_-3 m_base_-3
+m_param m_param
+m_base_-4 m_base_-4
+m_config_imp m_config_imp
+m_imprimer m_imprimer
+m_base_-5 m_base_-5
+m_quitter m_quitter
+end type
+
+on m_fichier.create
+call super::create
+this.text = "&Fichier"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_cantonnement=create m_cantonnement
+this.m_interlocuteur=create m_interlocuteur
+this.m_espece=create m_espece
+this.m_regionsprov=create m_regionsprov
+this.m_legislation=create m_legislation
+this.m_base_-2=create m_base_-2
+this.m_provenance=create m_provenance
+this.m_autorisation=create m_autorisation
+this.m_registre=create m_registre
+this.m_catalogue=create m_catalogue
+this.m_inventaire=create m_inventaire
+this.m_certificat=create m_certificat
+this.m_docfrn=create m_docfrn
+this.m_base-17=create m_base-17
+this.m_encodagecaractlots=create m_encodagecaractlots
+this.m_base-11=create m_base-11
+this.m_melange=create m_melange
+this.m_flux=create m_flux
+this.m_base-13=create m_base-13
+this.m_commande=create m_commande
+this.m_bordliv=create m_bordliv
+this.m_base_-3=create m_base_-3
+this.m_param=create m_param
+this.m_base_-4=create m_base_-4
+this.m_config_imp=create m_config_imp
+this.m_imprimer=create m_imprimer
+this.m_base_-5=create m_base_-5
+this.m_quitter=create m_quitter
+this.Item[UpperBound(this.Item)+1]=this.m_cantonnement
+this.Item[UpperBound(this.Item)+1]=this.m_interlocuteur
+this.Item[UpperBound(this.Item)+1]=this.m_espece
+this.Item[UpperBound(this.Item)+1]=this.m_regionsprov
+this.Item[UpperBound(this.Item)+1]=this.m_legislation
+this.Item[UpperBound(this.Item)+1]=this.m_base_-2
+this.Item[UpperBound(this.Item)+1]=this.m_provenance
+this.Item[UpperBound(this.Item)+1]=this.m_autorisation
+this.Item[UpperBound(this.Item)+1]=this.m_registre
+this.Item[UpperBound(this.Item)+1]=this.m_catalogue
+this.Item[UpperBound(this.Item)+1]=this.m_inventaire
+this.Item[UpperBound(this.Item)+1]=this.m_certificat
+this.Item[UpperBound(this.Item)+1]=this.m_docfrn
+this.Item[UpperBound(this.Item)+1]=this.m_base-17
+this.Item[UpperBound(this.Item)+1]=this.m_encodagecaractlots
+this.Item[UpperBound(this.Item)+1]=this.m_base-11
+this.Item[UpperBound(this.Item)+1]=this.m_melange
+this.Item[UpperBound(this.Item)+1]=this.m_flux
+this.Item[UpperBound(this.Item)+1]=this.m_base-13
+this.Item[UpperBound(this.Item)+1]=this.m_commande
+this.Item[UpperBound(this.Item)+1]=this.m_bordliv
+this.Item[UpperBound(this.Item)+1]=this.m_base_-3
+this.Item[UpperBound(this.Item)+1]=this.m_param
+this.Item[UpperBound(this.Item)+1]=this.m_base_-4
+this.Item[UpperBound(this.Item)+1]=this.m_config_imp
+this.Item[UpperBound(this.Item)+1]=this.m_imprimer
+this.Item[UpperBound(this.Item)+1]=this.m_base_-5
+this.Item[UpperBound(this.Item)+1]=this.m_quitter
+end on
+
+on m_fichier.destroy
+call super::destroy
+destroy(this.m_cantonnement)
+destroy(this.m_interlocuteur)
+destroy(this.m_espece)
+destroy(this.m_regionsprov)
+destroy(this.m_legislation)
+destroy(this.m_base_-2)
+destroy(this.m_provenance)
+destroy(this.m_autorisation)
+destroy(this.m_registre)
+destroy(this.m_catalogue)
+destroy(this.m_inventaire)
+destroy(this.m_certificat)
+destroy(this.m_docfrn)
+destroy(this.m_base-17)
+destroy(this.m_encodagecaractlots)
+destroy(this.m_base-11)
+destroy(this.m_melange)
+destroy(this.m_flux)
+destroy(this.m_base-13)
+destroy(this.m_commande)
+destroy(this.m_bordliv)
+destroy(this.m_base_-3)
+destroy(this.m_param)
+destroy(this.m_base_-4)
+destroy(this.m_config_imp)
+destroy(this.m_imprimer)
+destroy(this.m_base_-5)
+destroy(this.m_quitter)
+end on
+
+type m_cantonnement from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_cantonnement, gw_mdiframe, 0, Original!)
+end event
+
+on m_cantonnement.create
+call super::create
+this.text = "Cantonnements (consultation seulement)"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cantonnement.destroy
+call super::destroy
+end on
+
+type m_interlocuteur from menu within m_fichier
+end type
+
+on m_interlocuteur.create
+call super::create
+this.text = "Interlocuteurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_interlocuteur.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_interlocuteur, gw_mdiframe, 0, Original!)
+end event
+
+type m_espece from menu within m_fichier
+end type
+
+on m_espece.create
+call super::create
+this.text = "Espèces"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_espece.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_espece, gw_mdiframe, 0, Original!)
+end event
+
+type m_regionsprov from menu within m_fichier
+end type
+
+on m_regionsprov.create
+call super::create
+this.text = "Régions de provenance"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_regionsprov.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_regionprov, gw_mdiframe, 0, Original!)
+end event
+
+type m_legislation from menu within m_fichier
+end type
+
+on m_legislation.create
+call super::create
+this.text = "Textes législatifs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_legislation.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_legislation, gw_mdiframe, 0, Original!)
+end event
+
+type m_base_-2 from menu within m_fichier
+end type
+
+on m_base_-2.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-2.destroy
+call super::destroy
+end on
+
+type m_provenance from menu within m_fichier
+end type
+
+on m_provenance.create
+call super::create
+this.text = "Provenances"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_provenance.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_provenance, gw_mdiframe, 0, Original!)
+end event
+
+type m_autorisation from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_autorisation, gw_mdiframe, 0, Original!)
+end event
+
+on m_autorisation.create
+call super::create
+this.text = "Autorisations de récolte/mélange"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_autorisation.destroy
+call super::destroy
+end on
+
+type m_registre from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_registre, gw_mdiframe, 0, Original!)
+end event
+
+on m_registre.create
+call super::create
+this.text = "Registre des graines"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_registre.destroy
+call super::destroy
+end on
+
+type m_catalogue from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_catalogue, gw_mdiframe, 0, Original!)
+end event
+
+on m_catalogue.create
+call super::create
+this.text = "Catalogue de vente"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_catalogue.destroy
+call super::destroy
+end on
+
+type m_inventaire from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_inventaire, gw_mdiframe, 0, Original!)
+end event
+
+on m_inventaire.create
+call super::create
+this.text = "Inventaires"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_inventaire.destroy
+call super::destroy
+end on
+
+type m_certificat from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_certificat, gw_mdiframe, 0, Original!)
+end event
+
+on m_certificat.create
+call super::create
+this.text = "Certificat-Maître"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_certificat.destroy
+call super::destroy
+end on
+
+type m_docfrn from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_docfrn, gw_mdiframe, 0, Original!)
+end event
+
+on m_docfrn.create
+call super::create
+this.text = "Document fournisseur"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_docfrn.destroy
+call super::destroy
+end on
+
+type m_base-17 from menu within m_fichier
+end type
+
+on m_base-17.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-17.destroy
+call super::destroy
+end on
+
+type m_encodagecaractlots from menu within m_fichier
+m_cphys m_cphys
+m_viabilite m_viabilite
+w_qgerm w_qgerm
+w_qgerm_validation w_qgerm_validation
+m_validqgerm_liste m_validqgerm_liste
+m_base_-12 m_base_-12
+m_qgerm_barcode m_qgerm_barcode
+end type
+
+on m_encodagecaractlots.create
+call super::create
+this.text = "Caractéristiques des lots"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_cphys=create m_cphys
+this.m_viabilite=create m_viabilite
+this.w_qgerm=create w_qgerm
+this.w_qgerm_validation=create w_qgerm_validation
+this.m_validqgerm_liste=create m_validqgerm_liste
+this.m_base_-12=create m_base_-12
+this.m_qgerm_barcode=create m_qgerm_barcode
+this.Item[UpperBound(this.Item)+1]=this.m_cphys
+this.Item[UpperBound(this.Item)+1]=this.m_viabilite
+this.Item[UpperBound(this.Item)+1]=this.w_qgerm
+this.Item[UpperBound(this.Item)+1]=this.w_qgerm_validation
+this.Item[UpperBound(this.Item)+1]=this.m_validqgerm_liste
+this.Item[UpperBound(this.Item)+1]=this.m_base_-12
+this.Item[UpperBound(this.Item)+1]=this.m_qgerm_barcode
+end on
+
+on m_encodagecaractlots.destroy
+call super::destroy
+destroy(this.m_cphys)
+destroy(this.m_viabilite)
+destroy(this.w_qgerm)
+destroy(this.w_qgerm_validation)
+destroy(this.m_validqgerm_liste)
+destroy(this.m_base_-12)
+destroy(this.m_qgerm_barcode)
+end on
+
+type m_cphys from menu within m_encodagecaractlots
+end type
+
+event clicked;OpenSheet(w_cphys, gw_mdiframe, 0, Original!)
+end event
+
+on m_cphys.create
+call super::create
+this.text = "Caractéristiques Physiques des graines"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cphys.destroy
+call super::destroy
+end on
+
+type m_viabilite from menu within m_encodagecaractlots
+end type
+
+event clicked;OpenSheet(w_viabilite, gw_mdiframe, 0, Original!)
+end event
+
+on m_viabilite.create
+call super::create
+this.text = "Test de viabilité"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_viabilite.destroy
+call super::destroy
+end on
+
+type w_qgerm from menu within m_encodagecaractlots
+end type
+
+event clicked;IF IsValid(w_qgerm_validation) THEN
+	close(w_qgerm_validation)
+END IF
+OpenSheet(w_qgerm, gw_mdiframe, 0, Original!)
+end event
+
+on w_qgerm.create
+call super::create
+this.text = "Test de germination - encodage"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on w_qgerm.destroy
+call super::destroy
+end on
+
+type w_qgerm_validation from menu within m_encodagecaractlots
+end type
+
+event clicked;str_params	lstr_params
+
+lstr_params.a_param[1] = true
+IF IsValid(w_qgerm) THEN
+	close(w_qgerm)
+END IF
+OpenSheetWithParm(w_qgerm_validation, lstr_params, gw_mdiframe, 0, Original!)
+
+end event
+
+on w_qgerm_validation.create
+call super::create
+this.text = "Test de germination - validation individuelle"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on w_qgerm_validation.destroy
+call super::destroy
+end on
+
+type m_validqgerm_liste from menu within m_encodagecaractlots
+end type
+
+event clicked;OpenSheet(w_validqgerm_liste, gw_mdiframe, 0, Original!)
+end event
+
+on m_validqgerm_liste.create
+call super::create
+this.text = "Test de germination - validation par liste"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_validqgerm_liste.destroy
+call super::destroy
+end on
+
+type m_base_-12 from menu within m_encodagecaractlots
+end type
+
+on m_base_-12.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-12.destroy
+call super::destroy
+end on
+
+type m_qgerm_barcode from menu within m_encodagecaractlots
+end type
+
+event clicked;OpenSheet(w_qgerm_barcode, gw_mdiframe, 0, Original!)
+end event
+
+on m_qgerm_barcode.create
+call super::create
+this.text = "Relevés germination par lecture barcode"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_qgerm_barcode.destroy
+call super::destroy
+end on
+
+type m_base-11 from menu within m_fichier
+end type
+
+on m_base-11.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-11.destroy
+call super::destroy
+end on
+
+type m_melange from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_melange, gw_mdiframe, 0, Original!)
+end event
+
+on m_melange.create
+call super::create
+this.text = "Compositions de mélanges de MFR et semences"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_melange.destroy
+call super::destroy
+end on
+
+type m_flux from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_flux, gw_mdiframe, 0, Original!)
+end event
+
+on m_flux.create
+call super::create
+this.text = "Flux manuels"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_flux.destroy
+call super::destroy
+end on
+
+type m_base-13 from menu within m_fichier
+end type
+
+on m_base-13.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-13.destroy
+call super::destroy
+end on
+
+type m_commande from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_commande, gw_mdiframe, 0, Original!)
+end event
+
+on m_commande.create
+call super::create
+this.text = "Commande"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_commande.destroy
+call super::destroy
+end on
+
+type m_bordliv from menu within m_fichier
+end type
+
+event clicked;OpenSheet(w_bordliv, gw_mdiframe, 0, Original!)
+end event
+
+on m_bordliv.create
+call super::create
+this.text = "Bordereau de livraison"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_bordliv.destroy
+call super::destroy
+end on
+
+type m_base_-3 from menu within m_fichier
+end type
+
+on m_base_-3.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-3.destroy
+call super::destroy
+end on
+
+type m_param from menu within m_fichier
+m_traductions m_traductions
+m_cpteur m_cpteur
+m_base-8 m_base-8
+m_detail_critere m_detail_critere
+m_report_critere m_report_critere
+m_report_predeftri m_report_predeftri
+m_base_-6 m_base_-6
+m_groupe m_groupe
+m_user m_user
+m_showprivs m_showprivs
+end type
+
+on m_param.create
+call super::create
+this.text = "Paramètres"
+this.shifttoright = true
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_traductions=create m_traductions
+this.m_cpteur=create m_cpteur
+this.m_base-8=create m_base-8
+this.m_detail_critere=create m_detail_critere
+this.m_report_critere=create m_report_critere
+this.m_report_predeftri=create m_report_predeftri
+this.m_base_-6=create m_base_-6
+this.m_groupe=create m_groupe
+this.m_user=create m_user
+this.m_showprivs=create m_showprivs
+this.Item[UpperBound(this.Item)+1]=this.m_traductions
+this.Item[UpperBound(this.Item)+1]=this.m_cpteur
+this.Item[UpperBound(this.Item)+1]=this.m_base-8
+this.Item[UpperBound(this.Item)+1]=this.m_detail_critere
+this.Item[UpperBound(this.Item)+1]=this.m_report_critere
+this.Item[UpperBound(this.Item)+1]=this.m_report_predeftri
+this.Item[UpperBound(this.Item)+1]=this.m_base_-6
+this.Item[UpperBound(this.Item)+1]=this.m_groupe
+this.Item[UpperBound(this.Item)+1]=this.m_user
+this.Item[UpperBound(this.Item)+1]=this.m_showprivs
+end on
+
+on m_param.destroy
+call super::destroy
+destroy(this.m_traductions)
+destroy(this.m_cpteur)
+destroy(this.m_base-8)
+destroy(this.m_detail_critere)
+destroy(this.m_report_critere)
+destroy(this.m_report_predeftri)
+destroy(this.m_base_-6)
+destroy(this.m_groupe)
+destroy(this.m_user)
+destroy(this.m_showprivs)
+end on
+
+type m_traductions from menu within m_param
+end type
+
+event clicked;OpenSheet(w_traductions, gw_mdiframe, 0, Original!)
+end event
+
+on m_traductions.create
+call super::create
+this.text = "Traductions"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_traductions.destroy
+call super::destroy
+end on
+
+type m_cpteur from menu within m_param
+end type
+
+event clicked;OpenSheet(w_cpteur, gw_mdiframe, 0, Original!)
+end event
+
+on m_cpteur.create
+call super::create
+this.text = "Compteurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cpteur.destroy
+call super::destroy
+end on
+
+type m_base-8 from menu within m_param
+end type
+
+on m_base-8.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-8.destroy
+call super::destroy
+end on
+
+type m_detail_critere from menu within m_param
+end type
+
+on m_detail_critere.create
+call super::create
+this.text = "Détail des critères de sélection et de tri"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_detail_critere.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_detail_critere, gw_mdiframe, 0, Original!)
+end event
+
+type m_report_critere from menu within m_param
+end type
+
+on m_report_critere.create
+call super::create
+this.text = "Critères de sélection possibles par report"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_report_critere.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_report_critere, gw_mdiframe, 0, Original!)
+end event
+
+type m_report_predeftri from menu within m_param
+end type
+
+on m_report_predeftri.create
+call super::create
+this.text = "Critères de tri possibles par report"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_report_predeftri.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_report_predeftri, gw_mdiframe, 0, Original!)
+end event
+
+type m_base_-6 from menu within m_param
+end type
+
+on m_base_-6.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-6.destroy
+call super::destroy
+end on
+
+type m_groupe from menu within m_param
+end type
+
+on m_groupe.create
+call super::create
+this.text = "Droits d~'accès des groupes d~'utilisateurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_groupe.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_groupe, gw_mdiframe, 0, Original!)
+end event
+
+type m_user from menu within m_param
+end type
+
+on m_user.create
+call super::create
+this.text = "Droits d~'accès des utilisateurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_user.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_user, gw_mdiframe, 0, Original!)
+end event
+
+type m_showprivs from menu within m_param
+end type
+
+on m_showprivs.create
+call super::create
+this.text = "Visualiser les droits d~'accès de l~'utilisateur en cours"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_showprivs.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_showprivs, gw_mdiframe, 0, Original!)
+end event
+
+type m_base_-4 from menu within m_fichier
+end type
+
+on m_base_-4.create
+call super::create
+this.text = "-"
+this.shifttoright = true
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-4.destroy
+call super::destroy
+end on
+
+type m_config_imp from menu within m_fichier
+end type
+
+on m_config_imp.create
+call super::create
+this.text = "&Configuration de l~'imprimante..."
+this.microhelp = "Choisir l~'imprimante par défaut et ses caractéristiques"
+this.shifttoright = true
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;window ActiveSheet
+
+printsetup()
+
+// prise en compte des modif.éventuelles de format de page dans les preview
+ActiveSheet = ParentWindow.GetFirstSheet()
+DO WHILE IsValid(ActiveSheet)
+	activesheet.triggerevent("ue_preview")
+	ActiveSheet = ParentWindow.GetNextSheet(ActiveSheet)
+LOOP
+
+end event
+
+on m_config_imp.destroy
+call super::destroy
+end on
+
+type m_imprimer from menu within m_fichier
+end type
+
+event clicked;long		ll_pjob
+integer	li_status
+window ActiveSheet
+
+
+ActiveSheet = ParentWindow.GetFirstSheet()
+IF IsValid(ActiveSheet) THEN
+	// déclencher l'event ue_print. S'il n'y en a pas ou s'il n'y a rien dedans, demander s'il faut imprimer la fenêtre
+   IF activesheet.triggerevent("ue_print") = -1 THEN
+		IF gu_message.uf_query("Imprimer", "Pas d'impression spécifique prévue dans ce contexte." + &
+						"~nFaut-il imprimer une image de la fenêtre en cours ?", 2) = 1 THEN
+			SetPointer(hourglass!)
+			ll_pjob = PrintOpen(Activesheet.Title)
+			ActiveSheet.Print(ll_pjob,200,300)
+			PrintClose(ll_pjob)
+		END IF
+	END IF
+END IF
+
+end event
+
+on m_imprimer.create
+call super::create
+this.text = "&Imprimer...~tCtrl+P"
+this.shortcut = 336
+this.microhelp = "Imprime la fenêtre active"
+this.toolbaritemname = "..\bmp\print.png"
+this.toolbaritemtext = "Imprimer"
+this.toolbaritemorder = 2
+this.shifttoright = true
+this.menuimage = "..\bmp\print.png"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_imprimer.destroy
+call super::destroy
+end on
+
+type m_base_-5 from menu within m_fichier
+end type
+
+on m_base_-5.create
+call super::create
+this.text = "-"
+this.shifttoright = true
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-5.destroy
+call super::destroy
+end on
+
+type m_quitter from menu within m_fichier
+end type
+
+event clicked;close(w_mdiframe)
+end event
+
+on m_quitter.create
+call super::create
+this.text = "&Quitter"
+this.microhelp = "Ferme toutes les fenêtres ouvertes et quitte l~'application"
+this.toolbaritemname = "exit_2!"
+this.toolbaritemtext = "Quitter"
+this.shifttoright = true
+this.menuimage = "exit_2!"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_quitter.destroy
+call super::destroy
+end on
+
+type m_action from menu within m_base
+m_ouvrir m_ouvrir
+m_enregistrer m_enregistrer
+m_ajouter m_ajouter
+m_inserer m_inserer
+m_supprimer m_supprimer
+m_abandonner m_abandonner
+m_fermer m_fermer
+m_nullify m_nullify
+end type
+
+on m_action.create
+call super::create
+this.text = "&Action"
+this.toolbaritembarindex = 3
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_ouvrir=create m_ouvrir
+this.m_enregistrer=create m_enregistrer
+this.m_ajouter=create m_ajouter
+this.m_inserer=create m_inserer
+this.m_supprimer=create m_supprimer
+this.m_abandonner=create m_abandonner
+this.m_fermer=create m_fermer
+this.m_nullify=create m_nullify
+this.Item[UpperBound(this.Item)+1]=this.m_ouvrir
+this.Item[UpperBound(this.Item)+1]=this.m_enregistrer
+this.Item[UpperBound(this.Item)+1]=this.m_ajouter
+this.Item[UpperBound(this.Item)+1]=this.m_inserer
+this.Item[UpperBound(this.Item)+1]=this.m_supprimer
+this.Item[UpperBound(this.Item)+1]=this.m_abandonner
+this.Item[UpperBound(this.Item)+1]=this.m_fermer
+this.Item[UpperBound(this.Item)+1]=this.m_nullify
+end on
+
+on m_action.destroy
+call super::destroy
+destroy(this.m_ouvrir)
+destroy(this.m_enregistrer)
+destroy(this.m_ajouter)
+destroy(this.m_inserer)
+destroy(this.m_supprimer)
+destroy(this.m_abandonner)
+destroy(this.m_fermer)
+destroy(this.m_nullify)
+end on
+
+type m_ouvrir from menu within m_action
+end type
+
+on m_ouvrir.create
+call super::create
+this.visible = false
+this.text = "&Sélectionner un fichier"
+this.enabled = false
+this.microhelp = "Sélectionner un fichier"
+this.toolbaritemvisible = false
+this.toolbaritemname = "OpenFile.png"
+this.toolbaritemtext = "Sélectionner un fichier"
+this.toolbaritembarindex = 3
+this.menuimage = "openfile.png"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_ouvrir.destroy
+call super::destroy
+end on
+
+event clicked;window lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+   lw_activesheet.event DYNAMIC post ue_folderopen()
+END IF
+end event
+
+type m_enregistrer from menu within m_action
+end type
+
+on m_enregistrer.create
+call super::create
+this.text = "&Enregistrer~tCtrl+S"
+this.enabled = false
+this.shortcut = 339
+this.microhelp = "Enregistrer"
+this.toolbaritemname = "save_2!"
+this.toolbaritemtext = "Enregistrer"
+this.toolbaritembarindex = 3
+this.menuimage = "Save_2!"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_enregistrer.destroy
+call super::destroy
+end on
+
+event clicked;w_ancestor lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+   lw_activesheet.event DYNAMIC post ue_pre_enregistrer()
+END IF
+end event
+
+type m_ajouter from menu within m_action
+end type
+
+on m_ajouter.create
+call super::create
+this.visible = false
+this.text = "&Ajouter~tCtrl+A"
+this.enabled = false
+this.shortcut = 321
+this.microhelp = "Ajouter"
+this.toolbaritemvisible = false
+this.toolbaritemname = "..\bmp\appendrow.png"
+this.toolbaritemtext = "Ajouter"
+this.toolbaritembarindex = 3
+this.menuimage = "..\bmp\appendrow.png"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;window lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+   lw_activesheet.event DYNAMIC post ue_pre_ajouter()
+END IF
+end event
+
+on m_ajouter.destroy
+call super::destroy
+end on
+
+type m_inserer from menu within m_action
+end type
+
+event clicked;window lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+   lw_activesheet.event DYNAMIC post ue_pre_inserer()
+END IF
+end event
+
+on m_inserer.create
+call super::create
+this.visible = false
+this.text = "&Insérer~tCtrl+I"
+this.enabled = false
+this.shortcut = 329
+this.toolbaritemvisible = false
+this.toolbaritemname = "..\bmp\insertrow.png"
+this.toolbaritemtext = "Insérer"
+this.toolbaritembarindex = 3
+this.menuimage = "..\bmp\insertrow.png"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_inserer.destroy
+call super::destroy
+end on
+
+type m_supprimer from menu within m_action
+end type
+
+on m_supprimer.create
+call super::create
+this.text = "&Supprimer~tCtrl+X"
+this.enabled = false
+this.shortcut = 344
+this.microhelp = "Supprimer"
+this.toolbaritemname = "..\bmp\trash.png"
+this.toolbaritemtext = "Supprimer"
+this.toolbaritembarindex = 3
+this.menuimage = "..\bmp\trash.png"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;w_ancestor lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+	lw_activesheet.event DYNAMIC post ue_pre_supprimer()
+END IF
+end event
+
+on m_supprimer.destroy
+call super::destroy
+end on
+
+type m_abandonner from menu within m_action
+end type
+
+on m_abandonner.create
+call super::create
+this.text = "Aba&ndonner~tCtrl+N"
+this.enabled = false
+this.shortcut = 334
+this.microhelp = "Abandonner"
+this.toolbaritemname = "..\bmp\cancel.png"
+this.toolbaritemtext = "Abandonner"
+this.toolbaritembarindex = 3
+this.menuimage = "..\bmp\cancel.png"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;window lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+   lw_activesheet.event DYNAMIC post ue_abandonner()
+END IF
+end event
+
+on m_abandonner.destroy
+call super::destroy
+end on
+
+type m_fermer from menu within m_action
+end type
+
+event clicked;window lw_ActiveSheet
+
+lw_ActiveSheet = ParentWindow.GetFirstSheet()
+IF IsValid(lw_ActiveSheet) THEN
+	Post Close(lw_ActiveSheet)
+END IF
+end event
+
+on m_fermer.create
+call super::create
+this.text = "&Fermer~tCtrl+F"
+this.enabled = false
+this.shortcut = 326
+this.toolbaritemname = "close_2!"
+this.toolbaritemtext = "Fermer"
+this.toolbaritembarindex = 3
+this.menuimage = "close_2!"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_fermer.destroy
+call super::destroy
+end on
+
+type m_nullify from menu within m_action
+end type
+
+on m_nullify.create
+call super::create
+this.visible = false
+this.text = "Nullify~tAlt+X"
+this.enabled = false
+this.shortcut = 600
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_nullify.destroy
+call super::destroy
+end on
+
+event clicked;window lw_activesheet
+
+lw_activesheet = ParentWindow.GetActiveSheet( )
+IF IsValid(lw_activesheet) THEN
+   lw_activesheet.event DYNAMIC post ue_nullify()
+END IF
+end event
+
+type m_impressions from menu within m_base
+m_rpt_cantonnement m_rpt_cantonnement
+m_rpt_interlocuteur m_rpt_interlocuteur
+m_rpt_etiqadr m_rpt_etiqadr
+m_rpt_espece m_rpt_espece
+m_rpt_regionprov m_rpt_regionprov
+m_rpt_legislation m_rpt_legislation
+m_base_-1 m_base_-1
+m_rpt_provenance m_rpt_provenance
+m_rpt_dico_prov_rec m_rpt_dico_prov_rec
+m_rpt_liste_simplifiee_mb m_rpt_liste_simplifiee_mb
+m_rpt_inventaire m_rpt_inventaire
+m_base-12 m_base-12
+m_rpt_catalogue m_rpt_catalogue
+m_base_-8 m_base_-8
+m_rpt_registre m_rpt_registre
+m_rpt_demautorisation m_rpt_demautorisation
+m_rpt_autorisation m_rpt_autorisation
+m_autorisationdetransportformulairevierge m_autorisationdetransportformulairevierge
+m_certificats-maîtres m_certificats-maîtres
+m_rpt_docfrn m_rpt_docfrn
+m_base-14 m_base-14
+m_rpt_bordliv m_rpt_bordliv
+m_rpt_recapliv m_rpt_recapliv
+m_rpt_recette m_rpt_recette
+m_rpt_etiqliv m_rpt_etiqliv
+m_base-15 m_base-15
+m_rpt_vteclient m_rpt_vteclient
+m_rpt_etatstock m_rpt_etatstock
+m_situationdescommandes m_situationdescommandes
+m_base-16 m_base-16
+m_rpt_autorecolte m_rpt_autorecolte
+m_rpt_vtesemences m_rpt_vtesemences
+m_ventesdesemencesparcm m_ventesdesemencesparcm
+m_rpt_docfrn_horswal m_rpt_docfrn_horswal
+m_base_-9 m_base_-9
+m_impressioncaractlots m_impressioncaractlots
+m_base_-0 m_base_-0
+m_impression_parametres m_impression_parametres
+end type
+
+on m_impressions.create
+call super::create
+this.text = "Im&pressions"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_rpt_cantonnement=create m_rpt_cantonnement
+this.m_rpt_interlocuteur=create m_rpt_interlocuteur
+this.m_rpt_etiqadr=create m_rpt_etiqadr
+this.m_rpt_espece=create m_rpt_espece
+this.m_rpt_regionprov=create m_rpt_regionprov
+this.m_rpt_legislation=create m_rpt_legislation
+this.m_base_-1=create m_base_-1
+this.m_rpt_provenance=create m_rpt_provenance
+this.m_rpt_dico_prov_rec=create m_rpt_dico_prov_rec
+this.m_rpt_liste_simplifiee_mb=create m_rpt_liste_simplifiee_mb
+this.m_rpt_inventaire=create m_rpt_inventaire
+this.m_base-12=create m_base-12
+this.m_rpt_catalogue=create m_rpt_catalogue
+this.m_base_-8=create m_base_-8
+this.m_rpt_registre=create m_rpt_registre
+this.m_rpt_demautorisation=create m_rpt_demautorisation
+this.m_rpt_autorisation=create m_rpt_autorisation
+this.m_autorisationdetransportformulairevierge=create m_autorisationdetransportformulairevierge
+this.m_certificats-maîtres=create m_certificats-maîtres
+this.m_rpt_docfrn=create m_rpt_docfrn
+this.m_base-14=create m_base-14
+this.m_rpt_bordliv=create m_rpt_bordliv
+this.m_rpt_recapliv=create m_rpt_recapliv
+this.m_rpt_recette=create m_rpt_recette
+this.m_rpt_etiqliv=create m_rpt_etiqliv
+this.m_base-15=create m_base-15
+this.m_rpt_vteclient=create m_rpt_vteclient
+this.m_rpt_etatstock=create m_rpt_etatstock
+this.m_situationdescommandes=create m_situationdescommandes
+this.m_base-16=create m_base-16
+this.m_rpt_autorecolte=create m_rpt_autorecolte
+this.m_rpt_vtesemences=create m_rpt_vtesemences
+this.m_ventesdesemencesparcm=create m_ventesdesemencesparcm
+this.m_rpt_docfrn_horswal=create m_rpt_docfrn_horswal
+this.m_base_-9=create m_base_-9
+this.m_impressioncaractlots=create m_impressioncaractlots
+this.m_base_-0=create m_base_-0
+this.m_impression_parametres=create m_impression_parametres
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_cantonnement
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_interlocuteur
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_etiqadr
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_espece
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_regionprov
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_legislation
+this.Item[UpperBound(this.Item)+1]=this.m_base_-1
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_provenance
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_dico_prov_rec
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_liste_simplifiee_mb
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_inventaire
+this.Item[UpperBound(this.Item)+1]=this.m_base-12
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_catalogue
+this.Item[UpperBound(this.Item)+1]=this.m_base_-8
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_registre
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_demautorisation
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_autorisation
+this.Item[UpperBound(this.Item)+1]=this.m_autorisationdetransportformulairevierge
+this.Item[UpperBound(this.Item)+1]=this.m_certificats-maîtres
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_docfrn
+this.Item[UpperBound(this.Item)+1]=this.m_base-14
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_bordliv
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_recapliv
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_recette
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_etiqliv
+this.Item[UpperBound(this.Item)+1]=this.m_base-15
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_vteclient
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_etatstock
+this.Item[UpperBound(this.Item)+1]=this.m_situationdescommandes
+this.Item[UpperBound(this.Item)+1]=this.m_base-16
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_autorecolte
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_vtesemences
+this.Item[UpperBound(this.Item)+1]=this.m_ventesdesemencesparcm
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_docfrn_horswal
+this.Item[UpperBound(this.Item)+1]=this.m_base_-9
+this.Item[UpperBound(this.Item)+1]=this.m_impressioncaractlots
+this.Item[UpperBound(this.Item)+1]=this.m_base_-0
+this.Item[UpperBound(this.Item)+1]=this.m_impression_parametres
+end on
+
+on m_impressions.destroy
+call super::destroy
+destroy(this.m_rpt_cantonnement)
+destroy(this.m_rpt_interlocuteur)
+destroy(this.m_rpt_etiqadr)
+destroy(this.m_rpt_espece)
+destroy(this.m_rpt_regionprov)
+destroy(this.m_rpt_legislation)
+destroy(this.m_base_-1)
+destroy(this.m_rpt_provenance)
+destroy(this.m_rpt_dico_prov_rec)
+destroy(this.m_rpt_liste_simplifiee_mb)
+destroy(this.m_rpt_inventaire)
+destroy(this.m_base-12)
+destroy(this.m_rpt_catalogue)
+destroy(this.m_base_-8)
+destroy(this.m_rpt_registre)
+destroy(this.m_rpt_demautorisation)
+destroy(this.m_rpt_autorisation)
+destroy(this.m_autorisationdetransportformulairevierge)
+destroy(this.m_certificats-maîtres)
+destroy(this.m_rpt_docfrn)
+destroy(this.m_base-14)
+destroy(this.m_rpt_bordliv)
+destroy(this.m_rpt_recapliv)
+destroy(this.m_rpt_recette)
+destroy(this.m_rpt_etiqliv)
+destroy(this.m_base-15)
+destroy(this.m_rpt_vteclient)
+destroy(this.m_rpt_etatstock)
+destroy(this.m_situationdescommandes)
+destroy(this.m_base-16)
+destroy(this.m_rpt_autorecolte)
+destroy(this.m_rpt_vtesemences)
+destroy(this.m_ventesdesemencesparcm)
+destroy(this.m_rpt_docfrn_horswal)
+destroy(this.m_base_-9)
+destroy(this.m_impressioncaractlots)
+destroy(this.m_base_-0)
+destroy(this.m_impression_parametres)
+end on
+
+type m_rpt_cantonnement from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_cantonnement, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_cantonnement.create
+call super::create
+this.text = "Cantonnements"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_cantonnement.destroy
+call super::destroy
+end on
+
+type m_rpt_interlocuteur from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_interlocuteur, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_interlocuteur.create
+call super::create
+this.text = "Interlocuteurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_interlocuteur.destroy
+call super::destroy
+end on
+
+type m_rpt_etiqadr from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_etiqadr, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_etiqadr.create
+call super::create
+this.text = "Etiquettes adresses des interlocuteurs (fusion Word)"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_etiqadr.destroy
+call super::destroy
+end on
+
+type m_rpt_espece from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_espece, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_espece.create
+call super::create
+this.text = "Espèces"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_espece.destroy
+call super::destroy
+end on
+
+type m_rpt_regionprov from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_regionprov, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_regionprov.create
+call super::create
+this.text = "Régions de provenance"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_regionprov.destroy
+call super::destroy
+end on
+
+type m_rpt_legislation from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_legislation, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_legislation.create
+call super::create
+this.text = "Textes législatifs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_legislation.destroy
+call super::destroy
+end on
+
+type m_base_-1 from menu within m_impressions
+end type
+
+on m_base_-1.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-1.destroy
+call super::destroy
+end on
+
+type m_rpt_provenance from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_provenance, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_provenance.create
+call super::create
+this.text = "Provenances"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_provenance.destroy
+call super::destroy
+end on
+
+type m_rpt_dico_prov_rec from menu within m_impressions
+end type
+
+on m_rpt_dico_prov_rec.create
+call super::create
+this.text = "Dictionnaire des provenances recommandables"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_dico_prov_rec.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_dico_prov_rec, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_liste_simplifiee_mb from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_liste_simplifiee_mb, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_liste_simplifiee_mb.create
+call super::create
+this.text = "Liste simplifiée du Catalogue des Matériels de Base"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_liste_simplifiee_mb.destroy
+call super::destroy
+end on
+
+type m_rpt_inventaire from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_inventaire, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_inventaire.create
+call super::create
+this.text = "Inventaires"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_inventaire.destroy
+call super::destroy
+end on
+
+type m_base-12 from menu within m_impressions
+end type
+
+on m_base-12.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-12.destroy
+call super::destroy
+end on
+
+type m_rpt_catalogue from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_catalogue, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_catalogue.create
+call super::create
+this.text = "Catalogue de vente"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_catalogue.destroy
+call super::destroy
+end on
+
+type m_base_-8 from menu within m_impressions
+end type
+
+on m_base_-8.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-8.destroy
+call super::destroy
+end on
+
+type m_rpt_registre from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_registre, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_registre.create
+call super::create
+this.text = "Registre des MFR"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_registre.destroy
+call super::destroy
+end on
+
+type m_rpt_demautorisation from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_demautorisation, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_demautorisation.create
+call super::create
+this.text = "Demande d~'autorisation de récolte"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_demautorisation.destroy
+call super::destroy
+end on
+
+type m_rpt_autorisation from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_autorisation_transport, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_autorisation.create
+call super::create
+this.text = "Autorisation de transport"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_autorisation.destroy
+call super::destroy
+end on
+
+type m_autorisationdetransportformulairevierge from menu within m_impressions
+end type
+
+event clicked;str_Params lstr_Params
+string	ls_text, ls_document
+integer	li_nbre
+boolean	lb_correct
+
+ls_document=profileString(gs_inifile, "formulaires", "autoTrsp", "")
+IF f_isEmptyString(ls_document) THEN
+	gu_message.uf_error("Le nom du document n'est pas spécifié dans les paramètres de configuration (" + &
+	gs_inifile + ")")
+	return
+END IF
+
+ls_document = gs_cenpath + "\doc\" + ls_document
+IF NOT fileExists(ls_document) THEN
+	gu_message.uf_error("Le document " + ls_document + " est introuvable")
+	return
+END IF
+lstr_Params.a_param[1]  = "Introduisez le nombre d'exemplaire(s) à imprimer"
+
+lb_correct = FALSE
+do
+	OpenWithParm(W_GetText, lstr_Params)
+	IF Message.DoubleParm = -1 THEN
+		return // sort de la fonction
+	END IF
+	ls_text = Message.StringParm
+
+	IF f_IsEmptyString(ls_text) OR NOT isnumber(ls_text) THEN
+		gu_message.uf_error("Veuillez introduire une valeur numérique")
+		CONTINUE
+	ELSE
+		li_nbre = integer(ls_text)
+	END IF
+	IF li_nbre <= 0 THEN
+		gu_message.uf_error("Veuillez introduire une valeur > 0")
+		CONTINUE
+	END IF
+	IF gu_message.uf_query("Confirmez-vous l'impression de " + f_string(li_nbre) + &
+		" exemplaire(s)", YesNo!, 2) = 1 THEN
+		lb_correct = TRUE
+	ELSE
+		CONTINUE
+	END IF
+loop until lb_correct
+
+IF lb_correct THEN
+	f_print_word(ls_document, li_nbre)
+END IF
+end event
+
+on m_autorisationdetransportformulairevierge.create
+call super::create
+this.text = "Autorisation de transport : formulaire vierge"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_autorisationdetransportformulairevierge.destroy
+call super::destroy
+end on
+
+type m_certificats-maîtres from menu within m_impressions
+m_rpt_certificat_1 m_rpt_certificat_1
+m_rpt_certificat_2 m_rpt_certificat_2
+m_rpt_certificat_3 m_rpt_certificat_3
+m_base-10 m_base-10
+m_rpt_melangesmfr m_rpt_melangesmfr
+m_rpt_melangesclonaux m_rpt_melangesclonaux
+end type
+
+on m_certificats-maîtres.create
+call super::create
+this.text = "Certificats-maîtres"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_rpt_certificat_1=create m_rpt_certificat_1
+this.m_rpt_certificat_2=create m_rpt_certificat_2
+this.m_rpt_certificat_3=create m_rpt_certificat_3
+this.m_base-10=create m_base-10
+this.m_rpt_melangesmfr=create m_rpt_melangesmfr
+this.m_rpt_melangesclonaux=create m_rpt_melangesclonaux
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_certificat_1
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_certificat_2
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_certificat_3
+this.Item[UpperBound(this.Item)+1]=this.m_base-10
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_melangesmfr
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_melangesclonaux
+end on
+
+on m_certificats-maîtres.destroy
+call super::destroy
+destroy(this.m_rpt_certificat_1)
+destroy(this.m_rpt_certificat_2)
+destroy(this.m_rpt_certificat_3)
+destroy(this.m_base-10)
+destroy(this.m_rpt_melangesmfr)
+destroy(this.m_rpt_melangesclonaux)
+end on
+
+type m_rpt_certificat_1 from menu within m_certificats-maîtres
+end type
+
+event clicked;window w_window
+ClassDefinition lcd_win
+str_params	lstr_params
+
+lstr_params.a_param[1] = 1
+lcd_win = FindClassDefinition("w_rpt_certificat")
+IF NOT IsNull(lcd_win) THEN
+	OpenSheetWithParm(w_window, lstr_params, "w_rpt_certificat", gw_mdiframe, 0, Original!)
+END IF
+
+end event
+
+on m_rpt_certificat_1.create
+call super::create
+this.text = "MFR issus de sources de graines et de peuplements"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_certificat_1.destroy
+call super::destroy
+end on
+
+type m_rpt_certificat_2 from menu within m_certificats-maîtres
+end type
+
+on m_rpt_certificat_2.create
+call super::create
+this.text = "MFR issus de vergers à graines ou de parents de famille(s)"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_certificat_2.destroy
+call super::destroy
+end on
+
+event clicked;window w_window
+ClassDefinition lcd_win
+str_params	lstr_params
+
+lstr_params.a_param[1] = 2
+lcd_win = FindClassDefinition("w_rpt_certificat")
+IF NOT IsNull(lcd_win) THEN
+	OpenSheetWithParm(w_window, lstr_params, "w_rpt_certificat", gw_mdiframe, 0, Original!)
+END IF
+
+end event
+
+type m_rpt_certificat_3 from menu within m_certificats-maîtres
+end type
+
+on m_rpt_certificat_3.create
+call super::create
+this.text = "MFR issus de clones et de mélanges clonaux"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_certificat_3.destroy
+call super::destroy
+end on
+
+event clicked;window w_window
+ClassDefinition lcd_win
+str_params	lstr_params
+
+lstr_params.a_param[1] = 3
+lcd_win = FindClassDefinition("w_rpt_certificat")
+IF NOT IsNull(lcd_win) THEN
+	OpenSheetWithParm(w_window, lstr_params, "w_rpt_certificat", gw_mdiframe, 0, Original!)
+END IF
+
+end event
+
+type m_base-10 from menu within m_certificats-maîtres
+end type
+
+on m_base-10.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-10.destroy
+call super::destroy
+end on
+
+type m_rpt_melangesmfr from menu within m_certificats-maîtres
+end type
+
+on m_rpt_melangesmfr.create
+call super::create
+this.text = "Identification des mélanges de MFR et semences"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_melangesmfr.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_certificat_melange, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_melangesclonaux from menu within m_certificats-maîtres
+end type
+
+on m_rpt_melangesclonaux.create
+call super::create
+this.text = "Identification des mélanges clonaux"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_melangesclonaux.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_certificat_clone, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_docfrn from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_docfrn, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_docfrn.create
+call super::create
+this.text = "Document fournisseur émis"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_docfrn.destroy
+call super::destroy
+end on
+
+type m_base-14 from menu within m_impressions
+end type
+
+on m_base-14.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-14.destroy
+call super::destroy
+end on
+
+type m_rpt_bordliv from menu within m_impressions
+end type
+
+on m_rpt_bordliv.create
+call super::create
+this.text = "Bordereau de livraison"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_bordliv.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_bordliv, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_recapliv from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_recapliv, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_recapliv.create
+call super::create
+this.text = "Bordereau récapitulatif de facturation"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_recapliv.destroy
+call super::destroy
+end on
+
+type m_rpt_recette from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_recette, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_recette.create
+call super::create
+this.text = "Tableau synthétique des ordres de recettes"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_recette.destroy
+call super::destroy
+end on
+
+type m_rpt_etiqliv from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_etiqliv, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_etiqliv.create
+call super::create
+this.text = "Etiquettes de livraison (fusion Word)"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_etiqliv.destroy
+call super::destroy
+end on
+
+type m_base-15 from menu within m_impressions
+end type
+
+on m_base-15.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-15.destroy
+call super::destroy
+end on
+
+type m_rpt_vteclient from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_vteclient, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_vteclient.create
+call super::create
+this.text = "Résumé des ventes par client"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_vteclient.destroy
+call super::destroy
+end on
+
+type m_rpt_etatstock from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_etatstock, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_etatstock.create
+call super::create
+this.text = "Etat du stock lot par lot"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_etatstock.destroy
+call super::destroy
+end on
+
+type m_situationdescommandes from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_etatcmde, gw_mdiframe, 0, Original!)
+end event
+
+on m_situationdescommandes.create
+call super::create
+this.text = "Situation des commandes"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_situationdescommandes.destroy
+call super::destroy
+end on
+
+type m_base-16 from menu within m_impressions
+end type
+
+on m_base-16.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-16.destroy
+call super::destroy
+end on
+
+type m_rpt_autorecolte from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_autorecolte, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_autorecolte.create
+call super::create
+this.text = "Autorisations de récolte demandées et reçues"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_autorecolte.destroy
+call super::destroy
+end on
+
+type m_rpt_vtesemences from menu within m_impressions
+end type
+
+on m_rpt_vtesemences.create
+call super::create
+this.text = "Ventes de semences par commandes"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_vtesemences.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_vtesemences, gw_mdiframe, 0, Original!)
+end event
+
+type m_ventesdesemencesparcm from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_vtesemences_cm, gw_mdiframe, 0, Original!)
+end event
+
+on m_ventesdesemencesparcm.create
+call super::create
+this.text = "Ventes de semences par CM"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_ventesdesemencesparcm.destroy
+call super::destroy
+end on
+
+type m_rpt_docfrn_horswal from menu within m_impressions
+end type
+
+event clicked;OpenSheet(w_rpt_docfrn_horswal, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_docfrn_horswal.create
+call super::create
+this.text = "Documents fournisseurs émis hors wallonie"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_docfrn_horswal.destroy
+call super::destroy
+end on
+
+type m_base_-9 from menu within m_impressions
+end type
+
+on m_base_-9.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-9.destroy
+call super::destroy
+end on
+
+type m_impressioncaractlots from menu within m_impressions
+m_rpt_etiqlot m_rpt_etiqlot
+m_rpt_etiqgerm m_rpt_etiqgerm
+m_base_-14 m_base_-14
+m_rpt_testgerm m_rpt_testgerm
+m_base_-13 m_base_-13
+m_formulairevierge_germinationpetri m_formulairevierge_germinationpetri
+m_formulairevierge_germinationsubstrat m_formulairevierge_germinationsubstrat
+m_formulairevierge_caractlotsgraines m_formulairevierge_caractlotsgraines
+m_formulairevierge-matricetestecrasement m_formulairevierge-matricetestecrasement
+end type
+
+on m_impressioncaractlots.create
+call super::create
+this.text = "Caractéristiques des lots"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_rpt_etiqlot=create m_rpt_etiqlot
+this.m_rpt_etiqgerm=create m_rpt_etiqgerm
+this.m_base_-14=create m_base_-14
+this.m_rpt_testgerm=create m_rpt_testgerm
+this.m_base_-13=create m_base_-13
+this.m_formulairevierge_germinationpetri=create m_formulairevierge_germinationpetri
+this.m_formulairevierge_germinationsubstrat=create m_formulairevierge_germinationsubstrat
+this.m_formulairevierge_caractlotsgraines=create m_formulairevierge_caractlotsgraines
+this.m_formulairevierge-matricetestecrasement=create m_formulairevierge-matricetestecrasement
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_etiqlot
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_etiqgerm
+this.Item[UpperBound(this.Item)+1]=this.m_base_-14
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_testgerm
+this.Item[UpperBound(this.Item)+1]=this.m_base_-13
+this.Item[UpperBound(this.Item)+1]=this.m_formulairevierge_germinationpetri
+this.Item[UpperBound(this.Item)+1]=this.m_formulairevierge_germinationsubstrat
+this.Item[UpperBound(this.Item)+1]=this.m_formulairevierge_caractlotsgraines
+this.Item[UpperBound(this.Item)+1]=this.m_formulairevierge-matricetestecrasement
+end on
+
+on m_impressioncaractlots.destroy
+call super::destroy
+destroy(this.m_rpt_etiqlot)
+destroy(this.m_rpt_etiqgerm)
+destroy(this.m_base_-14)
+destroy(this.m_rpt_testgerm)
+destroy(this.m_base_-13)
+destroy(this.m_formulairevierge_germinationpetri)
+destroy(this.m_formulairevierge_germinationsubstrat)
+destroy(this.m_formulairevierge_caractlotsgraines)
+destroy(this.m_formulairevierge-matricetestecrasement)
+end on
+
+type m_rpt_etiqlot from menu within m_impressioncaractlots
+end type
+
+event clicked;OpenSheet(w_rpt_etiqlot, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_etiqlot.create
+call super::create
+this.text = "Etiquettes d~'identitication des lots"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_etiqlot.destroy
+call super::destroy
+end on
+
+type m_rpt_etiqgerm from menu within m_impressioncaractlots
+end type
+
+event clicked;OpenSheet(w_rpt_etiqgerm, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_etiqgerm.create
+call super::create
+this.text = "Etiquettes tests de germination"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_etiqgerm.destroy
+call super::destroy
+end on
+
+type m_base_-14 from menu within m_impressioncaractlots
+end type
+
+on m_base_-14.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-14.destroy
+call super::destroy
+end on
+
+type m_rpt_testgerm from menu within m_impressioncaractlots
+end type
+
+event clicked;OpenSheet(w_rpt_testgerm, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_testgerm.create
+call super::create
+this.text = "Liste des tests de germination"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_testgerm.destroy
+call super::destroy
+end on
+
+type m_base_-13 from menu within m_impressioncaractlots
+end type
+
+on m_base_-13.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-13.destroy
+call super::destroy
+end on
+
+type m_formulairevierge_germinationpetri from menu within m_impressioncaractlots
+end type
+
+event clicked;str_Params lstr_Params
+string	ls_text, ls_document
+integer	li_nbre
+boolean	lb_correct
+
+ls_document=profileString(gs_inifile, "formulaires", "germPetri", "")
+IF f_isEmptyString(ls_document) THEN
+	gu_message.uf_error("Le nom du document n'est pas spécifié dans les paramètres de configuration (" + &
+	gs_inifile + ")")
+	return
+END IF
+
+ls_document = gs_cenpath + "\doc\" + ls_document
+IF NOT fileExists(ls_document) THEN
+	gu_message.uf_error("Le document " + ls_document + " est introuvable")
+	return
+END IF
+lstr_Params.a_param[1]  = "Introduisez le nombre d'exemplaire(s) à imprimer"
+
+lb_correct = FALSE
+do
+	OpenWithParm(W_GetText, lstr_Params)
+	IF Message.DoubleParm = -1 THEN
+		return // sort de la fonction
+	END IF
+	ls_text = Message.StringParm
+
+	IF f_IsEmptyString(ls_text) OR NOT isnumber(ls_text) THEN
+		gu_message.uf_error("Veuillez introduire une valeur numérique")
+		CONTINUE
+	ELSE
+		li_nbre = integer(ls_text)
+	END IF
+	IF li_nbre <= 0 THEN
+		gu_message.uf_error("Veuillez introduire une valeur > 0")
+		CONTINUE
+	END IF
+	IF gu_message.uf_query("Confirmez-vous l'impression de " + f_string(li_nbre) + &
+		" exemplaire(s)", YesNo!, 2) = 1 THEN
+		lb_correct = TRUE
+	ELSE
+		CONTINUE
+	END IF
+loop until lb_correct
+
+IF lb_correct THEN
+	f_print_word(ls_document, li_nbre)
+END IF
+end event
+
+on m_formulairevierge_germinationpetri.create
+call super::create
+this.text = "Formulaires vierges - germination en boîte de Pétri"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_formulairevierge_germinationpetri.destroy
+call super::destroy
+end on
+
+type m_formulairevierge_germinationsubstrat from menu within m_impressioncaractlots
+end type
+
+on m_formulairevierge_germinationsubstrat.create
+call super::create
+this.text = "Formulaires vierges - germination en substrat"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_formulairevierge_germinationsubstrat.destroy
+call super::destroy
+end on
+
+event clicked;str_Params lstr_Params
+string	ls_text, ls_document
+integer	li_nbre
+boolean	lb_correct
+
+ls_document=profileString(gs_inifile, "formulaires", "germsubstrat", "")
+IF f_isEmptyString(ls_document) THEN
+	gu_message.uf_error("Le nom du document n'est pas spécifié dans les paramètres de configuration (" + &
+	gs_inifile + ")")
+	return
+END IF
+
+ls_document = gs_cenpath + "\doc\" + ls_document
+IF NOT fileExists(ls_document) THEN
+	gu_message.uf_error("Le document " + ls_document + " est introuvable")
+	return
+END IF
+lstr_Params.a_param[1]  = "Introduisez le nombre d'exemplaire(s) à imprimer"
+
+lb_correct = FALSE
+do
+	OpenWithParm(W_GetText, lstr_Params)
+	IF Message.DoubleParm = -1 THEN
+		return // sort de la fonction
+	END IF
+	ls_text = Message.StringParm
+
+	IF f_IsEmptyString(ls_text) OR NOT isnumber(ls_text) THEN
+		gu_message.uf_error("Veuillez introduire une valeur numérique")
+		CONTINUE
+	ELSE
+		li_nbre = integer(ls_text)
+	END IF
+	IF li_nbre <= 0 THEN
+		gu_message.uf_error("Veuillez introduire une valeur > 0")
+		CONTINUE
+	END IF
+	IF gu_message.uf_query("Confirmez-vous l'impression de " + f_string(li_nbre) + &
+		" exemplaire(s)", YesNo!, 2) = 1 THEN
+		lb_correct = TRUE
+	ELSE
+		CONTINUE
+	END IF
+loop until lb_correct
+
+IF lb_correct THEN
+	f_print_word(ls_document, li_nbre)
+END IF
+end event
+
+type m_formulairevierge_caractlotsgraines from menu within m_impressioncaractlots
+end type
+
+event clicked;str_Params lstr_Params
+string	ls_text, ls_document
+integer	li_nbre
+boolean	lb_correct
+
+ls_document=profileString(gs_inifile, "formulaires", "caractGraines", "")
+IF f_isEmptyString(ls_document) THEN
+	gu_message.uf_error("Le nom du document n'est pas spécifié dans les paramètres de configuration (" + &
+	gs_inifile + ")")
+	return
+END IF
+
+ls_document = gs_cenpath + "\doc\" + ls_document
+IF NOT fileExists(ls_document) THEN
+	gu_message.uf_error("Le document " + ls_document + " est introuvable")
+	return
+END IF
+lstr_Params.a_param[1]  = "Introduisez le nombre d'exemplaire(s) à imprimer"
+
+lb_correct = FALSE
+do
+	OpenWithParm(W_GetText, lstr_Params)
+	IF Message.DoubleParm = -1 THEN
+		return // sort de la fonction
+	END IF
+	ls_text = Message.StringParm
+
+	IF f_IsEmptyString(ls_text) OR NOT isnumber(ls_text) THEN
+		gu_message.uf_error("Veuillez introduire une valeur numérique")
+		CONTINUE
+	ELSE
+		li_nbre = integer(ls_text)
+	END IF
+	IF li_nbre <= 0 THEN
+		gu_message.uf_error("Veuillez introduire une valeur > 0")
+		CONTINUE
+	END IF
+	IF gu_message.uf_query("Confirmez-vous l'impression de " + f_string(li_nbre) + &
+		" exemplaire(s)", YesNo!, 2) = 1 THEN
+		lb_correct = TRUE
+	ELSE
+		CONTINUE
+	END IF
+loop until lb_correct
+
+IF lb_correct THEN
+	f_print_word(ls_document, li_nbre)
+END IF
+end event
+
+on m_formulairevierge_caractlotsgraines.create
+call super::create
+this.text = "Formulaires vierges - caractéristiques des lots de graines"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_formulairevierge_caractlotsgraines.destroy
+call super::destroy
+end on
+
+type m_formulairevierge-matricetestecrasement from menu within m_impressioncaractlots
+end type
+
+event clicked;str_Params lstr_Params
+string	ls_text, ls_document
+integer	li_nbre
+boolean	lb_correct
+
+ls_document=profileString(gs_inifile, "formulaires", "testEcrasmt", "")
+IF f_isEmptyString(ls_document) THEN
+	gu_message.uf_error("Le nom du document n'est pas spécifié dans les paramètres de configuration (" + &
+	gs_inifile + ")")
+	return
+END IF
+
+ls_document = gs_cenpath + "\doc\" + ls_document
+IF NOT fileExists(ls_document) THEN
+	gu_message.uf_error("Le document " + ls_document + " est introuvable")
+	return
+END IF
+lstr_Params.a_param[1]  = "Introduisez le nombre d'exemplaire(s) à imprimer"
+
+lb_correct = FALSE
+do
+	OpenWithParm(W_GetText, lstr_Params)
+	IF Message.DoubleParm = -1 THEN
+		return // sort de la fonction
+	END IF
+	ls_text = Message.StringParm
+
+	IF f_IsEmptyString(ls_text) OR NOT isnumber(ls_text) THEN
+		gu_message.uf_error("Veuillez introduire une valeur numérique")
+		CONTINUE
+	ELSE
+		li_nbre = integer(ls_text)
+	END IF
+	IF li_nbre <= 0 THEN
+		gu_message.uf_error("Veuillez introduire une valeur > 0")
+		CONTINUE
+	END IF
+	IF gu_message.uf_query("Confirmez-vous l'impression de " + f_string(li_nbre) + &
+		" exemplaire(s)", YesNo!, 2) = 1 THEN
+		lb_correct = TRUE
+	ELSE
+		CONTINUE
+	END IF
+loop until lb_correct
+
+IF lb_correct THEN
+	f_print_word(ls_document, li_nbre)
+END IF
+end event
+
+on m_formulairevierge-matricetestecrasement.create
+call super::create
+this.text = "Formulaires vierges - matrice du test à l~'écrasement"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_formulairevierge-matricetestecrasement.destroy
+call super::destroy
+end on
+
+type m_base_-0 from menu within m_impressions
+end type
+
+on m_base_-0.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base_-0.destroy
+call super::destroy
+end on
+
+type m_impression_parametres from menu within m_impressions
+m_rpt_traductions m_rpt_traductions
+m_base-9 m_base-9
+m_rpt_usergroups m_rpt_usergroups
+m_rpt_users m_rpt_users
+m_rpt_userprivs m_rpt_userprivs
+m_rpt_progprivs m_rpt_progprivs
+end type
+
+on m_impression_parametres.create
+call super::create
+this.text = "Paramètres"
+this.shifttoright = true
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_rpt_traductions=create m_rpt_traductions
+this.m_base-9=create m_base-9
+this.m_rpt_usergroups=create m_rpt_usergroups
+this.m_rpt_users=create m_rpt_users
+this.m_rpt_userprivs=create m_rpt_userprivs
+this.m_rpt_progprivs=create m_rpt_progprivs
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_traductions
+this.Item[UpperBound(this.Item)+1]=this.m_base-9
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_usergroups
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_users
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_userprivs
+this.Item[UpperBound(this.Item)+1]=this.m_rpt_progprivs
+end on
+
+on m_impression_parametres.destroy
+call super::destroy
+destroy(this.m_rpt_traductions)
+destroy(this.m_base-9)
+destroy(this.m_rpt_usergroups)
+destroy(this.m_rpt_users)
+destroy(this.m_rpt_userprivs)
+destroy(this.m_rpt_progprivs)
+end on
+
+type m_rpt_traductions from menu within m_impression_parametres
+end type
+
+event clicked;OpenSheet(w_rpt_traductions, gw_mdiframe, 0, Original!)
+end event
+
+on m_rpt_traductions.create
+call super::create
+this.text = "Traductions"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_traductions.destroy
+call super::destroy
+end on
+
+type m_base-9 from menu within m_impression_parametres
+end type
+
+on m_base-9.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_base-9.destroy
+call super::destroy
+end on
+
+type m_rpt_usergroups from menu within m_impression_parametres
+end type
+
+on m_rpt_usergroups.create
+call super::create
+this.text = "Groupes d~'utilisateurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_usergroups.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_usergroups, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_users from menu within m_impression_parametres
+end type
+
+on m_rpt_users.create
+call super::create
+this.text = "Utilisateurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_users.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_users, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_userprivs from menu within m_impression_parametres
+end type
+
+on m_rpt_userprivs.create
+call super::create
+this.text = "Privilèges effectifs des utilisateurs"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_userprivs.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_userprivs, gw_mdiframe, 0, Original!)
+end event
+
+type m_rpt_progprivs from menu within m_impression_parametres
+end type
+
+on m_rpt_progprivs.create
+call super::create
+this.text = "Droits d~'accès par programme"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_rpt_progprivs.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_rpt_progprivs, gw_mdiframe, 0, Original!)
+end event
+
+type m_operationsparticulieres from menu within m_base
+m_annulation_commande m_annulation_commande
+end type
+
+on m_operationsparticulieres.create
+call super::create
+this.text = "&Opérations particulières"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_annulation_commande=create m_annulation_commande
+this.Item[UpperBound(this.Item)+1]=this.m_annulation_commande
+end on
+
+on m_operationsparticulieres.destroy
+call super::destroy
+destroy(this.m_annulation_commande)
+end on
+
+type m_annulation_commande from menu within m_operationsparticulieres
+end type
+
+event clicked;OpenSheet(w_annulation_commande, gw_mdiframe, 0, Original!)
+end event
+
+on m_annulation_commande.create
+call super::create
+this.text = "Annulation de commande"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_annulation_commande.destroy
+call super::destroy
+end on
+
+type m_outils from menu within m_base
+m_prognonprevu m_prognonprevu
+m_sql m_sql
+m_sqlspy m_sqlspy
+m_changeconnect m_changeconnect
+m_-9 m_-9
+m_options m_options
+end type
+
+on m_outils.create
+call super::create
+this.text = "Ou&tils"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_prognonprevu=create m_prognonprevu
+this.m_sql=create m_sql
+this.m_sqlspy=create m_sqlspy
+this.m_changeconnect=create m_changeconnect
+this.m_-9=create m_-9
+this.m_options=create m_options
+this.Item[UpperBound(this.Item)+1]=this.m_prognonprevu
+this.Item[UpperBound(this.Item)+1]=this.m_sql
+this.Item[UpperBound(this.Item)+1]=this.m_sqlspy
+this.Item[UpperBound(this.Item)+1]=this.m_changeconnect
+this.Item[UpperBound(this.Item)+1]=this.m_-9
+this.Item[UpperBound(this.Item)+1]=this.m_options
+end on
+
+on m_outils.destroy
+call super::destroy
+destroy(this.m_prognonprevu)
+destroy(this.m_sql)
+destroy(this.m_sqlspy)
+destroy(this.m_changeconnect)
+destroy(this.m_-9)
+destroy(this.m_options)
+end on
+
+type m_prognonprevu from menu within m_outils
+end type
+
+on m_prognonprevu.create
+call super::create
+this.text = "Lancer programme non prévu..."
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;opensheet (w_openwindow,gw_mdiframe,0,Original!)
+end event
+
+on m_prognonprevu.destroy
+call super::destroy
+end on
+
+type m_sql from menu within m_outils
+end type
+
+event clicked;OpenSheet(w_sql, gw_mdiframe, 0, Original!)
+end event
+
+on m_sql.create
+call super::create
+this.text = "Visualiser/Imprimer/Enregistrer le résultat d~'une commande SQL"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sql.destroy
+call super::destroy
+end on
+
+type m_sqlspy from menu within m_outils
+end type
+
+event clicked;this.checked = not this.checked
+gb_sqlspy_on = this.checked
+IF this.checked THEN
+	opensheet(w_sqlspy, gw_mdiframe, 0, Original!)
+ELSE
+	Post Close(w_sqlspy)
+END IF
+end event
+
+on m_sqlspy.create
+call super::create
+this.text = "Traçage SQL"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sqlspy.destroy
+call super::destroy
+end on
+
+type m_changeconnect from menu within m_outils
+end type
+
+on m_changeconnect.create
+call super::create
+this.text = "Changer de connexion à la DB"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_changeconnect.destroy
+call super::destroy
+end on
+
+event clicked;// on ne peut pas changer de connexion tant que toutes les fenêtres ne sont pas fermées
+window lw_Sheet
+
+lw_Sheet = gw_mdiframe.GetFirstSheet()
+
+IF IsValid(lw_Sheet) THEN
+		// There is an open sheet
+		gu_message.uf_info("Veuillez fermer toutes les fenêtres avant de changer de connexion")
+		return
+END IF
+disconnect using sqlca;
+disconnect using esqlca;
+gw_mdiframe.PostEvent("ue_login")
+end event
+
+type m_-9 from menu within m_outils
+end type
+
+on m_-9.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_-9.destroy
+call super::destroy
+end on
+
+type m_options from menu within m_outils
+end type
+
+on m_options.create
+call super::create
+this.text = "Options..."
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;opensheet (w_options_cpt,gw_mdiframe,0,Original!)
+end event
+
+on m_options.destroy
+call super::destroy
+end on
+
+type m_fenetres from menu within m_base
+m_cascade1 m_cascade1
+m_horizontal1 m_horizontal1
+m_vertical1 m_vertical1
+end type
+
+on m_fenetres.create
+call super::create
+this.text = "Fe&nêtres"
+this.toolbaritembarindex = 2
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_cascade1=create m_cascade1
+this.m_horizontal1=create m_horizontal1
+this.m_vertical1=create m_vertical1
+this.Item[UpperBound(this.Item)+1]=this.m_cascade1
+this.Item[UpperBound(this.Item)+1]=this.m_horizontal1
+this.Item[UpperBound(this.Item)+1]=this.m_vertical1
+end on
+
+on m_fenetres.destroy
+call super::destroy
+destroy(this.m_cascade1)
+destroy(this.m_horizontal1)
+destroy(this.m_vertical1)
+end on
+
+type m_cascade1 from menu within m_fenetres
+end type
+
+on m_cascade1.create
+call super::create
+this.text = "&Cascade"
+this.microhelp = "Réorganise l~'affichage - fenêtres en cascade"
+this.toolbaritemname = "cascade!"
+this.toolbaritemtext = "Cascade"
+this.toolbaritembarindex = 2
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;ParentWindow.ArrangeSheets (Cascade!)
+end event
+
+on m_cascade1.destroy
+call super::destroy
+end on
+
+type m_horizontal1 from menu within m_fenetres
+end type
+
+on m_horizontal1.create
+call super::create
+this.text = "&Horizontal"
+this.microhelp = "Réorganise l~'affichage - fenêtres alignées horizontalement"
+this.toolbaritemname = "tile!"
+this.toolbaritemtext = "Horizontal"
+this.toolbaritembarindex = 2
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;ParentWindow.ArrangeSheets (Tile!)
+end event
+
+on m_horizontal1.destroy
+call super::destroy
+end on
+
+type m_vertical1 from menu within m_fenetres
+end type
+
+on m_vertical1.create
+call super::create
+this.text = "&Vertical"
+this.microhelp = "Réorganise l~'affichage - fenêtres alignées verticalement"
+this.toolbaritemname = "horizontal!"
+this.toolbaritemtext = "Vertical"
+this.toolbaritembarindex = 2
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;ParentWindow.ArrangeSheets (TileHorizontal!)
+end event
+
+on m_vertical1.destroy
+call super::destroy
+end on
+
+type m_2 from menu within m_base
+m_environnement m_environnement
+m_-12 m_-12
+m_apropos m_apropos
+end type
+
+on m_2.create
+call super::create
+this.text = "&?"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_environnement=create m_environnement
+this.m_-12=create m_-12
+this.m_apropos=create m_apropos
+this.Item[UpperBound(this.Item)+1]=this.m_environnement
+this.Item[UpperBound(this.Item)+1]=this.m_-12
+this.Item[UpperBound(this.Item)+1]=this.m_apropos
+end on
+
+on m_2.destroy
+call super::destroy
+destroy(this.m_environnement)
+destroy(this.m_-12)
+destroy(this.m_apropos)
+end on
+
+type m_environnement from menu within m_2
+end type
+
+event clicked;open(w_environnement)
+end event
+
+on m_environnement.create
+call super::create
+this.text = "Environnement"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_environnement.destroy
+call super::destroy
+end on
+
+type m_-12 from menu within m_2
+end type
+
+on m_-12.create
+call super::create
+this.text = "-"
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_-12.destroy
+call super::destroy
+end on
+
+type m_apropos from menu within m_2
+end type
+
+event clicked;open(w_about)
+end event
+
+on m_apropos.create
+call super::create
+this.text = "A propos..."
+this.menustyle = contemporarymenu!
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbarstyle = contemporarytoolbar!
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_apropos.destroy
+call super::destroy
+end on
+

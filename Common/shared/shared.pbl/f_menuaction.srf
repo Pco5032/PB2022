@@ -1,0 +1,11 @@
+﻿global type f_menuaction from function_object
+end type
+
+forward prototypes
+global subroutine f_menuaction (string as_options[])
+end prototypes
+
+global subroutine f_menuaction (string as_options[]);// enabler les options voulues dans le menu action
+gw_mdiframe.menuid.DYNAMIC mf_enableaction(as_options)
+end subroutine
+

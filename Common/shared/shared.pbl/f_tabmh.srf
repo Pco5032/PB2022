@@ -1,0 +1,16 @@
+﻿//objectcomments Affiche microhelp de la page active d'un onglet
+global type f_tabmh from function_object
+end type
+
+forward prototypes
+global subroutine f_tabmh (tab t_tab)
+end prototypes
+
+global subroutine f_tabmh (tab t_tab);// affiche microhelp(tag:help=xxxx) du TABPAGE en cours du TAB object passé en argument
+userobject u_tabpage
+
+u_tabpage = t_tab.control[t_tab.selectedtab]
+gw_mdiframe.SetMicroHelp(f_gethelpmsg(u_tabpage.tag))
+
+end subroutine
+

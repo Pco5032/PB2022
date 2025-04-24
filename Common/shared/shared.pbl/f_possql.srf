@@ -1,0 +1,52 @@
+﻿global type f_possql from function_object
+end type
+
+forward prototypes
+global function integer f_possql (string as_select, string as_keyword, ref string as_nextkeyword, ref long al_pos1, ref long al_pos2)
+end prototypes
+
+global function integer f_possql (string as_select, string as_keyword, ref string as_nextkeyword, ref long al_pos1, ref long al_pos2);// recherche la position du mot-clé passé en paramètre et celle du 1er mot-clé qui suit
+// as_select = l'ordre SQL dans lequel on recherche la position du mot-clé donné
+// as_keyword = le mot-clé par rapport auquel on recherche la position du mot-clé suivant
+//	as_nextkeyword = mot-clé qui suit celui passé en paramètre
+//	al_pos1 = position dans l'ordre SQL du mot-clé passé en paramètre
+//	al_pos2 = position dans l'ordre SQL du mot-clé qui suit celui passé en paramètre
+// return(-1) : en cas d'erreur (paramètres d'entrée non fournis)
+// return(0)  : OK mais le mot clé passé en paramètre n'est pas présent dans l'ordre SQL
+// return(1)  : OK
+
+string	ls_keyword[]={"WHERE", "START WITH", "CONNECT BY", "GROUP BY", "HAVING", "UNION", &
+								"INTERSECT", "MINUS", "ORDER BY", "FOR UPDATE"}
+integer	li_max, li_i
+
+as_select = upper(trim(as_select))
+as_keyword = upper(trim(as_keyword))
+IF IsNull(as_select) OR LenA(as_select) = 0 THEN return(-1)
+IF IsNull(as_keyword) OR LenA(as_keyword) = 0 THEN return(-1)
+
+as_keyword = " " + upper(trim(as_keyword)) + " "
+as_nextkeyword=""
+al_pos1=0
+al_pos2=0
+
+al_pos1 = PosA(as_select, as_keyword)
+// mot clé pas présent dans l'ordre SQL
+IF al_pos1 = 0 THEN return(0)
+
+// + 1 pour annuler l'espace ajouté devant le mot-clé pour la recherche
+al_pos1 = al_pos1 + 1
+
+// le mot clé est présent, on cherche le mot-clé qui le suit directement
+li_max = upperbound(ls_keyword)
+FOR li_i = 1 TO li_max
+	al_pos2 = PosA(as_select, " " + ls_keyword[li_i] + " ", al_pos1 + LenA(as_keyword))
+	IF al_pos2 > 0 THEN
+		al_pos2 = al_pos2 + 1
+		as_nextkeyword = ls_keyword[li_i]
+		exit
+	END IF
+NEXT
+
+return(1)
+end function
+

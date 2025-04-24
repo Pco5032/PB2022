@@ -1,0 +1,34 @@
+﻿//objectcomments test validité n° de cantonnement
+global type f_check_can from function_object
+end type
+
+forward prototypes
+global function integer f_check_can (integer ai_can, ref string as_message)
+end prototypes
+
+global function integer f_check_can (integer ai_can, ref string as_message);// return -1	: erreur select
+// return 0		: cantonnement inexistant
+// return 1		: cantonnement existe, son nom est dans as_message
+
+integer	li_status
+
+IF IsNull(ai_can) OR ai_can = 0 THEN
+	as_message = "Le n° de cantonnement doit être spécifié"
+	return(-1)
+END IF
+
+select cantonnement into :as_message from cantonnement where can = :ai_can USING ESQLCA;
+
+li_status = f_check_sql(ESQLCA)
+CHOOSE CASE li_status
+	CASE 0
+		return(1)
+	CASE -1
+		as_message = "SELECT CANTONNEMENT : Erreur SQL"
+		return(-1)
+	CASE 100
+		as_message = "Cantonnement inexistant"
+		return(0)
+END CHOOSE
+end function
+

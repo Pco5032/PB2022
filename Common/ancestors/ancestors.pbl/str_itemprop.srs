@@ -1,0 +1,8 @@
+﻿//objectcomments Structure de stockage des propriétés des items de DW
+global type str_itemprop from structure
+	string		s_item
+	string		s_protect
+	string		s_bgcolor
+	string		s_pointer
+end type
+

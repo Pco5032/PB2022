@@ -1,0 +1,14 @@
+﻿global type f_removeaccent from function_object
+end type
+
+forward prototypes
+global function string f_removeaccent (string as_text, string as_case)
+end prototypes
+
+global function string f_removeaccent (string as_text, string as_case);// Renvoie la chaîne as_text en remplaçant les caractères accentués par des caractères sans accent.
+// Argument as_case : s'il vaut "U", la string est convertie en majuscules. Toute autre valeur n'a aucune influence.
+// NB : cette fonction n'a été créée que pour pouvoir être utilisée dans les expressions de DW.
+//      Dans les autres cas, utiliser directement l'objet gu_stringServices.
+return(gu_stringservices.uf_removeaccent(as_text, as_case))
+end function
+

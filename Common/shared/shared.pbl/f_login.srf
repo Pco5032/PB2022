@@ -1,0 +1,23 @@
+﻿global type f_login from function_object
+end type
+
+forward prototypes
+global function integer f_login ()
+end prototypes
+
+global function integer f_login ();string	ls_truefalse
+
+// Possibilité de revenir au login direct (DNF/DNF par exemple) 
+// en ajoutant paramètre OldLogin=true dans .ini local.
+ls_truefalse = upper(ProfileString(gs_inifile,"DB","OldLogin","False"))
+ls_truefalse = upper(ProfileString(gs_locinifile,"DB","OldLogin",ls_truefalse))
+ls_truefalse = upper(ProfileString(gs_locinifile,gs_username,"OldLogin",ls_truefalse))
+IF ls_truefalse = "TRUE" THEN
+	open(w_login)
+ELSE
+	open(w_login_new)
+END IF
+
+return(Message.DoubleParm)
+end function
+

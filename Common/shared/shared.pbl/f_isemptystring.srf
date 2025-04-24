@@ -1,0 +1,18 @@
+﻿global type f_isemptystring from function_object
+end type
+
+forward prototypes
+global function boolean f_isemptystring (string as_string)
+end prototypes
+
+global function boolean f_isemptystring (string as_string);// renvoie TRUE si la string passée en paramètre est vide ou nulle
+if LenA(trim(as_string))=0 OR IsNull(as_string) then
+	return true
+else
+	return false
+end if
+
+
+
+end function
+

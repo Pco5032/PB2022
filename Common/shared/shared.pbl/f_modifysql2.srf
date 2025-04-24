@@ -1,0 +1,106 @@
+﻿//objectcomments Modifier le WHERE et/ou remplacer le ORDER BY d'une ordre SQL
+global type f_modifysql2 from function_object
+end type
+
+forward prototypes
+global function string f_modifysql2 (string as_originalselect, string as_where, string as_order, boolean ab_replaceorderby, string as_insertionpoint)
+end prototypes
+
+global function string f_modifysql2 (string as_originalselect, string as_where, string as_order, boolean ab_replaceorderby, string as_insertionpoint);// complète l'ordre sql initial avec le 'where' et 'order by' passés en paramètres
+// as_originalselect = ordre sql à modifier
+// as_where (facultatif) = condition where à ajouter (sans le mot-clé WHERE !)
+// as_ordre (facultatif) = order by à ajouter (sans le mot-clé ORDER BY !)
+// ab_ReplaceOrderBy = TRUE pour REMPLACER l'order by du select d'origine, FALSE pour le COMPLETER
+// as_insertionpoint (facultatif) = dans certains cas, cette fonction ne peut pas déterminer où il faut ajouter la condition where (par exemple, 
+//										 quand il y a un subselect). On peut par ce paramètre lui indiquer l'emplacement à utiliser.
+//										 Par ex. : on met un where 'bidon' dans l'ordre SQL d'origine, qqchose du genre where 1=1, et on passe le paramètre
+//										 '1=1' à la fonction, qui remplacera ce 1=1 par la where à ajouter
+// return = le nouvel ordre SQL
+
+long		ll_posw, ll_pos
+string	ls_FirstPart, ls_LastPart, ls_OriginalWhere, ls_newselect
+
+// PCO 05/11/12008 : si as_where est vide, remplacer le point d'insertion par qq chose de toujours vrai (1=1)
+IF f_IsEmptyString(as_where) AND NOT f_IsEmptyString(as_insertionpoint) THEN
+	as_originalselect = gu_stringservices.uf_replaceall(as_originalselect, as_insertionpoint, "1=1")
+END IF
+
+// ajouter le 'where' au select de départ
+IF NOT f_IsEmptyString(as_where) THEN
+	// si un point d'insertion particulier est passé en paramètre, on le remplace par le where à ajouter
+	IF NOT f_IsEmptyString(as_insertionpoint) THEN
+		ls_newselect = gu_stringservices.uf_replaceall(as_originalselect, as_insertionpoint, as_where)
+	ELSE
+		// pas de point d'insertion spécifié : recherche automatique de l'emplacement du where
+		// s'il y a déjà un where dans le select d'origine, ajouter un 'and' à la clause qu'on veut ajouter
+		//  et la mettre entre parenthèses pour éviter problèmes de conflit avec OR et (outer) joins
+		ll_posw = PosA(upper(as_originalselect), " WHERE ")
+		IF ll_posw > 0 THEN
+			as_where = "and (" + trim(as_where) + ")"
+		ELSE
+		// s'il n'y a pas encore de where, il ne faut pas ajouter le "and"
+			as_where = "(" + as_where + ")"
+		END IF
+		// en fonction du select d'origine, repérer la position où il faut insérer la clause where qu'on veut ajouter
+		ll_pos = PosA(upper(as_originalselect), " START WITH ")
+		IF ll_pos = 0 THEN
+			ll_pos = PosA(upper(as_originalselect), " GROUP BY ")
+			IF ll_pos = 0 THEN
+				ll_pos = PosA(upper(as_originalselect), " HAVING ")
+				IF ll_pos = 0 THEN
+					ll_pos = PosA(upper(as_originalselect), " UNION ")
+					IF ll_pos = 0 THEN
+						ll_pos = PosA(upper(as_originalselect), " INTERSECT ")
+						IF ll_pos = 0 THEN
+							ll_pos = PosA(upper(as_originalselect), " MINUS ")
+							IF ll_pos = 0 THEN
+								ll_pos = PosA(upper(as_originalselect), " ORDER BY ")
+								IF ll_pos = 0 THEN
+									ll_pos = PosA(upper(as_originalselect), " FOR UPDATE")
+								END IF
+							END IF
+						END IF
+					END IF
+				END IF
+			END IF
+		END IF
+		
+		// isoler la partie qui doit se trouver devant le where
+		// et s'il y avait un where dans le SELECT d'origine, l'isoler et la mettre entre parenthèses
+		IF ll_posw > 0 THEN
+			ls_FirstPart = trim(LeftA(as_originalselect, ll_posw))
+			IF ll_pos > 0 THEN
+				ls_OriginalWhere = "(" + trim(MidA(as_originalselect, ll_posw + 7, ll_pos - (ll_posw + 7))) + ")"
+			ELSE
+				ls_OriginalWhere = "(" + trim(MidA(as_originalselect, ll_posw + 7)) + ")"
+			END IF
+		ELSE
+			IF ll_pos > 0 THEN
+				ls_FirstPart = trim(LeftA(as_originalselect, ll_pos))
+			ELSE
+				ls_FirstPart = as_originalselect
+			END IF
+		END IF
+
+		// isoler tout ce qui se trouve après la position où le where doit prendre place
+		IF ll_pos > 0 THEN
+			ls_LastPart = trim(MidA(as_originalselect, ll_pos))
+		END IF
+		
+		// reconstruire une nouveau SELECT
+		ls_newselect = ls_FirstPart + " where " + f_string(ls_OriginalWhere) + " " + as_where + " " + f_string(ls_LastPart)
+	END IF
+ELSE
+	ls_newselect = as_originalselect
+END IF
+
+// ajouter le nouveau ORDER BY (remplace l'existant ou le complète en fonction du paramètre ab_ReplaceOrderBy)
+IF NOT f_IsEmptyString(as_order) THEN
+	ls_newselect = f_ModifyOrderBy(ls_newselect, as_order, ab_ReplaceOrderBy)
+END IF
+
+// renvoyer le nouvel ordre SQL complet
+return(ls_newselect)
+
+end function
+

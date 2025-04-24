@@ -1,0 +1,25 @@
+﻿global type f_tableexists from function_object
+end type
+
+forward prototypes
+global function boolean f_tableexists (string as_tablename, transaction atr_site)
+end prototypes
+
+global function boolean f_tableexists (string as_tablename, transaction atr_site);// Teste si la table as_tablename existe dans la DB
+// return : TRUE/FALSE
+long	ll_count
+
+select count(*) into :ll_count from 
+(select table_name from user_tables
+ minus
+ select table_name from user_snapshots)
+where table_name = upper(:as_tablename) using atr_site;
+
+IF ll_count > 0 THEN
+	return(TRUE)
+ELSE
+	return(FALSE)
+END IF
+
+end function
+

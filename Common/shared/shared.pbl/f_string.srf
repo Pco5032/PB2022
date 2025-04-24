@@ -1,0 +1,23 @@
+﻿global type f_string from function_object
+end type
+
+forward prototypes
+global function string f_string (any aa_value)
+end prototypes
+
+global function string f_string (any aa_value);/*---------------------------------
+FONCTION POUR CONVERTIR UNE VALEUR
+DE TYPE QUELCONQUE (any) SOUS FORME
+DE STRING NON NUL
+-----------------------------------*/
+string ls_string
+
+ls_string = string(aa_value)
+if IsNull(ls_string) then
+	return("")
+else
+	return(ls_string)
+end if
+
+end function
+

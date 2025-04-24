@@ -1,0 +1,17 @@
+﻿global type f_logerror from function_object
+end type
+
+forward prototypes
+global function integer f_logerror (string as_message)
+end prototypes
+
+global function integer f_logerror (string as_message);// enregistre le message passé en paramètre dans le fichier d'enregistrement des erreurs
+// dans l'appel à la fonction logmessage, on demande un plafonnement de la taille du fichier à 500Ko
+integer	li_stat
+
+li_stat = gu_logmessage.uf_logmessage(gs_errorlog, as_message, 500, TRUE)
+
+return(li_stat)
+
+end function
+

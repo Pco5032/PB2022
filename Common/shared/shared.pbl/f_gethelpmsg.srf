@@ -1,0 +1,23 @@
+﻿global type f_gethelpmsg from function_object
+end type
+
+forward prototypes
+global function string f_gethelpmsg (string as_tag)
+end prototypes
+
+global function string f_gethelpmsg (string as_tag);integer	li_tag
+string	ls_key, ls_msg
+
+// extraire le n° de message après le mot-clé "help" qui se trouve dans la propriété TAG du champ
+li_tag = f_gettag(as_tag, "help", ls_key)
+
+// sur base du n° de message, extraire le message du fichier .ini
+IF li_tag = 0 THEN
+	ls_msg = ""
+ELSE
+	ls_msg = ProfileString(gs_helpfile, "microhelp", ls_key, "Message " + ls_key + " pas trouvé")
+END IF
+
+return(ls_msg)
+end function
+

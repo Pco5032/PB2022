@@ -1,0 +1,33 @@
+Save Format v3.0(19990112)
+@begin Libraries
+ "appldbusers\\ApplDBusers\\appldbusers.pbl" "";
+@end;
+@begin Objects
+ "ApplDBusers\\ApplDBusers\\w_options_appldbusers.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "appldbusers\\ApplDBusers\\d_l_agents.srd" "appldbusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_select_group.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_select_dbalias.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_dbalias.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_group.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_l_group.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_l_user.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\m_base.srm" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_params.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_about.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_user.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_mdiframe.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\appldbusers.sra" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\appldbusers.srj" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_groupdb.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\uo_applprivs.sru" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_dbalias.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_l_group.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_l_user.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "appldbusers\\ApplDBusers\\w_l_agent.srw" "appldbusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\uo_cpteur.sru" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_params.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_userdb.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\d_usergrp.srd" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_users.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+ "ApplDBusers\\ApplDBusers\\w_groups.srw" "ApplDBusers\\ApplDBusers\\appldbusers.pbl";
+@end;

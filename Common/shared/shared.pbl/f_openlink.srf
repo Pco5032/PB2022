@@ -1,0 +1,22 @@
+﻿//objectcomments Ouvre le lien passé en argument dans IE
+global type f_openlink from function_object
+end type
+
+forward prototypes
+global function integer f_openlink (string as_link)
+end prototypes
+
+global function integer f_openlink (string as_link);// ouvre le lien passé en argument dans IE
+integer li_st
+
+IF f_isEmptyString(as_link) THEN
+	return(0)
+END IF
+
+// espace ajouté devant l'URL comme workaround d'un bug PB avec Firefox...
+// PCO 01/09/2017 : inclure l'URL dans des double-quotes sinon ouverture impossible quand présence d'espaces
+// PCO 18/08/20223 : remplacer linet.HyperlinkToURL() par openUrl()
+openUrl(" ~"" + as_link + "~"")
+return(li_st)
+end function
+

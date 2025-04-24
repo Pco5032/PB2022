@@ -1,0 +1,17 @@
+﻿//objectcomments teste si la fenêtre dont le nom est passé en argument existe
+global type f_winexist from function_object
+end type
+
+forward prototypes
+global function boolean f_winexist (string as_windowname)
+end prototypes
+
+global function boolean f_winexist (string as_windowname);ClassDefinition lcd_win
+
+lcd_win = FindClassDefinition(as_windowname)
+IF IsNull(lcd_win) THEN return(FALSE)
+IF lcd_win.datatypeof <> "window" THEN return(FALSE)
+return(TRUE)
+
+end function
+

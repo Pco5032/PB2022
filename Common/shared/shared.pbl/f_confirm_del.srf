@@ -1,0 +1,16 @@
+﻿global type f_confirm_del from function_object
+end type
+
+forward prototypes
+global function integer f_confirm_del (string as_message)
+end prototypes
+
+global function integer f_confirm_del (string as_message);// argument as_message facultatif
+// return 1 = suppression confirmée
+// return 2 = suppression abandonnée
+IF LenA(trim(as_message)) = 0 OR IsNull(as_message) THEN 
+	as_message = "Voulez-vous supprimer cet enregistrement"
+END IF
+return (gu_message.uf_query("CONFIRMATION",as_message,2))
+end function
+

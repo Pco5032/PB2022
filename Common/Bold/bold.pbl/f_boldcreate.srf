@@ -1,0 +1,23 @@
+﻿global type f_boldcreate from function_object
+end type
+
+forward prototypes
+global function integer f_boldcreate ()
+end prototypes
+
+global function integer f_boldcreate ();// Instanciation gu_bold si nécessaire et connexion à la DB BOLD
+// A utiliser au lieu d'un CREATE direct dans programmes business qui doivent interragir avec BOLD.
+// return(1) : OK
+// return(-1) : erreur
+IF NOT isValid(gu_bold) THEN
+	gu_bold = CREATE uo_bold
+END IF
+
+IF gu_bold.uf_connect() = -1 THEN
+	return(-1)
+ELSE
+	return(1)
+END IF
+
+end function
+

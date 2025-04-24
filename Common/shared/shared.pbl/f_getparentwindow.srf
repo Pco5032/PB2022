@@ -1,0 +1,46 @@
+﻿global type f_getparentwindow from function_object
+end type
+
+forward prototypes
+global function integer f_getparentwindow (graphicobject ag_this, ref window aw_parent)
+end prototypes
+
+global function integer f_getparentwindow (graphicobject ag_this, ref window aw_parent);//////////////////////////////////////////////////////////////////////////////
+//
+//	Function:  		uf_GetParentWindow
+//
+//	Access:  		public
+//
+//	Arguments:
+//	aw_parent		The Parent window for this object (passed by reference).
+//						If a parent window is not found, variable returns
+//						with NULL.
+//
+//	Returns:  		Integer
+//						1 if it succeeds and -1 if an error occurs.
+//
+//	Description:	Calculates the parent window of a window object.
+//
+//////////////////////////////////////////////////////////////////////////////
+
+powerobject	lpo_parent
+
+//Loop getting the parent of the object until it is of type window!
+lpo_parent = ag_this.GetParent()
+do while IsValid (lpo_parent)
+	If lpo_parent.TypeOf() = window! Then 
+		aw_parent = lpo_parent
+		return 1
+	ELSE
+		lpo_parent = lpo_parent.GetParent()
+	END IF
+loop
+
+if not IsValid (lpo_parent) then
+	setnull(aw_parent)	
+	return -1
+end If
+
+
+end function
+

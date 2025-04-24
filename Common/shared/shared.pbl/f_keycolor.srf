@@ -1,0 +1,10 @@
+﻿global type f_keycolor from function_object
+end type
+
+forward prototypes
+global function long f_keycolor ()
+end prototypes
+
+global function long f_keycolor ();return (gl_keys_bckg_color)
+end function
+

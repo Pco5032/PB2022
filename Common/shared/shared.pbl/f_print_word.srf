@@ -1,0 +1,56 @@
+﻿global type f_print_word from function_object
+end type
+
+forward prototypes
+global function integer f_print_word (string as_document, integer ai_nbre)
+end prototypes
+
+global function integer f_print_word (string as_document, integer ai_nbre);// fonction globale f_print_word : imprime le document passé en argument via Word
+// return(-1) en cas d'erreur
+// return(1) si OK
+//
+// as_Document : nom du document à imprimer
+// ai_nbre : nombre d'exemplaires à imprimer
+
+OLEObject	lole_Word, lole_doc
+integer		result
+boolean		lb_word_visible
+
+lb_Word_Visible = FALSE
+
+IF as_Document = "" THEN
+	gu_message.uf_error("Le nom du document à imprimer doit être spécifié")
+	return(-1)
+END IF
+
+IF NOT FileExists(as_Document) THEN
+	gu_message.uf_error("Le document à imprimer (" + as_Document + ") n'existe pas")
+	return(-1)
+END IF
+
+lole_word = create oleobject
+result = lole_word.ConnectToNewObject("word.application.8")
+if result <> 0 then
+	destroy lole_word
+	gu_message.uf_error("OLE ERROR : unable to connect to MS-WORD",string(result))
+	return(-1)
+end if
+
+lole_word.visible = lb_Word_Visible
+lole_doc = lole_word.documents.open(as_Document)
+
+// imprimer
+lole_doc.PrintOut(false, true, 0, '', '', '', 0, ai_nbre)
+
+// si WORD ne doit pas être visible, on ferme tout sinon on laisse ouvert
+IF NOT lb_Word_visible THEN
+	lole_word.documents.close(0)
+	lole_word.Quit(0)
+END IF
+
+DESTROY lole_word
+DESTROY lole_doc
+
+return(1)
+end function
+

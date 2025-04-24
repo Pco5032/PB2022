@@ -1,0 +1,22 @@
+﻿//objectcomments DW impression autorisations de transport
+release 10.5;
+datawindow(units=0 timer_interval=0 color=16777215 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.preview.outline=yes hidegrayline=no )
+header(height=0 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=72 color="536870912" height.autosize=yes )
+table(column=(type=number updatewhereclause=yes name=c_total dbname="c_total" )
+ retrieve="PBSELECT( VERSION(400) TABLE(NAME=~"autorisation_tr~" ) COMPUTE(NAME=~"sum(autorisation_tr.qte_mfr_tr) c_total~")WHERE(    EXP1 =~"autorisation_tr.an_aut~"   OP =~"=~"    EXP2 =~":a_annee~"    LOGIC =~"And~" ) WHERE(    EXP1 =~"autorisation_tr.num_aut~"   OP =~"=~"    EXP2 =~":a_num~" ) ) ARG(NAME = ~"a_annee~" TYPE = number)  ARG(NAME = ~"a_num~" TYPE = number) " arguments=(("a_annee", number),("a_num", number)) )
+column(band=detail id=1 alignment="1" tabsequence=32766 border="0" color="33554432" x="18" y="4" height="60" width="311" format="###,##0.000" html.valueishtml="0"  name=c_total visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+text(band=detail alignment="0" text="kg" border="0" color="33554432" x="347" y="4" height="60" width="82" html.valueishtml="0"  name=t_1 visible="1"  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 

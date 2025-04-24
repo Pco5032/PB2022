@@ -1,0 +1,13 @@
+﻿global type f_quotesql from function_object
+end type
+
+forward prototypes
+global function string f_quotesql (string as_sql)
+end prototypes
+
+global function string f_quotesql (string as_sql);// pour qu'un ordre SQL soit accepté par une fonction modify(), les single-quotes délimitant les valeurs doivent être
+// "escaped" pour ne pas être confondu avec la marque de fin de string
+return(gu_stringservices.uf_replaceall(as_sql, "'", "~~~'"))
+
+end function
+

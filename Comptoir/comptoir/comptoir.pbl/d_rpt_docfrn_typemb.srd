@@ -1,0 +1,38 @@
+﻿//objectcomments DW impression d'une demande d'autorisation : type de matériel de base
+release 10.5;
+datawindow(units=0 timer_interval=0 color=1073741824 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.preview.outline=yes hidegrayline=no rows_per_detail = 3 )
+header(height=0 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=72 color="536870912" )
+table(column=(type=char(20) updatewhereclause=yes name=trad dbname="trad" )
+ column=(type=number updatewhereclause=yes name=c_code dbname="c_code" values="	1/	0" )
+ column=(type=char(15) updatewhereclause=yes name=cde dbname="cde" )
+ retrieve="select trad, decode(:as_code, code, 1, 0) c_code, cde from
+(select ordre * 10 ordre, code, trad, abbrfd cde from v_typemb where code > 0 and code <= '4'
+union
+select ordre + 20, code, trad, abbrfd cde from v_typemb where code = '5'
+union
+select ordre + 40, code, trad, abbrfd cde from v_typemb where code = '6')
+order by ordre
+" arguments=(("as_code", string)) )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="585" y="4" height="64" width="73" format="[general]" html.valueishtml="0" row_in_detail=1  name=c_code_1 visible="1" checkbox.text="" checkbox.on="1" checkbox.off="0" checkbox.scale=no checkbox.threed=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=1 alignment="0" tabsequence=32766 border="0" color="33554432" x="896" y="4" height="64" width="512" format="[general]" html.valueishtml="0" row_in_detail=2  name=trad_2 visible="1" edit.limit=20 edit.case=any edit.autoselect=yes edit.autohscroll=yes  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="1408" y="4" height="64" width="73" format="[general]" html.valueishtml="0" row_in_detail=2  name=c_code_2 visible="1" checkbox.text="" checkbox.on="1" checkbox.off="0" checkbox.scale=no checkbox.threed=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=1 alignment="0" tabsequence=32766 border="0" color="33554432" x="1737" y="4" height="64" width="512" format="[general]" html.valueishtml="0" row_in_detail=3  name=trad_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="2249" y="4" height="64" width="73" format="[general]" html.valueishtml="0" row_in_detail=3  name=c_code_3 visible="1" checkbox.text="" checkbox.on="1" checkbox.off="0" checkbox.scale=no checkbox.threed=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=1 alignment="0" tabsequence=32766 border="0" color="33554432" x="73" y="4" height="64" width="512" format="[general]" html.valueishtml="0" row_in_detail=1  name=trad_1 visible="1" edit.limit=20 edit.case=any edit.autoselect=yes edit.autohscroll=yes  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=3 alignment="0" tabsequence=0 border="0" color="33554432" x="18" y="12" height="56" width="55" html.valueishtml="0" row_in_detail=1  name=cde_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial Narrow" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=3 alignment="0" tabsequence=0 border="0" color="33554432" x="841" y="12" height="56" width="55" html.valueishtml="0" row_in_detail=2  name=cde_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial Narrow" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=3 alignment="0" tabsequence=0 border="0" color="33554432" x="1682" y="12" height="56" width="55" html.valueishtml="0" row_in_detail=3  name=cde_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial Narrow" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 

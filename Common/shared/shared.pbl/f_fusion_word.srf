@@ -1,0 +1,199 @@
+﻿//objectcomments Fusion/publipostage
+global type f_fusion_word from function_object
+end type
+
+forward prototypes
+global function integer f_fusion_word (string as_document_principal, string as_ordre_sql, string as_connect_odbc, string as_type_action, string as_type_document, boolean ab_word_visible)
+end prototypes
+
+global function integer f_fusion_word (string as_document_principal, string as_ordre_sql, string as_connect_odbc, string as_type_action, string as_type_document, boolean ab_word_visible);//
+// fonction globale f_fusion_word : publipostage effectué dans WORD via OLE2
+// return(-1) en cas d'erreur
+// return(1) si OK
+//
+// as_Document_Principal : nom du document principal de fusion
+// as_Ordre_SQL : ordre SQL
+// ATTENTION : la longueur maxi de la requête est de 510 caractères !
+// as_Connect_ODBC : chaîne de connection ODBC. PLUS UTILISE !!!!
+// as_Type_Action : 	F = seulement fusionner (le paramètre ab_Word_Visible sera d'office considéré comme true)
+//							I = fusionner et imprimer
+//							P = fusionner et prévisualiser (le paramètre ab_Word_Visible sera d'office considéré comme true)
+// as_Type_Document : 	L = Lettres types
+//								T = Etiquettes de publipostage
+//								E = Enveloppes
+//								C = Catalogues
+// ab_Word_visible :	True = Word sera visible et ne sera pas fermé en fin de traitement
+//							False = Word sera invisible et sera fermé en fin de traitement
+
+// PCO juin 2013 : suite migration des bases de données vers Oracle XE et utilisation de datatypes Oracle en mode
+//                 "char" au lieu de "byte" dans les VARCHAR2 et CHAR, la fusion ne fonctionne plus, des données
+//                 vides sont renvoyées.
+//                 Pour contourner ce problème, je crée un fichier xls qui va servir de source de données à WORD
+//                 au lieu de demander à WORD d'aller chercher les données directement dans Oracle par ODBC.
+//                 L'ancien code est conservé en commentaire en bas de fonction.
+
+// nouveau code juin 2013 : datasource = fichier .xls 
+OLEObject	lole_Word, lole_doc
+integer		li_Type_Document, result, n, li_rc
+string		ls_syntax, ls_err, ls_filename
+long			ll_retrieve
+uo_ds			l_ds
+
+// nom du fichier qui contiendra les données
+ls_filename = gs_tmpfiles + "\datasource.xlsx"
+
+// vérification des arguments
+IF as_Document_Principal = "" THEN
+	gu_message.uf_error("Le nom du document principal de fusion doit être spécifié")
+	return(-1)
+END IF
+
+IF NOT FileExists(as_Document_Principal) THEN
+	gu_message.uf_error("Le document principal de fusion (" + as_Document_Principal + ") n'existe pas")
+	return(-1)
+END IF
+
+IF as_Ordre_SQL = "" THEN
+	gu_message.uf_error("La requête SQL doit être spécifiée")
+	return(-1)
+END IF
+
+as_Type_Action = upper(as_Type_Action)
+as_Type_Document = upper(as_Type_Document)
+
+IF as_Type_Action <> "F" AND as_Type_Action <> "I" AND as_Type_Action <> "P" THEN
+	gu_message.uf_error("Le type d'action spécifié est incorrect : " + as_Type_Action + &
+							  "~nChoix possibles : F(usionner seulement)/I(fusionner et Imprimer)/P(fusionner et prévisualiser)")
+	return(-1)
+END IF
+
+// conversion des arguments
+IF as_Type_Action = "F" OR as_Type_Action = "P" THEN
+	ab_Word_Visible = True
+END IF
+
+CHOOSE CASE as_Type_Document
+	CASE "L"
+		li_Type_Document = 0
+	CASE "T"
+		li_Type_Document = 1
+	CASE "E"
+		li_Type_Document = 2
+	CASE "C"
+		li_Type_Document = 3
+	CASE ""
+		li_Type_Document = 3
+	CASE ELSE
+		gu_message.uf_error("Le type de document résultat est incorrect : " + as_Type_Document + &
+								  "~nChoix possibles : L/T/E/C")
+		return(-1)
+END CHOOSE
+
+// création d'une syntaxe pour créer un DS sur base de la requête SQL
+ls_syntax = SQLCA.syntaxfromsql (as_Ordre_SQL, "", ls_err)
+IF LenA(ls_err) > 0 THEN
+	populateError(20000,"")
+	gu_message.uf_unexp("Erreur SyntaxFromSQL : " + ls_err)
+	return(-1)
+END IF
+
+// création du DS
+l_ds = create uo_ds
+l_ds.Create(ls_Syntax, ls_err)
+IF LenA(ls_err) > 0 THEN
+	populateError(20000,"")
+	gu_message.uf_unexp("Erreur Create Datastore : " + ls_err)
+	return(-1)
+END IF
+l_ds.SetTransObject(SQLCA)
+
+// lecture des données dans le DS
+ll_retrieve = l_ds.retrieve()
+IF ll_retrieve <= 0 THEN
+	destroy l_ds
+	gu_message.uf_info("Aucune donnée à fusionner (" + f_string(ll_retrieve) + ")  !")
+	return(-1)
+END IF
+
+// sauver les données du DS dans un fichier .xls
+li_rc = l_ds.saveas(ls_filename, xlsx!, true)
+IF li_rc = -1 THEN
+	destroy l_ds
+	populateError(20000,"")
+	gu_message.uf_unexp("Erreur SaveAs .xlsx in " + ls_filename)
+	return(-1)
+END IF
+destroy l_ds
+
+// démarrer Word et le rendre visible
+lole_word = create oleobject
+result = lole_word.ConnectToNewObject("word.application")
+if result <> 0 then
+	destroy lole_word
+	gu_message.uf_error("OLE ERROR : unable to connect to MS-WORD",string(result))
+	return(-1)
+end if
+lole_word.visible = ab_Word_Visible
+
+// ouvrir le document et le convertir vers le type choisi
+lole_doc = lole_word.documents.open(as_Document_Principal)
+lole_doc.MailMerge.MainDocumentType = li_Type_Document
+
+// ouvrir la source de données (fichier xls)
+lole_doc.MailMerge.OpenDataSource(ls_filename, 0, False, True, False, False, "", "", False, "", "", "", &
+											 "select * from [datasource$]", "", false, 0)
+
+/* void OpenDataSource(
+	string Name,
+	ref Object Format,
+	ref Object ConfirmConversions,
+	ref Object ReadOnly,
+	ref Object LinkToSource,
+	ref Object AddToRecentFiles,
+	ref Object PasswordDocument,
+	ref Object PasswordTemplate,
+	ref Object Revert,
+	ref Object WritePasswordDocument,
+	ref Object WritePasswordTemplate,
+	ref Object Connection,
+	ref Object SQLStatement,
+	ref Object SQLStatement1,
+	ref Object OpenExclusive,
+	ref Object SubType
+)
+*/
+
+// choix de la destination du document final
+lole_doc.MailMerge.Destination=0
+
+// GO
+lole_doc.MailMerge.Execute
+
+// fermer document d'origine
+lole_doc.close(0)
+
+// changer variable pour pointer vers document résultat
+lole_doc = lole_word.ActiveDocument
+
+// update peut-être nécessaire pour les champs INCLUDEPICTURE
+// lole_doc.Fields.Update
+// messagebox("", string(lole_doc.Fields.count))
+
+// imprimer si demandé
+IF as_Type_Action = "I" THEN
+	lole_doc.PrintOut(false)
+END IF
+
+// si WORD ne doit pas être visible, on ferme tout sinon on laisse ouvert
+IF NOT ab_Word_visible THEN
+	lole_word.documents.close(0)
+	lole_word.Quit(0)
+END IF
+
+DESTROY lole_word
+DESTROY lole_doc
+
+return(1)
+
+end function
+

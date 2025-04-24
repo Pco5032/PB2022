@@ -1,0 +1,21 @@
+﻿global type f_centerinmdi from function_object
+end type
+
+forward prototypes
+global subroutine f_centerinmdi (window aw_win)
+end prototypes
+
+global subroutine f_centerinmdi (window aw_win);integer	li_x, li_y
+
+// Centrer la fenêtre dans le cadre MDI
+CHOOSE CASE aw_win.windowType
+	CASE Child!, Main!
+		li_x = gw_mdiframe.workspacewidth() / 2 - aw_win.width / 2
+		li_y = gw_mdiframe.workspaceheight() / 2 - aw_win.Height / 2 - 150
+	CASE ELSE
+		li_x = gw_mdiframe.x + (gw_mdiframe.WorkSpaceWidth() - aw_win.width) / 2
+		li_y = gw_mdiframe.y + (gw_mdiframe.WorkSpaceHeight() - aw_win.Height - 150) / 2
+END CHOOSE
+aw_win.move(li_x, li_y)
+end subroutine
+

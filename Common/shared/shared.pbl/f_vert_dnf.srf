@@ -1,0 +1,11 @@
+﻿global type f_vert_dnf from function_object
+end type
+
+forward prototypes
+global function long f_vert_dnf ()
+end prototypes
+
+global function long f_vert_dnf ();// renvoie la couleur "vert DNF"
+return(rgb(94, 173, 52))
+end function
+

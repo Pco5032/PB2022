@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Solution>
+  <Projects Default="DBCentrale\dbcentrale.pbproj">
+    <Project Path="carnettournee\carnettournee.pbproj"/>
+    <Project Path="DBCentrale\dbcentrale.pbproj"/>
+    <Project Path="Exacha\exacha.pbproj"/>
+    <Project Path="Comptoir\comptoir.pbproj"/>
+    <Project Path="Efor2002\efor.pbproj"/>
+  </Projects>
+</Solution>

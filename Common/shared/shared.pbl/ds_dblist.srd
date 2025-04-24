@@ -1,0 +1,39 @@
+﻿release 10.5;
+datawindow(units=0 timer_interval=0 color=67108864 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.preview.outline=yes hidegrayline=no )
+header(height=0 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=72 color="536870912" )
+table(column=(type=char(30) updatewhereclause=yes name=dbalias dbname="v_dnf_avlconnection.dbalias" dbalias=".dbalias" )
+ column=(type=char(30) updatewhereclause=yes name=description dbname="v_dnf_avlconnection.description" dbalias=".description" )
+ column=(type=char(4000) updatewhereclause=yes name=schema dbname="schema" )
+ column=(type=char(4000) updatewhereclause=yes name=passwd dbname="passwd" )
+ column=(type=char(1) updatewhereclause=yes name=warning dbname="v_dnf_avlconnection.warning" dbalias=".warning" )
+ column=(type=decimal(0) updatewhereclause=yes name=ordre dbname="v_dnf_avlconnection.ordre" dbalias=".ordre" )
+ retrieve="  SELECT DISTINCT v_dnf_avlconnection.dbalias,   
+         v_dnf_avlconnection.description,   
+		   dnf_decrypt_raw(v_dnf_avlconnection.schema, DNF_vars.getCryptKey()) schema,  
+         dnf_decrypt_raw(v_dnf_avlconnection.passwd, DNF_vars.getCryptKey()) passwd, 
+         v_dnf_avlconnection.warning,   
+         v_dnf_avlconnection.ordre  
+    FROM v_dnf_avlconnection  
+   WHERE ( v_dnf_avlconnection.domain = :as_domain ) AND  
+         ( v_dnf_avlconnection.logname = :as_logname )   
+ORDER BY v_dnf_avlconnection.ordre ASC   
+" arguments=(("as_domain", string),("as_logname", string)) )
+column(band=detail id=5 alignment="0" tabsequence=32766 border="0" color="33554432" x="1975" y="4" height="64" width="238" format="[general]" html.valueishtml="0"  name=warning visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="18" y="4" height="64" width="786" format="[general]" html.valueishtml="0"  name=description visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=1 alignment="0" tabsequence=32766 border="0" color="33554432" x="823" y="4" height="64" width="512" format="[general]" html.valueishtml="0"  name=dbalias visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=3 alignment="0" tabsequence=32766 border="0" color="33554432" x="1353" y="4" height="64" width="293" format="[general]" html.valueishtml="0"  name=schema visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+column(band=detail id=4 alignment="0" tabsequence=32766 border="0" color="33554432" x="1664" y="4" height="64" width="293" format="[general]" html.valueishtml="0"  name=passwd visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="536870912" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 

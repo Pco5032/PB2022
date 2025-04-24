@@ -1,0 +1,238 @@
+﻿forward
+global type uo_menu from menu
+end type
+end forward
+
+global type uo_menu from menu
+end type
+global uo_menu uo_menu
+
+forward prototypes
+public function integer mf_getmenu (readonly string as_itemname, ref menu am_menuin, ref menu am_menuout)
+public subroutine mf_disablemenu (menu am_menu, boolean ab_self)
+public subroutine mf_disablemenu (string as_menu, boolean ab_self)
+public subroutine mf_enablemenu (menu am_menu)
+public subroutine mf_enablemenu (string as_menu)
+public function integer mf_hideitems (string as_itemstohide[])
+public function integer mf_hideitems (menu am_start, string as_itemstohide[])
+public function integer mf_showitems (menu am_start, string as_itemstoshow[])
+public function integer mf_showitems (string as_itemstoshow[])
+public function integer mf_disableitems (string as_itemstodisable[])
+public function integer mf_disableitems (menu am_start, string as_itemstodisable[])
+public function integer mf_enableitems (menu am_start, string as_itemstoenable[])
+public function integer mf_enableitems (string as_itemstoenable[])
+public function integer mf_setitemproperty (readonly string as_mode, ref string as_itemname[])
+public function integer mf_setitemproperty (readonly string as_mode, menu am_start, ref string as_itemname[])
+public function integer mf_setitemicon (string as_itemname, string as_icon)
+end prototypes
+
+public function integer mf_getmenu (readonly string as_itemname, ref menu am_menuin, ref menu am_menuout);// Initialise une variable de type menu
+// sur base du nom (as_itemname)
+//--------------------------------------
+
+integer li_MaxItem, li_Item, li_return=0
+string ls_ItemName
+menu lm_MenuIn, lm_MenuOut
+
+ls_ItemName = as_ItemName
+lm_MenuIn   = am_MenuIn
+lm_MenuOut  = am_MenuOut
+li_MaxItem  = UpperBound(lm_MenuIn.item)
+
+for li_Item = 1 to li_MaxItem
+   if (ls_ItemName=lm_MenuIn.Item[li_Item].ClassName()) then
+		am_MenuOut=lm_MenuIn.Item[li_Item]
+		li_return=1
+		exit
+	else
+		li_return = mf_GetMenu(ls_ItemName,lm_MenuIn.Item[li_Item],lm_MenuOut) 
+		if (li_return=1) then
+			am_MenuOut=lm_menuOut
+         exit
+      end if
+	end if	
+next
+
+return li_return
+
+end function
+
+public subroutine mf_disablemenu (menu am_menu, boolean ab_self);// disable toutes les options du menu am_menu,
+// ainsi que am_menu lui-même si ab_self=TRUE
+integer li, li_max
+menu lm_menu
+
+lm_menu = am_menu
+
+IF ab_self THEN
+	lm_menu.disable()
+END IF
+
+li_max = UpperBound(lm_menu.item)
+for li = 1 to li_max
+	mf_disablemenu(lm_menu.item[li], TRUE)
+next
+
+end subroutine
+
+public subroutine mf_disablemenu (string as_menu, boolean ab_self);// disable toutes les options du menu as_menu,
+// ainsi que as_menu lui-même si ab_self=TRUE
+
+menu lm_menuIn, lm_menuOut
+
+lm_MenuIn   = this 
+lm_MenuOut  = this 
+
+IF mf_GetMenu(as_menu,lm_MenuIn,lm_MenuOut) = 1 THEN
+	mf_disablemenu(lm_menuout, ab_self)
+END IF
+
+end subroutine
+
+public subroutine mf_enablemenu (menu am_menu);// enable un menu et toutes ses options
+integer li, li_max
+menu lm_menu
+
+lm_menu = am_menu
+
+lm_menu.enable()
+
+li_max = UpperBound(lm_menu.item)
+for li = 1 to li_max
+	mf_enablemenu(lm_menu.item[li])
+next
+
+end subroutine
+
+public subroutine mf_enablemenu (string as_menu);// enable toutes les options du menu as_menu, ainsi que as_menu lui-même
+
+menu lm_menuIn, lm_menuOut
+
+lm_MenuIn   = this 
+lm_MenuOut  = this 
+
+IF mf_GetMenu(as_menu,lm_MenuIn,lm_MenuOut) = 1 THEN
+	mf_enablemenu(lm_menuout)
+END IF
+
+end subroutine
+
+public function integer mf_hideitems (string as_itemstohide[]);return (mf_setItemProperty("h", as_ItemsToHide))
+end function
+
+public function integer mf_hideitems (menu am_start, string as_itemstohide[]);return (mf_setItemProperty("h", am_start, as_ItemsToHide))
+end function
+
+public function integer mf_showitems (menu am_start, string as_itemstoshow[]);return (mf_setItemProperty("s", am_start, as_ItemsToShow))
+end function
+
+public function integer mf_showitems (string as_itemstoshow[]);return (mf_setItemProperty("s", as_ItemsToShow))
+end function
+
+public function integer mf_disableitems (string as_itemstodisable[]);// disable les options de menu passées en paramètre où qu'elles soient dans la hiérarchie
+return (mf_setItemProperty("d",as_ItemsToDisable))
+end function
+
+public function integer mf_disableitems (menu am_start, string as_itemstodisable[]);// disable les options de menu passées en paramètre où qu'elles soient dans la hiérarchie
+return (mf_setItemProperty("d",am_start,as_ItemsToDisable))
+end function
+
+public function integer mf_enableitems (menu am_start, string as_itemstoenable[]);// enable les options de menu passées en paramètre, en ne les cherchant qu'à partir du menu am_start
+return (mf_setItemProperty("e",am_start, as_ItemsToEnable))
+end function
+
+public function integer mf_enableitems (string as_itemstoenable[]);// enable les options de menu passées en paramètre où qu'elles soient dans la hiérarchie
+return (mf_setItemProperty("e",as_ItemsToEnable))
+end function
+
+public function integer mf_setitemproperty (readonly string as_mode, ref string as_itemname[]);/* recherche les options de menu as_itemname[]
+   en démarrant la recherche à partir du niveau principal du menu
+	et leur applique la propriété as_mode
+*/
+return (mf_setitemproperty(as_mode,this,as_itemname[]))
+
+end function
+
+public function integer mf_setitemproperty (readonly string as_mode, menu am_start, ref string as_itemname[]);/* recherche les options de menu as_itemname[]
+   en démarrant la recherche à partir de l'option de menu am_start
+	et leur applique la propriété as_mode
+	return 0 si tout est OK
+*/
+
+integer li_CheckItem = 0, li_return, li_i, li_Max
+string ls_ItemName[]
+menu lm_menuIn, lm_menuOut
+
+lm_MenuIn   = am_start
+lm_MenuOut  = am_start
+ls_ItemName = as_ItemName
+li_Max  = UpperBound(as_ItemName)
+
+for li_i = 1 to li_Max
+   if mf_GetMenu(ls_ItemName[li_i],lm_MenuIn,lm_MenuOut) = 1 then
+      li_CheckItem ++ 
+   	CHOOSE CASE as_mode
+	   	CASE "d"
+				lm_MenuOut.disable()
+      	CASE "e"
+	      	lm_MenuOut.enable()
+			CASE "h"
+				if (lm_MenuOut.ParentWindow.WindowType = MDI!) then
+					lm_MenuOut.text = ""	
+				else
+					lm_MenuOut.hide()
+					IF LenA(lm_MenuOut.ToolbarItemName) > 0 THEN
+						lm_MenuOut.ToolbarItemVisible = FALSE
+					END IF
+				end if		
+			CASE "s"
+				if (lm_MenuOut.ParentWindow.WindowType = MDI!) then
+					lm_MenuOut.text = ""	
+				else
+					lm_MenuOut.show()
+					IF LenA(lm_MenuOut.ToolbarItemName) > 0 THEN
+						lm_MenuOut.ToolbarItemVisible = TRUE
+					END IF
+				end if
+			END CHOOSE
+	end if
+ 
+next	
+
+return (li_CheckItem - li_max) // Nombre de noms d'item non valides
+
+end function
+
+public function integer mf_setitemicon (string as_itemname, string as_icon);/* recherche l'option de menu as_itemname en démarrant la recherche à partir de la base du menu
+	et lui applique l'icone as_icon.
+	return(1) si OK
+	return(-1) si erreur
+*/
+
+menu lm_menuIn, lm_menuOut
+
+lm_MenuIn   = this
+lm_MenuOut  = this
+
+if mf_GetMenu(as_ItemName, lm_MenuIn, lm_MenuOut) = 1 then
+	lm_MenuOut.ToolbarItemName	 = as_icon	
+	return(1)
+ELSE
+	return(-1) // nom d'item non valide
+end if
+
+
+
+
+end function
+
+on uo_menu.create
+uo_menu=this
+call super::create
+this.text = "uo_menu"
+end on
+
+on uo_menu.destroy
+call super::destroy
+end on
+

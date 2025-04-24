@@ -1,0 +1,18 @@
+﻿global type f_impressionok from function_object
+end type
+
+forward prototypes
+global function integer f_impressionok ()
+end prototypes
+
+global function integer f_impressionok ();// demande si l'impression s'est déroulée correctement
+// renvoie 1 si OK et -1 si pas OK
+IF gu_message.uf_query("Confirmation","Si l'impression s'est déroulée correctement, choisissez O(ui) pour poursuivre le traitement.~n~n" + &
+							  "Dans le cas contraire, choisissez N(on) pour abandonner.", YesNo!, 2) = 1 THEN
+	return(1)
+ELSE
+	return(-1)
+END IF
+						  
+end function
+
