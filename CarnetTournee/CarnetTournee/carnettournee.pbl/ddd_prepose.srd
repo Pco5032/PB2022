@@ -1,0 +1,66 @@
+﻿//objectcomments DDDW sélection du préposé. Affiche la liste des agents du responsable passé en argument.
+release 19;
+datawindow(units=0 timer_interval=0 color=1073741824 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=yes showbackcoloronxp=no picture.file="" )
+header(height=8 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=72 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=char(7) updatewhereclause=yes name=prep_matricule dbname="prep_matricule" )
+ column=(type=char(30) updatewhereclause=yes name=agent_nom dbname="nom" )
+ column=(type=char(9) updatewhereclause=yes name=service_codeservice dbname="codeservice" )
+ column=(type=char(40) updatewhereclause=yes name=service_service dbname="service" )
+ column=(type=decimal(0) updatewhereclause=yes name=service_can dbname="can" )
+ column=(type=number updatewhereclause=yes name=service_bri dbname="bri" )
+ column=(type=char(1) updatewhereclause=yes name=modif_planning dbname="modif_planning" )
+ column=(type=char(1) updatewhereclause=yes name=modif_realise dbname="modif_realise" )
+ retrieve="SELECT prep_matricule, nom, codeservice, service, can, bri, 
+         max(modif_planning) modif_planning, max(modif_realise) modif_realise
+FROM
+ (SELECT encadrement.prep_matricule, agent.nom, service.codeservice, service.service, service.can, nvl(service.bri,0) bri,
+         encadrement.modif_planning, encadrement.modif_realise
+  FROM encadrement, agent, service
+  WHERE agent.matricule = encadrement.prep_matricule and  
+        service.codeservice = agent.codeservice and  
+        encadrement.resp_matricule = decode(:as_superuser,'O', encadrement.resp_matricule, :as_responsable) and
+        encadrement.consult_planning=decode(:as_typedata,'P','O',encadrement.consult_planning) and
+        encadrement.consult_realise=decode(:as_typedata,'R','O',encadrement.consult_realise)
+UNION   
+SELECT agent.matricule AS prep_matricule, agent.nom,  service.codeservice, service.service, service.can, nvl(service.bri,0) bri,
+       'O' modif_planning, 'O' modif_realise
+  FROM agent, service  
+  WHERE service.codeservice = agent.codeservice and agent.matricule = :as_responsable
+UNION
+SELECT agent.matricule AS prep_matricule, agent.nom,  service.codeservice, service.service, service.can, nvl(service.bri,0) bri,
+       encadrement.modif_planning, encadrement.modif_realise
+  FROM encadrement, remplacement, agent, service
+  WHERE remplacement.remp_matricule = :as_responsable and
+        remplacement.resp_matricule = encadrement.resp_matricule and
+        agent.matricule = encadrement.prep_matricule and  
+        service.codeservice = agent.codeservice and
+        (select to_date(sysdate) from dual) >= remplacement.date_debut and
+        (select to_date(sysdate) from dual) <= remplacement.date_fin and
+        encadrement.consult_planning=decode(:as_typedata,'P','O',encadrement.consult_planning) and
+        encadrement.consult_realise=decode(:as_typedata,'R','O',encadrement.consult_realise)
+)
+GROUP BY prep_matricule, nom, codeservice, service, can, bri
+ORDER BY can,bri,nom
+" arguments=(("as_responsable", string),("as_superuser", string),("as_typedata", string)) )
+group(level=1 header.height=72 trailer.height=0 by=("service_can" , "service_bri" ) header.suppress=yes header.color="536870912" header.transparency="0" header.gradient.color="8421504" header.gradient.transparency="0" header.gradient.angle="0" header.brushmode="0" header.gradient.repetition.mode="0" header.gradient.repetition.count="0" header.gradient.repetition.length="100" header.gradient.focus="0" header.gradient.scale="100" header.gradient.spread="100" trailer.color="536870912" trailer.transparency="0" trailer.gradient.color="8421504" trailer.gradient.transparency="0" trailer.gradient.angle="0" trailer.brushmode="0" trailer.gradient.repetition.mode="0" trailer.gradient.repetition.count="0" trailer.gradient.repetition.length="100" trailer.gradient.focus="0" trailer.gradient.scale="100" trailer.gradient.spread="100" )
+text(band=header.1 alignment="0" text="Service~tIf (left(service_codeservice,6)='C05001', 
+          f_translate_getlabel(~"TEXT_00734~",~"Service de la pêche~"),
+    If (not isnull(service_can), f_translate_getlabel(~"TEXT_00730~", ~"Cantonnement~")          + ~" ~" + string(service_can) + if (service_bri=0, ~"~", ~" - ~" +          f_translate_getlabel(~"TEXT_00732~",~"Brigade~") + ~" ~" + string(service_bri)), 
+    f_translate_getlabel(~"TEXT_00733~",~"Autre(s) service(s)~"))
+   )
+" border="0" color="33554432" x="73" y="4" height="60" width="1006" html.valueishtml="0"  name=t_1  tag="TEXT_00721" visible="1"  font.face="Arial" font.height="-9" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" font.italic="1" background.mode="2" background.color="1073741824" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="0" text="~tagent_nom + ~" (~" +   service_service + ~")~"" border="0" color="33554432" x="0" y="4" height="60" width="2322" html.valueishtml="0"  name=t_text visible="1"  font.face="Arial" font.height="-9" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

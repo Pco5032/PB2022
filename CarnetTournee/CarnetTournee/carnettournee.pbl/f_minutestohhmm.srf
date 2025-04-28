@@ -1,0 +1,21 @@
+﻿//objectcomments Convertit la durée en minutes passée en argument en format texte : ----h--
+global type f_minutestohhmm from function_object
+end type
+
+forward prototypes
+global function string f_minutestohhmm (long ai_minutes)
+end prototypes
+
+global function string f_minutestohhmm (long ai_minutes);// Convertit la durée en minutes passée en argument en format texte : ----h--
+// Exemple 300 minutes --> 5h00.
+// Si ai_minutes est NULL, renvoie NULL
+string	ls_hhmm
+
+IF isNull(ai_minutes) THEN
+	return(gu_c.s_null)
+ELSE
+	ls_hhmm = string(truncate(ai_minutes/60, 0)) + ":" + string(mod(ai_minutes, 60), "00")
+	return(ls_hhmm)
+END IF
+end function
+
