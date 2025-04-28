@@ -6,6 +6,8 @@ type dw_genop from uo_datawindow_multiplerow within w_genop
 end type
 type cb_refresh from uo_cb within w_genop
 end type
+type cbx_1 from uo_cbx within w_genop
+end type
 end forward
 
 global type w_genop from w_ancestor_dataentry
@@ -16,6 +18,7 @@ boolean maxbox = true
 boolean resizable = true
 dw_genop dw_genop
 cb_refresh cb_refresh
+cbx_1 cbx_1
 end type
 global w_genop w_genop
 
@@ -58,15 +61,18 @@ int iCurrent
 call super::create
 this.dw_genop=create dw_genop
 this.cb_refresh=create cb_refresh
+this.cbx_1=create cbx_1
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.dw_genop
 this.Control[iCurrent+2]=this.cb_refresh
+this.Control[iCurrent+3]=this.cbx_1
 end on
 
 on w_genop.destroy
 call super::destroy
 destroy(this.dw_genop)
 destroy(this.cb_refresh)
+destroy(this.cbx_1)
 end on
 
 event ue_postopen;call super::ue_postopen;dw_genop.retrieve()
@@ -158,4 +164,10 @@ end type
 event clicked;call super::clicked;dw_genop.retrieve()
 
 end event
+
+type cbx_1 from uo_cbx within w_genop
+integer x = 384
+integer y = 16
+boolean bringtotop = true
+end type
 
